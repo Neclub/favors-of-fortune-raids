@@ -447,7 +447,7 @@
       {
         "id": "75132",
         "icon": "https://spells.eqresource.com/spellicons/1299Single0.jpe",
-        "effect": "Increase Poison Counter by 120",
+        "effect": "Decrease Current Hit Points by 550000 per Tick (Poison 120)",
         "url": "https://spells.eqresource.com/spells.php?id=75132&source=beta"
       }
     ],
@@ -529,7 +529,7 @@
       {
         "id": "17057",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
-        "effect": "Decrease Current Hit Points by 7500",
+        "effect": "Decrease Current Hit Points by 7500 (Poison 50); Decrease Current Hit Points by 5000 per Tick (Poison 50)",
         "url": "https://spells.eqresource.com/spells.php?id=17057&source=beta"
       }
     ],
@@ -737,7 +737,7 @@
       {
         "id": "75092",
         "icon": "https://spells.eqresource.com/spellicons/778Single0.jpe",
-        "effect": "Decrease Current Hit Points by 600600 per Tick",
+        "effect": "Decrease Current Hit Points by 600600 per Tick (Corruption 24)",
         "url": "https://spells.eqresource.com/spells.php?id=75092&source=beta"
       }
     ],

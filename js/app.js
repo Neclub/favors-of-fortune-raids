@@ -56,6 +56,9 @@ function appendSpell(parent, name) {
   ids.append(")");
   wrap.append(ids);
   parent.append(wrap);
+  if (matches.length === 1 && matches[0].effect) {
+    parent.append(el("span", "spell-effect", ` — ${matches[0].effect}`));
+  }
 }
 
 function appendLinkedText(parent, text) {
@@ -165,7 +168,8 @@ function renderRaid(raid) {
     raid.summary.forEach((row) => {
       const item = document.createElement("li");
       appendLinkedText(item, row.name);
-      item.append(" — ");
+      const singleEffect = data.spells[row.name] && data.spells[row.name].length === 1 && data.spells[row.name][0].effect;
+      item.append(singleEffect ? ". " : " — ");
       appendLinkedText(item, row.effect);
       (data.spells[row.name] ? [row.name] : []).forEach((name) => appendCopies(item, name));
       list.append(item);

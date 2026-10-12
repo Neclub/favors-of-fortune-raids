@@ -127,7 +127,7 @@
       {
         "id": "17274",
         "icon": "https://spells.eqresource.com/spellicons/41Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 7500 per Tick",
+        "effect": "Decrease Current Hit Points by 7500 per Tick (Disease 16)",
         "url": "https://spells.eqresource.com/spells.php?id=17274&source=beta"
       },
       {
@@ -157,7 +157,7 @@
       {
         "id": "39557",
         "icon": "https://spells.eqresource.com/spellicons/41Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 29500 per Tick",
+        "effect": "Decrease Current Hit Points by 29500 per Tick (Disease 65)",
         "url": "https://spells.eqresource.com/spells.php?id=39557&source=beta"
       },
       {
@@ -187,7 +187,7 @@
       {
         "id": "68260",
         "icon": "https://spells.eqresource.com/spellicons/41Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 83672 per Tick",
+        "effect": "Decrease Current Hit Points by 83672 per Tick (Disease 165)",
         "url": "https://spells.eqresource.com/spells.php?id=68260&source=beta"
       },
       {
@@ -1173,13 +1173,13 @@
       {
         "id": "4729",
         "icon": "https://spells.eqresource.com/spellicons/173Single0.jpe",
-        "effect": "Decrease Attack by 500",
+        "effect": "Decrease Current Hit Points by 1225 per Tick (Poison 297)",
         "url": "https://spells.eqresource.com/spells.php?id=4729&source=beta"
       },
       {
         "id": "75024",
         "icon": "https://spells.eqresource.com/spellicons/173Single0.jpe",
-        "effect": "Decrease Attack by 500",
+        "effect": "Decrease Current Hit Points by 122500 per Tick (Poison 297)",
         "url": "https://spells.eqresource.com/spells.php?id=75024&source=beta"
       }
     ],
@@ -1209,13 +1209,13 @@
       {
         "id": "12209",
         "icon": "https://spells.eqresource.com/spellicons/160Single0.jpe",
-        "effect": "Decrease Current Hit Points by 35000",
+        "effect": "Decrease Current Hit Points by 35000 (Corruption 20); Decrease Current Hit Points by 10000 per Tick (Corruption 20)",
         "url": "https://spells.eqresource.com/spells.php?id=12209&source=beta"
       },
       {
         "id": "75005",
         "icon": "https://spells.eqresource.com/spellicons/160Single0.jpe",
-        "effect": "Decrease Current Hit Points by 350000",
+        "effect": "Decrease Current Hit Points by 350000 (Corruption 20); Decrease Current Hit Points by 100000 per Tick (Corruption 20)",
         "url": "https://spells.eqresource.com/spells.php?id=75005&source=beta"
       }
     ],
@@ -1377,13 +1377,13 @@
       {
         "id": "4728",
         "icon": "https://spells.eqresource.com/spellicons/8Caster%20PB0.jpe",
-        "effect": "Increase Spell Mana Cost by 1% to 50%",
+        "effect": "Decrease Current Hit Points by 4050 (Poison 396); Decrease Current Hit Points by 500 per Tick (Poison 396)",
         "url": "https://spells.eqresource.com/spells.php?id=4728&source=beta"
       },
       {
         "id": "75023",
         "icon": "https://spells.eqresource.com/spellicons/8Caster%20PB0.jpe",
-        "effect": "Increase Spell Mana Cost by 1% to 50%",
+        "effect": "Decrease Current Hit Points by 325000 (Poison 396); Decrease Current Hit Points by 150000 per Tick (Poison 396)",
         "url": "https://spells.eqresource.com/spells.php?id=75023&source=beta"
       }
     ],
@@ -1391,13 +1391,13 @@
       {
         "id": "39657",
         "icon": "https://spells.eqresource.com/spellicons/94Single0.jpe",
-        "effect": "Increase Hit Damage Taken by 25%",
+        "effect": "Decrease Current Hit Points by 6000 per Tick (Poison 10)",
         "url": "https://spells.eqresource.com/spells.php?id=39657&source=beta"
       },
       {
         "id": "75113",
         "icon": "https://spells.eqresource.com/spellicons/1140Single0.jpe",
-        "effect": "Decrease Current Hit Points by 350000 per Tick",
+        "effect": "Decrease Current Hit Points by 350000 per Tick (Corruption 30)",
         "url": "https://spells.eqresource.com/spells.php?id=75113&source=beta"
       }
     ],

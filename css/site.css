@@ -317,14 +317,9 @@ ul.effects ul { margin: 4px 0; }
 }
 
 .spell-card-effect {
-  margin: 10px 0 8px;
+  margin: 10px 0 0;
   font-size: 16px;
   line-height: 1.45;
-}
-
-.spell-card-spell a {
-  font-size: 15px;
-  font-weight: 600;
 }
 
 @media (max-width: 860px) {

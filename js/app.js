@@ -51,10 +51,6 @@ function fillCard(matches, name) {
     head.append(img, title);
     block.append(head);
     if (match.effect) block.append(el("p", "spell-card-effect", match.effect));
-    const more = document.createElement("a");
-    more.href = match.url || spellPage(match.id);
-    more.textContent = "Open spell page";
-    block.append(more);
     card.append(block);
   });
 }

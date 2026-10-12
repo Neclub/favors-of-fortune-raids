@@ -19,6 +19,69 @@ function spellPage(id) {
   return `https://spells.eqresource.com/spells.php?id=${id}&source=beta`;
 }
 
+const card = document.createElement("div");
+card.id = "spell-card";
+card.hidden = true;
+document.body.append(card);
+let hideTimer = 0;
+
+function placeCard(event) {
+  card.hidden = false;
+  const width = card.offsetWidth;
+  const height = card.offsetHeight;
+  let left = event.clientX + 18;
+  let top = event.clientY + 16;
+  if (left + width > window.innerWidth - 12) left = Math.max(12, event.clientX - width - 18);
+  if (top + height > window.innerHeight - 12) top = Math.max(12, window.innerHeight - height - 12);
+  card.style.left = `${left}px`;
+  card.style.top = `${top}px`;
+}
+
+function fillCard(matches, name) {
+  card.replaceChildren();
+  matches.forEach((match) => {
+    const block = el("article", "spell-card-spell");
+    const head = el("div", "spell-card-head");
+    const img = document.createElement("img");
+    img.src = match.icon;
+    img.alt = "";
+    const title = el("div");
+    title.append(el("div", "spell-card-name", name));
+    title.append(el("div", "spell-card-id", `Beta ${match.id}`));
+    head.append(img, title);
+    block.append(head);
+    if (match.effect) block.append(el("p", "spell-card-effect", match.effect));
+    const more = document.createElement("a");
+    more.href = match.url || spellPage(match.id);
+    more.textContent = "Open spell page";
+    block.append(more);
+    card.append(block);
+  });
+}
+
+function showCard(event, matches, name) {
+  clearTimeout(hideTimer);
+  fillCard(matches, name);
+  placeCard(event);
+}
+
+function scheduleHide() {
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(() => {
+    card.hidden = true;
+  }, 160);
+}
+
+card.addEventListener("mouseenter", () => clearTimeout(hideTimer));
+card.addEventListener("mouseleave", scheduleHide);
+
+function bindSpellHover(node, matches, name) {
+  node.addEventListener("mouseenter", (event) => showCard(event, matches, name));
+  node.addEventListener("mouseleave", scheduleHide);
+  node.addEventListener("focusin", (event) => showCard(event, matches, name));
+  node.addEventListener("focusout", scheduleHide);
+}
+
 function appendSpell(parent, name) {
   const matches = data.spells[name];
   if (!matches || !matches.length) {
@@ -52,10 +115,14 @@ function appendSpell(parent, name) {
     idLink.href = match.url || spellPage(match.id);
     idLink.textContent = match.id;
     ids.append(idLink);
+    bindSpellHover(idLink, [match], name);
   });
   ids.append(")");
   wrap.append(ids);
   parent.append(wrap);
+  wrap.addEventListener("mouseenter", (event) => showCard(event, matches, name));
+  wrap.addEventListener("mouseleave", scheduleHide);
+  bindSpellHover(link, matches, name);
   if (matches.length === 1 && matches[0].effect) {
     parent.append(el("span", "spell-effect", ` — ${matches[0].effect}`));
   }
@@ -110,6 +177,7 @@ function appendCopies(parent, name) {
     link.href = match.url;
     link.textContent = match.id;
     item.append(link);
+    bindSpellHover(link, [match], name);
     if (match.effect) item.append(` — ${match.effect}`);
     list.append(item);
   });

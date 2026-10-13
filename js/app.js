@@ -25,22 +25,18 @@ function openInNewTab(link) {
   return link;
 }
 
-const card = document.createElement("div");
-card.id = "spell-card";
-card.hidden = true;
-document.body.append(card);
-let hideTimer = 0;
+const card = document.getElementById("spell-card");
+const spellPanel = document.getElementById("spell-panel");
 
-function placeCard(event) {
-  card.hidden = false;
-  const width = card.offsetWidth;
-  const height = card.offsetHeight;
-  let left = event.clientX + 18;
-  let top = event.clientY + 16;
-  if (left + width > window.innerWidth - 12) left = Math.max(12, event.clientX - width - 18);
-  if (top + height > window.innerHeight - 12) top = Math.max(12, window.innerHeight - height - 12);
-  card.style.left = `${left}px`;
-  card.style.top = `${top}px`;
+function showEmptyCard() {
+  card.replaceChildren(el("p", "spell-panel-empty", "Hover a spell in the writeup to see its details."));
+}
+
+function detailText(value) {
+  return value
+    .replace(/\s*function degreesToRadians[\s\S]*$/, "")
+    .replace(/&deg;/g, "°")
+    .replace(/&amp;/g, "&");
 }
 
 function fillCard(matches, name) {
@@ -52,8 +48,15 @@ function fillCard(matches, name) {
     img.src = match.icon;
     img.alt = "";
     const title = el("div");
-    title.append(el("div", "spell-card-name", name));
-    title.append(el("div", "spell-card-id", `Beta ${match.id}`));
+    const nameLink = openInNewTab(document.createElement("a"));
+    nameLink.className = "spell-card-name";
+    nameLink.href = match.url || spellPage(match.id);
+    nameLink.textContent = name;
+    const idLink = openInNewTab(document.createElement("a"));
+    idLink.className = "spell-card-id";
+    idLink.href = match.url || spellPage(match.id);
+    idLink.textContent = `Beta ${match.id}`;
+    title.append(nameLink, idLink);
     head.append(img, title);
     block.append(head);
     const slots = match.slots && match.slots.length ? match.slots : (match.effect ? [match.effect] : []);
@@ -66,35 +69,25 @@ function fillCard(matches, name) {
       const details = el("dl", "spell-card-details");
       match.details.forEach((row) => {
         details.append(el("dt", "", row.label));
-        details.append(el("dd", "", row.value));
+        details.append(el("dd", "", detailText(row.value)));
       });
       block.append(details);
     }
     card.append(block);
   });
+  spellPanel.scrollTop = 0;
 }
 
 function showCard(event, matches, name) {
-  clearTimeout(hideTimer);
+  document.querySelectorAll(".is-open").forEach((node) => node.classList.remove("is-open"));
+  const spell = event.currentTarget.closest(".spell");
+  (spell || event.currentTarget).classList.add("is-open");
   fillCard(matches, name);
-  placeCard(event);
 }
-
-function scheduleHide() {
-  clearTimeout(hideTimer);
-  hideTimer = setTimeout(() => {
-    card.hidden = true;
-  }, 160);
-}
-
-card.addEventListener("mouseenter", () => clearTimeout(hideTimer));
-card.addEventListener("mouseleave", scheduleHide);
 
 function bindSpellHover(node, matches, name) {
   node.addEventListener("mouseenter", (event) => showCard(event, matches, name));
-  node.addEventListener("mouseleave", scheduleHide);
   node.addEventListener("focusin", (event) => showCard(event, matches, name));
-  node.addEventListener("focusout", scheduleHide);
 }
 
 function appendSpell(parent, name) {
@@ -136,7 +129,6 @@ function appendSpell(parent, name) {
   wrap.append(ids);
   parent.append(wrap);
   wrap.addEventListener("mouseenter", (event) => showCard(event, matches, name));
-  wrap.addEventListener("mouseleave", scheduleHide);
   bindSpellHover(link, matches, name);
   if (matches.length === 1 && matches[0].effect) {
     parent.append(el("span", "spell-effect", ` — ${matches[0].effect}`));
@@ -279,6 +271,7 @@ function selectRaid(id, updateHash) {
     if (toggle) toggle.setAttribute("aria-expanded", "true");
   }
   renderRaid(raid);
+  showEmptyCard();
   document.getElementById("content").scrollTop = 0;
   window.scrollTo(0, 0);
 }

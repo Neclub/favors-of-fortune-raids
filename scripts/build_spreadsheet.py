@@ -157,28 +157,68 @@ def spell_fields(page):
     }
 
 
-def raid_spells(raid):
+def raid_spells(raid, spells):
+    """Spell names the website links for this raid, in first-seen order."""
     ordered = []
     seen = set()
+    names = sorted(spells, key=len, reverse=True)
+    linkable = [name for name in names if " " in name or len(name) > 8]
+    word = re.compile(r"[A-Za-z0-9'’]")
 
     def add(name):
-        if name and name not in seen:
+        if name in spells and name not in seen:
             seen.add(name)
             ordered.append(name)
 
+    def linked_names(text):
+        if not text:
+            return
+        if text in spells:
+            add(text)
+            return
+        used = [False] * len(text)
+        hits = []
+        for name in linkable:
+            start = 0
+            while True:
+                index = text.find(name, start)
+                if index < 0:
+                    break
+                end = index + len(name)
+                before = index == 0 or not word.match(text[index - 1])
+                after = end == len(text) or not word.match(text[end])
+                if before and after and not any(used[index:end]):
+                    for cursor in range(index, end):
+                        used[cursor] = True
+                    hits.append((index, name))
+                start = index + 1
+        for _, name in sorted(hits):
+            add(name)
+
+    def walk(bullets):
+        for bullet in bullets:
+            linked_names(bullet.get("text") or "")
+            if bullet.get("spell"):
+                add(bullet["spell"])
+            walk(bullet.get("children") or [])
+
     for stage in raid["stages"]:
         for block in stage["blocks"]:
+            linked_names(block.get("title") or "")
             for name in block.get("spellNames") or []:
                 add(name)
-            def walk(bullets):
-                for bullet in bullets:
-                    if bullet.get("spell"):
-                        add(bullet["spell"])
-                    walk(bullet.get("children") or [])
+            for paragraph in block.get("prose") or []:
+                linked_names(paragraph)
             walk(block.get("bullets") or [])
     for row in raid.get("summary") or []:
         add(row["name"])
+        linked_names(row.get("effect") or "")
     return ordered
+
+
+def detail_value(match, label):
+    values = [row["value"] for row in match.get("details") or [] if row.get("label") == label]
+    return values[0] if values else ""
 
 
 def main():
@@ -203,13 +243,19 @@ def main():
                 cell.font = header_font
                 cell.fill = header_fill
                 cell.alignment = Alignment(vertical="center")
-            for name in raid_spells(raid):
+            for name in raid_spells(raid, data["spells"]):
                 matches = data["spells"].get(name) or []
                 if not matches:
                     continue
                 for match in matches:
                     page = pages.get(match["id"], {"slots": [], "duration": "", "land": "", "wear": ""})
-                    fields = spell_fields(page)
+                    slots = match.get("slots") or page.get("slots") or []
+                    if not slots and match.get("effect"):
+                        slots = [match["effect"]]
+                    fields = spell_fields({"slots": slots, "duration": "", "land": "", "wear": ""})
+                    fields["duration"] = detail_value(match, "Duration") or page.get("duration", "")
+                    fields["land"] = detail_value(match, "Land on You") or page.get("land", "")
+                    fields["wear"] = detail_value(match, "Wear off") or page.get("wear", "")
                     sheet.append([
                         name,
                         int(match["id"]),

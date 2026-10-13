@@ -50,7 +50,7 @@ DETAIL_ORDER = [
     "Timer ID",
     "Category",
 ]
-HEADERS = ["Spell", "Spell ID", "Spell information", "Counters", "Duration", "Land on You", "Wear off"]
+HEADERS = ["Spell", "Spell ID", "Spell information", "Counters", "Duration", "Land on You", "Land on Other", "Wear off"]
 SHEET_NAMES = {
     "siren": "Siren Sisters",
     "dipuc": "Dipuc",
@@ -137,6 +137,7 @@ def load_pages():
                 "details": spell_details(html),
                 "duration": labeled(html, "Duration"),
                 "land": labeled(html, "Land on You"),
+                "other": labeled(html, "Land on Other"),
                 "wear": labeled(html, "Wear off"),
             }
     return pages
@@ -255,6 +256,7 @@ def main():
                     fields = spell_fields({"slots": slots, "duration": "", "land": "", "wear": ""})
                     fields["duration"] = detail_value(match, "Duration") or page.get("duration", "")
                     fields["land"] = detail_value(match, "Land on You") or page.get("land", "")
+                    fields["other"] = detail_value(match, "Land on Other") or page.get("other", "")
                     fields["wear"] = detail_value(match, "Wear off") or page.get("wear", "")
                     sheet.append([
                         name,
@@ -263,12 +265,13 @@ def main():
                         fields["counters"],
                         fields["duration"],
                         fields["land"],
+                        fields["other"],
                         fields["wear"],
                     ])
                     id_cell = sheet.cell(sheet.max_row, 2)
                     id_cell.hyperlink = f"https://spells.eqresource.com/spells.php?id={match['id']}&source=beta"
                     id_cell.font = link_font
-            widths = [28, 12, 62, 18, 14, 55, 40]
+            widths = [28, 12, 62, 18, 14, 55, 55, 40]
             for column, width in enumerate(widths, start=1):
                 sheet.column_dimensions[get_column_letter(column)].width = width
             previous = None
@@ -291,7 +294,7 @@ def main():
                 sheet.row_dimensions[row[0].row].height = needed * 16
             sheet.auto_filter.ref = sheet.dimensions
             sheet.freeze_panes = "A2"
-            sheet.auto_filter.ref = f"A1:G{sheet.max_row}"
+            sheet.auto_filter.ref = f"A1:H{sheet.max_row}"
             sheet.page_setup.orientation = "landscape"
             sheet.page_setup.fitToPage = True
             sheet.page_setup.fitToWidth = 1

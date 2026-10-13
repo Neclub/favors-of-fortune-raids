@@ -1,0 +1,72 @@
+Tier 1 – Plane of Desire Raid 1 – Siren Sisters
+Raid Giver: Uldrek
+Requirements: Level 130
+Background
+Three sirens are taking advantage of the chaos in the Plane of Desire by drawing in artists with promises of inspiration. Desperate for relief from their creative block they seek out the sisters and instead of finding salvation they are ambushed and drained of their creative essence by the bickering sisters.
+Encounter Overview
+The Siren Sisters is a single stage fight where all three sirens are active at the same time. Each siren seeks the adoration of everyone around them and based on the amount of attention they receive will (or don't receive) they will grow ever more angry and frustrated. Players can show their affection by standing near the siren of their choosing, cooling them down. Be careful how much attention you give to one siren as their attention comes at a cost.
+• The Singer, Mella're: Draws inspiration from and feasts on the voices of others
+• The Poet, Era'mi: The pen is mighty than the sword and her verses are stunning
+• The Musician, Calli'do: Her melodies will make you want to plant your feet and bang your head
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 (100% - 0%)
+Overview
+Scorn starts the encounter by wrapping Tholuxe Paells in a layer of thick thorns, dealing persistent damage to them throughout the encounter, while leaning heavily into her mastery of archery by rapid firing arrows at targets around the arena. Meanwhile Tholuxe attempts to help the players but sometimes things just seem to go wrong. Bramble Sentinels accompany Scorn, silencing players and Tholuxe if they are too close to them.
+The Siren Sisters start the encounter spread and do not move from starting locations. Each sister will vie for your attention by offering protection from one of the elements. Show them your affection by standing close, reducing their anger, but drawing their attention. Be warned, you are not the only one drawn in by the sisters' presence.
+Mechanics
+Mella're
+Soothing Ballad:
+• Protects nearby players, reducing dmg taken by Calli'do's spells
+Shrill Chorus:
+• Occurs every 90 seconds
+• Pulse AoE dmg - entire raid
+◦ Dmg is based on Mella're's anger level
+◦ At anger level 4 pulse will also silence players
+Lingering Hymn:
+• Occurs every 7% life
+• Targets a number of random players based on anger level
+◦ More players at lower anger levels
+• Deals dmg and silences targeted players
+Era'mi
+Empowering Rhetoric:
+• Protects nearby players, reducing dmg taken by Mella're's spells
+Cutting Verse:
+• Occurs every 90 seconds
+• Pulse AoE dmg - entire raid
+◦ Dmg is based on Era'mi's anger level
+◦ At anger level 4 pulse will also put players to sleep (stun)
+Biting Sonnet:
+• Occurs every 7% life
+• Targets a number of random players based on anger level
+◦ More players at lower anger levels
+• Deals dmg and sleeps (stuns) targeted players
+Calli'do
+Tranquil Rhythm:
+• Protects nearby players, reducing dmg taken by Era'mi's spells
+Discordant Melody:
+• Occurs every 90 seconds
+• Pulse AoE dmg - entire raid
+◦ Dmg is based on Calli'do's anger level
+◦ At anger level 4 pulse will also slow players
+Cacophonous Note:
+• Occurs every 7% life
+• Targets a number of random players based on anger level
+◦ More players at lower anger levels
+• Deals dmg and slows targeted players
+Fans and Devotees:
+Throughout the fight the siren sisters will be joined by their fans and devotees. Some of them can be controlled while others can not.
+Strategy: Pay attention to the siren sister's anger levels and avoid allowing any of them to get to 4. Control the adds that spawn throughout the encounter and prepare for health based damage.
+Achievements
+Complete additional challenges for special recognition:
+1. Shared Affection: Never allow a siren sister get to max anger
+2. Picking Favorites: Allow two siren sisters get to max anger
+3. Fanatic Poaching: Use a single target mez on at least five of each of the siren sister’s fans
+Key Mechanics Summary
+Mechanic
+Effect
+Shrill Chorus
+Pulse of increasing dmg based on Mella're's anger level. At anger level 4 silences
+Cutting Verse
+Pulse of increasing dmg based on Era'mi's anger level. At anger level 4 stuns
+Discordant Melody
+Pulse of increasing dmg based on Calli'do's anger level. At anger level 4 slows

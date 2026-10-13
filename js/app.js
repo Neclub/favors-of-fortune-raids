@@ -265,8 +265,9 @@ function renderRaid(raid) {
 function selectRaid(id, updateHash, keepCard) {
   const raid = data.tiers.flatMap((tier) => tier.raids).find((item) => item.id === id);
   if (!raid) return;
+  const raidChanged = id !== selectedId;
   selectedId = id;
-  if (updateHash) history.replaceState(null, "", `#${id}`);
+  if (updateHash && raidChanged) history.pushState({ raid: id }, "", `#${id}`);
   navList.querySelectorAll(".nav-btn").forEach((button) => {
     const active = button.dataset.raid === id;
     button.classList.toggle("active", active);
@@ -442,9 +443,24 @@ function openSpell(raidId, name, ids) {
 const searchInput = document.getElementById("spell-search");
 const searchResults = document.getElementById("spell-search-results");
 const SEARCH_LIMIT = 25;
+const expandedSpellIds = new Set();
+let lastSearchQuery = "";
+
+function orderedIds(entry, query) {
+  const ids = matchingIds(entry, query);
+  const q = query.trim();
+  if (/^\d+$/.test(q)) {
+    ids.sort((a, b) => Number(b === q) - Number(a === q) || a.localeCompare(b, undefined, { numeric: true }));
+  }
+  return ids;
+}
 
 function renderSearch(query) {
   const q = query.trim();
+  if (q !== lastSearchQuery) {
+    expandedSpellIds.clear();
+    lastSearchQuery = q;
+  }
   searchResults.replaceChildren();
   searchInput.setAttribute("aria-expanded", q ? "true" : "false");
   if (!q || !spellIndex.length) return;
@@ -462,10 +478,12 @@ function renderSearch(query) {
     : `${hits.length} spell${hits.length === 1 ? "" : "s"}`;
   const list = el("div", "search-results");
   shown.forEach((entry) => {
-    const ids = matchingIds(entry, q);
+    const ids = orderedIds(entry, q);
+    const expanded = expandedSpellIds.has(entry.name);
+    const visibleIds = expanded ? ids : ids.slice(0, 1);
     const hit = el("article", "search-hit");
     const spell = el("div", "search-hit-spell");
-    const icon = entry.matches.find((match) => ids.includes(String(match.id)) && match.icon) || entry.matches[0];
+    const icon = entry.matches.find((match) => visibleIds.includes(String(match.id)) && match.icon) || entry.matches[0];
     if (icon && icon.icon) {
       const img = document.createElement("img");
       img.src = icon.icon;
@@ -475,10 +493,26 @@ function renderSearch(query) {
     const title = el("div");
     const name = el("div", "search-hit-name");
     name.append(highlightQuery(entry.name, q));
-    const idLine = el("div", "search-hit-ids", ids.join(", "));
-    title.append(name, idLine);
-    const effect = (entry.matches.find((match) => ids.includes(String(match.id)) && match.effect) || {}).effect;
-    if (effect) title.append(el("div", "search-hit-effect", effect));
+    title.append(name, el("div", "search-hit-ids", visibleIds.join(", ")));
+    if (ids.length > 1) {
+      const more = document.createElement("button");
+      more.type = "button";
+      more.className = "search-id-more";
+      more.dataset.expand = entry.name;
+      more.setAttribute("aria-expanded", expanded ? "true" : "false");
+      more.textContent = expanded
+        ? "Show one ID"
+        : ids.length === 2
+          ? "Show the other ID"
+          : `Show all ${ids.length} IDs`;
+      more.addEventListener("click", () => {
+        if (expandedSpellIds.has(entry.name)) expandedSpellIds.delete(entry.name);
+        else expandedSpellIds.add(entry.name);
+        renderSearch(searchInput.value);
+        [...searchResults.querySelectorAll(".search-id-more")].find((button) => button.dataset.expand === entry.name)?.focus();
+      });
+      title.append(more);
+    }
     spell.append(title);
     hit.append(spell);
     const raids = el("div", "search-hit-raids");
@@ -488,13 +522,17 @@ function renderSearch(query) {
       button.className = "search-raid";
       button.textContent = `${raid.tier} · ${raid.short}`;
       button.setAttribute("aria-label", `Show ${entry.name} in ${raid.short}`);
-      button.addEventListener("click", () => openSpell(raid.id, entry.name, ids));
+      button.addEventListener("click", () => openSpell(raid.id, entry.name, visibleIds));
       raids.append(button);
     });
     hit.append(raids);
     list.append(hit);
   });
   searchResults.append(status, list);
+}
+
+function searchRaidButtons() {
+  return [...searchResults.querySelectorAll(".search-raid")];
 }
 
 function bindSearch() {
@@ -505,13 +543,55 @@ function bindSearch() {
       renderSearch("");
       return;
     }
+    if (event.key === "ArrowDown") {
+      const first = searchRaidButtons()[0];
+      if (!first) return;
+      event.preventDefault();
+      first.focus();
+      return;
+    }
     if (event.key === "Enter") {
-      const first = searchResults.querySelector(".search-raid");
+      const first = searchRaidButtons()[0];
       if (!first) return;
       event.preventDefault();
       first.click();
     }
   });
+  searchResults.addEventListener("keydown", (event) => {
+    const buttons = searchRaidButtons();
+    if (!buttons.length) return;
+    const index = buttons.indexOf(document.activeElement);
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      const next = index < 0 ? buttons[0] : buttons[Math.min(index + 1, buttons.length - 1)];
+      next.focus();
+      return;
+    }
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      if (index <= 0) searchInput.focus();
+      else buttons[index - 1].focus();
+      return;
+    }
+    if (event.key === "Escape") {
+      event.preventDefault();
+      searchInput.value = "";
+      renderSearch("");
+      searchInput.focus();
+    }
+  });
+}
+
+function raidIdFromLocation() {
+  const fromHash = decodeURIComponent(location.hash.replace(/^#/, ""));
+  const known = data.tiers.flatMap((tier) => tier.raids).some((raid) => raid.id === fromHash);
+  return known ? fromHash : data.tiers[0].raids[0].id;
+}
+
+function onHistoryNavigation() {
+  const id = raidIdFromLocation();
+  if (id === selectedId) return;
+  selectRaid(id, false);
 }
 
 async function start() {
@@ -521,10 +601,10 @@ async function start() {
   renderNav();
   buildSpellIndex();
   bindSearch();
+  window.addEventListener("popstate", onHistoryNavigation);
+  window.addEventListener("hashchange", onHistoryNavigation);
   if (searchInput.value.trim()) renderSearch(searchInput.value);
-  const fromHash = location.hash.replace("#", "");
-  const known = data.tiers.flatMap((tier) => tier.raids).some((raid) => raid.id === fromHash);
-  selectRaid(known ? fromHash : data.tiers[0].raids[0].id, false);
+  selectRaid(raidIdFromLocation(), false);
 }
 
 start().catch(() => {

@@ -15,7 +15,7 @@ FOLDERS = [
     Path(r"C:\Users\120ch\AppData\Local\Temp\fof-posts\searches"),
     Path(r"C:\Users\120ch\AppData\Local\Temp\fof-posts\spellpages"),
 ]
-SLOT_RE = re.compile(r"Slot\s+\d+:\s*</b>\s*</td>\s*<td>\s*([^<]+)", re.I)
+SLOT_RE = re.compile(r"Slot\s+\d+:\s*</b>\s*</td>\s*<td>(.*?)</td>", re.I | re.S)
 ROW_RE = re.compile(r"<b>\s*([^<]+?)\s*</b>\s*</td>\s*<td[^>]*>(.*?)</td>", re.I | re.S)
 COUNTER_RE = re.compile(r"Increase ([A-Za-z]+) Counter by (\d+)", re.I)
 DETAIL_ORDER = [
@@ -131,7 +131,7 @@ def load_pages():
             spell_id = re.search(r"history\.php\?id=(\d+)", html) or re.search(r"spells\.php\?id=(\d+)", html)
             if not spell_id:
                 continue
-            slots = [clean(text) for text in SLOT_RE.findall(html)]
+            slots = [cell_text(text) for text in SLOT_RE.findall(html)]
             pages[spell_id.group(1)] = {
                 "slots": slots,
                 "details": spell_details(html),

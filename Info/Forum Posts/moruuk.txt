@@ -1,0 +1,192 @@
+Tier 2 – Plane of Greed Raid 1 – Moruuk and Sorshkah
+Raid Giver: Quisl'ing The Trustworthy
+Requirements: Level 130
+Background
+Moruuk and Sorshka were running the show until their luck turned sour. Now Sorshka is sick and Moruuk is desperately trying to get the mines back under control.
+**Shout-out to the CRC for the foundational design for this encounter. I had to cut and modify things to make it work, but the overall design was theirs.
+Encounter Overview
+Moruuk and Sorshkah is a three stage encounter fought in the confined space of the quarry in the Plane of Greed. Sorshkah, Moruuk's pet manticore, is a little under the weather, but don't let that fool you, she is still a savage beast that will take her pound of flesh through AoE attacks. Moruuk is an accomplished beast master that may have been living the high life, but he didn't get to where he was without breaking a few skulls.
+• Savage Beast: Sorshkah is well trained, but still a savage manticore to her core and her attacks reflect that nature
+• Beastmaster: Before Moruuk became the boss he was an accomplished tracker, trapper, and trainer. He can command Sorshkah and works well with her
+• The Boss: Moruuk is more than just an ogre with a manticore, he is the boss and the boss has goons
+• Greed: The Plane of Greed plays a role in everything; expect coins, extortion, and bankers taking their cut
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 (100% - 81%)
+Overview
+Moruuk is currently dealing with problems somewhere else in the quarry, so only Sorshkah is active for this portion of the encounter and she is feeling very sick. Despite that, she has been trained to defend the quarry from any trespassers and she intends to follow through with her training using her claws, barbs, and a little snot.
+Mechanics
+Sorshkah
+Sick:
+• Starts with 60 counters
+• Cannot be dispelled during this phase
+Feral Toxin
+• Occurs every 120 seconds
+• Poison DoT with 120 counters
+• Targets 5 players
+Barb Shot:
+• Occurs every 80 seconds
+• Frontal Cone
+• DoT and Mana Burn on players hit
+• Will destroy traps (Stage 2)
+Rake:
+• Occurs every 90 seconds
+• Back-to-back side cones (left/right)
+• DoT, Knockback, and Silence on players hit
+Sneeze:
+• Occurs every 180 seconds
+• While still feeling sick Sorshkah will occasionally sneeze, creating a glob of volatile snot
+• Snot will linger in the area and players getting too close will not feel so good
+◦ DoT, Reduced Movement Speed, Reduced spell casting and melee speeds
+Strategy: Sorshkah is the only enemy active during this phase, so utilize the encounter area to avoid the snot and AoEs. Quickly cleanse the Feral Toxin to smooth damage during this stage.
+Stage 2 (100% / 80% - 35%)
+Overview
+The commotion in the quarry has earned the attention of Moruuk. Both Moruuk and Sorshkah are active during this stage. Morruk brings with him goons, traps, and some good ol' fashion bareknuckle beatdowns. Oh, that problem Moruuk was dealing with? Yeah, that's found its way into the fight as well.
+Mechanics
+Sorshkah
+Sick:
+• 60 counters
+• Can now be dispelled
+Feral Toxin
+• Continues
+Barb Shot:
+• Continues
+Rake:
+• Continues
+Sneeze:
+• Continues while still sick
+Damage Mitigation (Applies to both Moruuk and Sorshkah)
+• Reduces damage taken from 10% - 50% based on 'stacks'
+• Hitting the manticore with the correct order of fulmination spells will remove stacks of mitigation
+◦ Fulmination is broken down into Melee, Caster, Hybrid
+■ Melee - Berserker, Monk, Rogue
+■ Caster - Enchanter, Mage, Necro, Wizard
+■ Hybrid - Bard, Beastlord, Ranger, Paladin, Shadowknight
+Moruuk
+Trap Toss
+• Occurs every 9% health
+• Becomes active after a slight delay
+• Lockjaw Trap
+◦ If triggered deal direct dmg and roots
+Sick'Em
+• Occurs every 120 seconds
+• Moruuk summons 6 adds with a short lifespan
+◦ Random combination
+◦ lvl 128 - Can be charmed by bards and enchanters
+◦ lvl 129 - Can be charmed by enchanters
+• Orders Sorshkah to slam one of Moruuk's highest threat targets
+◦ Target is one of Moruuk's top 6 highest threat players
+◦ That target will become Sorshkah's highest threat target
+◦ Shorshkah will continue to slam that target until they are no longer the highest threat
+Protection Racket
+• Occurs every 7% health
+• Summons and elite add (see below)
+Slow Your Roll
+• Occurs every 90 seconds
+• Short range cone attack
+• Players hit will take dmg and have their attack speed / casting speed reduced
+Stronger Together
+• Moruuk and Sorshkah work very well together
+• If they are too close they will buff each other
+◦ Increased melee attack speed
+Balanced As All Things Should Be
+• When either Moruuk or Sorshkah reaches 75% life both will need to be kept within 5% of each other
+◦ If they are not then the boss with the lowest health percent will heal to the highest health %
+Intimidating Goon (Protection Racket)
+Taking Your Stuff
+• Drains mana and endurance
+• Escalating cast - the longer the goon stays alive the quicker it will take your stuff
+◦ 1min -> 45 seconds -> 30 seconds -> etc..
+The Problem - Greed Gateways
+Three gateways (portals) spawn around the quarry each will begin spawning elemental goons in escalating numbers until they are destroyed
+• Blaze Gateway
+◦ Spawns blazing goons that take extra dmg from fire, corruption, slashing
+• Frozen Gateway
+◦ Spawns frozen goons that take extra dmg from cold, magic, blunt / hand to hand
+• Sickly Gateway
+◦ Spawns sickly goons that take extra dmg from disease, poison, piercing
+Greed Coins
+Goons that spawn from the portals will drop greed coins. These coins can be kept in your inventory or handed over for 'safe keeping'
+Gold-laced Traps
+Scattered around the quarry these traps can be disarmed for coins of greed
+'Helpful' Banker
+More than happy to store your coins, for a price. Who said the denizens of greed only look after themselves? Feel free to withdraw the coins when you need to, they've already made their gold off the investments with your coins.
+Strategy: Phew, that's a lot! Allow portals to spawn some adds, but don't let them become overwhelming. Avoid AoEs, keep Moruuk and Sorshkah split and deal with intimidating goons quickly. Pay attention to the mitigation and execute. Piece of cake!
+Stage 3 (34% - 0%)
+Overview
+Luck isn't on Moruuk's side, so he changes tactics, ordering Sorshkah to split off in an attempt to use the Plane of Greed and his control of the area to his advantage.
+Mechanics
+Sorshkah
+Sick:
+• Sick continues as long as counters exist
+Feral Toxin
+• Continues
+Barb Shot:
+• Continues
+Rake:
+• Continues
+Sneeze:
+• Continues while still sick
+Aura of Greed
+• Greatly reduces casting range
+• If a player does NOT have a Greed Coin in their inventory:
+◦ Decreases skill and spell damage by 50%
+◦ Decreases healing by 50%
+◦ Increases damage taken by 50%
+Moruuk
+Trap Toss
+• Continues
+Sick'Em
+• Continues
+Protection Racket
+• Continues
+Slow Your Roll
+• Continues
+Balanced As All Things Should Be
+• Continues
+Aura of Poverty
+• Greatly reduces casting range
+• If a player HAS a Greed Coin in their inventory:
+◦ Decreases skill and spell damage by 50%
+◦ Decreases healing by 50%
+◦ Increases damage taken by 50%
+Run Your Pockets
+• Occurs at 25% and 15% health
+• Removes all coins from players' inventories
+• Reduces the total count
+• Randomly distributes coins back out
+Intimidating Goon (Protection Racket)
+Taking Your Stuff
+• Drains mana and endurance
+• Escalating cast - the longer the goon stays alive the quicker it will take your stuff
+◦ 1min -> 45 seconds -> 30 seconds -> etc..
+'Helpful' Banker
+The banker is here to help, store and withdraw coins as needed.
+No Man's Land
+Don't linger too long outside of the Greed or Poverty aura, bad things may happen.
+Strategy: The bosses will be physically split. Distribute coins to players so they can switch sides as needed to help keep the boss' health totals close.
+Achievements
+Complete additional challenges for special recognition:
+1. Expedient: Complete each mini game in under 20 seconds
+2. The Portal Greed: Destroy none of the greed portals
+3. Love Lost: Use charm bane to kill all the wolf adds
+Key Mechanics Summary
+Mechanic
+Effect
+Barb Shot
+Cone AoE DoT with mana drain
+Rake
+Side cone AoE that knockback and silence
+Sick and Sneeze
+While sick Sorshkah will sneeze and create and are that applies a DoT, reducing casting / melee speed, and reducing movement
+Damage Mitigation
+Reduces the damage inflicted to Moruuk and Sorshkah
+Sick-Em
+Summons adds and orders Sorshkah to focus a target dealing significant damage
+Slow Your Roll
+Short range cone AoE that deals dmg and reduces casting / melee speed
+Stronger Together
+Increases the attack speed of Moruuk and Sorshkah when the are too close to one another
+Balanced As All Things Should Be
+If Moruuk or Sorshkah's health percent is more than 5% below the other they will heal to the other's health percent
+Aura of Greed / Poverty
+If in the wrong aura deceases skill damage, spell damage, healing, and increases damage received

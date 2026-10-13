@@ -1,0 +1,78 @@
+Tier 1 – Plane of Desire Raid 2 – Dipuc, General of Scorn
+Raid Giver: Uldrek
+Requirements: Level 130
+Background
+Initially ordered by Scorn, Queen of Thorns, to take control of the Plane of Desire, General Dipuc was aggressive and methodical, but further destabilized the realm. New orders have been given, but the general is ignoring them and appears to have gone rogue.
+Encounter Overview
+Dipuc is a three stage encounter the revolves around dodging attacks, destroying statues with boss mechanics before they become active, and coordinating the placement of auras.
+• Master Archer: Much like his queen, Dipuc is a master with the bow
+• Statues: Scorn's influence is seeping into the very fabric of realm and bringing it to life
+• General: Every general commands troops
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 (100% - 76%)
+Overview
+Dipuc, overconfident he can handle the situation, fights alone, relying on his skill with the bow to vanquish the foes in front of him.
+Mechanics
+Dipuc
+Piercing Shot:
+• Occurs every 60 seconds
+• Teleports to a location
+• Fires a piercing shot that must be avoided
+Strategy: Mechanics light stage. Burn the boss and avoid the line.
+Stage 2 (75% - 56%)
+Overview
+Taking the fight more seriously Dipuc digs deeper into his arsenal and calls on the aid of his soldiers.
+Mechanics
+Dipuc
+Piercing Shot:
+• Continues
+Shatter Shot:
+• Occurs every 100 seconds
+• Targets a player with a cluster of arrows
+• When the arrows impact they splinter and fire off in different directions
+• Will destroy the statues around the room
+Scornful Touch
+• Occurs every 245 seconds
+• Targets a charmable add and enrages it
+Scorn-touched Satyrs and Scornful Dryads
+The general calls on additional support. Some of them can be controlled while others cannot.
+Strategy: Short stage, so control damage. Continue to avoid the piercing shot, move the shatter shot away from the raid, and handle the adds that spawn.
+Stage 3 (55% - 0%)
+Overview
+General Dipuc is no longer taking it easy, he is now throwing everything at the players, including curses and additional adds.
+Mechanics
+Dipuc
+Piercing Shot:
+• Continues
+Shatter Shot:
+• Continues
+Scornful Touch
+• Continues
+Curse of the Broken Heart
+• Occurs every 7% health
+• Picks 3 random players
+• After a short delay players will create an area around them
+• Anyone caught in the area will suffer dmg and have their attack speed and casting slowed
+• Creates Unrequited Love zones
+◦ If two zones overlap they will detonate, dealing significant dmg to the raid
+Scorn-touched Satyrs and Scornful Dryads
+Continue to aid the general
+Lifelike Masterpiece
+Remaining statues around the room become infused with scorn and come to life, attacking the general's enemies
+Strategy: Control tougher lifelike statues, do not stack the curse auras and continue to execute the previous stage's mechanics. Keep in mind, space is limited.
+Achievements
+Complete additional challenges for special recognition:
+1. Shattered Art: Destroy None of the Statues
+2. Devastating Love: Detonate Three Unrequited Love zones
+3. Love Lost: Do not detonate any Unrequited Love zones
+Key Mechanics Summary
+Mechanic
+Effect
+Piercing Shot
+Cone AoE
+Shatter Shot
+PBAoE, causes Shattered Fragments
+Curse of the Broken Heart
+Single target DoT, creates an Unrequited Love zone
+Unrequited Love
+Players that move into the zone will take dmg and have their casting / melee speeds slowed

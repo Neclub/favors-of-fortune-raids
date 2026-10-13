@@ -1,0 +1,134 @@
+Tier 2 – Plane of Greed Raid 2 – Taurlton, The Doorman
+Raid Giver: Quisl'ing The Trustworthy
+Requirements: Level 130
+Background
+Taurlton, the Doorman, was ordered to not let anyone into the palace unless they are on the list and you are not on the list.
+Encounter Overview
+The Doorman is a four stage encounter that takes place in one of the upper levels of the city. Taurlton may be recently promoted, but he has a knack for crushing things smaller than him and he is a very large minotaur. The Doorman plans to use his size, immense strength, and horns to smash, crush, and bleed you out.
+• Minotaur: Taurlton is like a bull, ready to dig his horns into anything or anyone that dares to stand up to him
+• Bouncer: Due to his immense size, Taurlton found a lot of work as a bouncer, tossing upstarts to the back of the line and black listing patrons that got out of hand
+• Has a List: To be clear, the list is empty, but you are for sure not on it
+• Doesn't Work Alone: Just because he is the biggest and potentially the strongest there is doesn't mean he works alone
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 (100% - 85%)
+Overview
+Taurlton takes his job very seriously and when he says you aren't on the list, he means it. He will utilize gore attacks, bleeds, and literal chunks of the city to drive you off.
+Mechanics
+Taurlton
+Not on the List
+• Occurs every 45 seconds
+• Gores the main tank
+◦ Deals high damage
+◦ Causing a stack of Sucking Wound
+Sucking Wound
+• DoT effect that stacks up to 4 times
+• Each stack refreshes the timer and deals increasingly more damage
+• At 4 stacks the target Bleeds Out
+Tossing the Trash
+• Occurs every 11% health
+• AoE Cone that must be soaked by at least 10 players
+• Player hit will take damage and receive a stack of Sucking Wound
+• If not enough player soak then the entire raid receives a stack of Sucking Wound
+Strategy: Soak the AoEs, watch your stacks, and keep moving forward.
+Stage 2 (84% - 65%)
+Overview
+You haven't gotten the message yet, but that's okay, Taurlton is calling in some assistance to help squash the upstarts and he will toss chunks of rubble into the air to rain down on your heads for good measure.
+Mechanics
+Taurlton
+Not on the List
+• Continues
+Sucking Wound
+• Continues
+Tossing the Trash
+• Continues
+Falling Debris
+• Occurs every 90 seconds
+• 5 rubble piles will fall from the sky
+• Players that step into the rubble piles will take damage and destroy the rubble pile
+Hulking Bruiser
+• Spawns ever 13% health
+• Jump into the arena, crashing down on targeted player's heads
+• Deal damage to anyone around the targeted player
+• If two bruisers get too close to one another they become emboldened
+◦ Increasing attack speed and providing a damage shield
+Denizens
+Your fighting has drawn the attention of opportunistic denizens who are looking for their chance to get ahead
+• Occurs every 110 seconds
+• Random assortment of adds spawn from the edge of the arena
+◦ Made Centaur - mezzable
+◦ Enraged Henchman - charmable
+◦ Desperate Opportunist - rootable
+Strategy: Watch your feet and don't step in the rubble, you may need them later. Control small adds and tackle the bigger ones.
+Stage 3 (64% - 40%)
+Overview
+Okay, that's it. You're blacklisted!
+Mechanics
+Taurlton
+Not on the List
+• Continues
+Sucking Wound
+• Continues
+Tossing the Trash
+• Continues, but now occurs twice in a row
+Falling Debris
+• Continues
+Black Listed
+• Occurs every 80 seconds
+• Targets 5 players
+• Deals DoT
+• Moving into a rubble pile removes the curse and changes the rubble pile into a stationary quicksand golem (see below)
+• If the debuff is not removed, the weight of being on the black list forever crushes your spirit (you die) and the raid takes a large amount of damage
+Quicksand Golem
+• Stationary and surprisingly pretty chill as long as you keep your distance
+• Moving into their area will root the player in place and apply a DoT
+Hulking Bruiser
+• Continue to spawn
+Denizens
+• Continue to spawn
+Strategy: Utilize rubble to remove the black listed debuff and keep on your toes.
+Stage 4 (39% - 0%)
+Overview
+Taurlton has had enough. You haven't gotten the message yet, so it is time to resort to tactics he knows works and send you to the back of the line.
+Mechanics
+Taurlton
+Not on the List
+• Continues
+Sucking Wound
+• Continues
+Tossing the Trash
+• Continues
+Falling Debris
+• Continues
+Black Listed
+• Continues
+Back of the Line
+• Occurs every 85 seconds
+• Massive PBAoE
+• Players will be thrown across the room and take significant damage
+Quicksand Golem
+• Stationary and surprisingly pretty chill as long as you keep your distance
+• Moving into their area will root the player in place and apply a DoT
+◦ Players standing in the quicksand aura will take no damage and will not be thrown
+Hulking Bruiser
+• Continue to spawn
+Denizens
+• Continue to spawn
+Strategy: Keep a close eye on those bleed stacks, stand in the quicksand to stop from being thrown, and burn.
+Achievements
+Complete additional challenges for special recognition:
+1. Threat Escalation: Kill 6 enraged bruisers
+2. Threat Mitigation: Never let a bruiser get enraged
+3. Reserve List: Never destroy a debris pile without being on the black list
+Key Mechanics Summary
+Mechanic
+Effect
+Sucking Wound
+Stacking bleed DoT that will instant kill when at 4 stacks
+Tossing the Trash
+Large cone AoE that must be soaked by at least 10 players, applies a stack of Sucking Wound
+Falling Debris
+Creates piles of rubble that are destroyed when moved into
+Black Listed
+Heavy DoT curse that will instant kill and detonate if left to expire naturally
+Back of the Line
+Massive PBAoE that throws players and deals significant damage

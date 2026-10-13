@@ -139,6 +139,28 @@ body {
   font-weight: 500;
 }
 
+.search-id-more {
+  display: block;
+  margin-top: 2px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--link);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.search-id-more:hover { text-decoration: underline; }
+
+.search-id-more:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
 .search-mark {
   background: var(--gold-soft);
   color: inherit;

@@ -1,0 +1,114 @@
+Tier 1 – Plane of Love Raid 1 – Scorn, Queen of Thorns
+Raid Giver: Canotia
+Requirements: Level 130
+Background
+After a devastating betrayal Erollisi Marr once again took on the mantle of Scorn, Queen of Thorns. She has taken Tholuxe captive and intends to punish them for their role in the betrayal.
+Encounter Overview
+Scorn is a three stage encounter that centers around confronting The Queen of Thorns while protecting Tholuxe Paells, who is attempting to help the players break Erollisi Marr free from her wrathful side.
+• Goddess of Love: Scorn is just another facet of Erollisi Marr, the Goddess of Love
+• Master Archer: The Queen of Thorns is a master archer with an arsenal of arrows
+• Tholuxe's 'Help': Tholuxe Paells attempts to help the player, but something is wrong and their assistance will often feel like a detriment
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 (100% - 81%)
+Overview
+Scorn starts the encounter by wrapping Tholuxe Paells in a layer of thick thorns, dealing persistent damage to them throughout the encounter, while leaning heavily into her mastery of archery by rapid firing arrows at targets around the arena. Meanwhile Tholuxe attempts to help the players but sometimes things just seem to go wrong. Bramble Sentinels accompany Scorn, silencing players and Tholuxe if they are too close to them.
+Mechanics
+Scorn - Rapid Fire:
+• Occurs every 120 seconds
+• Targets 15 players
+Tholuxe Paells - 'Help':
+• Every 75 seconds Tholuxe will attempt to help
+• Help comes in the form of one of the following spells based on their remaining health:
+◦ HP >= 65%
+■ Invigorating Essence - Mana Regen & Endurance Regen
+■ Quickened Reflexes - Increased Melee Attack Speed, Increased Spell Casting Speed
+◦ HP >= 50%
+■ Protective Embrace - Spell Guard, Melee Guard, DoT Guard
+■ Gift of Giving - Increased Healing %
+■ Briar Shackles - Reduced Movement
+◦ HP >= 35%
+■ Draining Touch - Reduce Dmg Dealt (Spell and Skill)
+◦ HP >= 15%
+■ Sapping Buds - Reduce Healing %
+◦ HP >= 0%
+■ Languorous Runes - Increased Mana Cost
+Bramble Sentinels:
+• Spawn every 90 seconds
+• Players that get too close to them will be silenced
+• If a sentinel is brought too close to Tholuxe they will be silenced and unable to 'help'
+• Bramble Sentinels can be charmed
+Strategy: Keep Tholuxe's health above 65% (if Tholuxe's health drops to 0, game over) to ensure the best odds at receiving a positive buff. Manage adds and heal through Scorn's rapid fire.
+Stage 2 (80% - 40%)
+Overview
+Scorn wraps herself in a bramble shield that reflects damage and spells while Tholuxe continues to help and now starts to draw unwanted attention.
+Mechanics
+Scorn - Rapid Fire Burst:
+• Occurs every 120 seconds
+• Targets 15 players
+• Targeted players will now deal AoE damage around them
+Scorn - Bramble Shield:
+• Reflects damage and spells
+• When a charmed Bramble Sentinel hits Scorn it is killed and the shield is dispelled for 30 seconds
+Tholuxe Paells - 'Help':
+• Tholuxe continues to 'help' the players
+Tholuxe Paells - Unwanted Attention:
+• After being held captive for so long, Tholuxe is starting to grow tired and losing control of their powers
+• As the personification of desire itself they are started to get unwanted attention and taunting the Bramble Sentinels
+Bramble Sentinels:
+• Spawn every 90 seconds
+• Players that get too close to them will be silenced
+• If a sentinel is brought too close to Tholuxe they will be silenced and unable to 'help'
+• Bramble Sentinels that hit Tholuxe Paells will apply a reduced healing received debuff on them
+• Bramble Sentinels can be charmed
+Strategy: Spread for the rapid fire burst, control adds by charming them and creating 'burn windows' when they bring down Scorn's shield.
+Stage 3 (40% - 0%)
+Overview
+All of Scorn and the Bramble Sentinels' previous mechanics continue, but now Scorn's Rapid Fire Burst will charm players caught in the AoE. Tholuxe Paells has completely lost control of their power and their help changes drastically.
+Mechanics
+Scorn - Rapid Fire Burst:
+• Occurs every 120 seconds
+• Targets 15 players
+• Targeted players will now deal AoE damage around them
+• Players caught in the AoE are charmed
+Scorn - Bramble Shield:
+• Reflects damage and spells
+• When a charmed Bramble Sentinel hits Scorn it is killed and the shield is dispelled for 30 seconds
+Tholuxe Paells - 'Help':
+• Tholuxe will create two zones
+• A random number of players will be selected and be given either a buff or debuff
+◦ Players with the buff will need to move to one zone
+■ Players that enter this zone will have their buff removed, but be given an even more powerful buff
+◦ Players with the debuff will need to move to the other zone
+■ Players that enter this zone will have the debuff removed
+◦ If a player enters the wrong zone they will detonate causing a large amount of AoE dmg to the raid and be charmed
+◦ Players that fail to remove their buff or debuff will be punished
+Tholuxe Paells - Unwanted Attention:
+• After being held captive for so long, Tholuxe is starting to grow tired and losing control of their powers
+• As the personification of desire itself they are started to get unwanted attention and taunting the Bramble Sentinels
+Bramble Sentinels:
+• Spawn every 90 seconds
+• Players that get too close to them will be silenced
+• If a sentinel is brought too close to Tholuxe they will be silenced and unable to 'help'
+• Bramble Sentinels that hit Tholuxe Paells will apply a reduced healing received debuff on them
+• Bramble Sentinels can be charmed
+Strategy: Spread for the rapid fire burst, control adds by charming them and creating 'burn windows' when they bring down Scorn's shield, pay attention to which buff you have an move to the appropriate zone.
+Achievements
+Complete additional challenges for special recognition:
+1. Defending Desire: Never let Tholuxe Paells fall below 50% life
+2. Proper Footwork: Never detonate the wrong buff / debuff
+3. Captivating Scorn: Charm 15 or more bramble sentinels
+Key Mechanics Summary
+Mechanic
+Effect
+Rapid Fire Burst
+Single Target Damage and PBAE damage
+Coerced Loyalty
+Part of the Stage 3 Rapid Fire Burst, charms targets caught int he AoE
+Stolen Words
+AoE Silence centered around the Bramble Sentinels
+Bramble Shield
+Reflects Dmg and Spells
+Lucky in Life
+Tholuxe helps the player by increasing their dmg and providing mana and endurance regen, but if not taken to the correct zone will result in consequences
+Unlucky in Life
+Tholuxe attempts to hep the player, but curses them instead reducing their dmg

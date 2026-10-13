@@ -1,0 +1,154 @@
+Tier 3 – Plane of Luck Raid 1 – Xev Tests Fate
+Raid Giver: Norna Sal
+Requirements: Level 130
+Background
+Xev Bristlebane, the god of luck, seeks to test the players, not by defeating a traditional threat, but by surviving unpredictable, ever-changing challenges, all in the name of entertainment.
+Encounter Overview
+Xev Bristlebane isn't planning on sitting out on all the fun and will be taking on the player directly with random mechanics based on the roll of a dice. Over the course of three stages expect there to be a sprinkle of adds, a few coins, a bookie, and a few memory games and you have the makings of a good time, at least for Xev.
+• Luck Plays a Factor: Xev's primary ability is random and can result in unexpected outcomes
+• Bookie: Pick up coins and turn them into the bookie to swing luck your way
+• Lucksworn: Xev isn't here alone. He is accompanied by the lucksworn, so stay on your toes
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 (100% - 80%)
+Overview
+Xev is eager to get started, but doesn't want the game to end too quickly. In an effort to keep the fun going for as long as he can he is start things off slowly. Roll some dice, invite a few friends to play, toss a handful of coins into the air. You know, keeping it chill.
+Mechanics
+Xev Bristlebane
+Roll the Dice
+• Occurs every 30 seconds
+• One of the following random effects will happen
+◦ Roll the Dice: Rush Order
+■ Wagerlings spawn early
+◦ Roll the Dice: Befuddle
+■ Random number of players have their attack speed slowed and increased spell fizzle chance
+◦ Roll the Dice: Fear
+■ Random number of players are feared and take increased damage
+◦ Roll the Dice: Resource Burn
+■ Random number of players are inflicted with manaburn
+◦ Roll the Dice: Wallop
+■ Highest threat target takes a big hit
+Heads Up
+Xev tosses a bunch of small coins into the air, some you need to catch and some you need to avoid
+• Occurs every 120 seconds
+• 10 Catch Circles
+◦ A single player needs to stand in the circle to catch the coin
+◦ Failure to have any player stand in the circle will result in the raid taking damage
+• 10 Avoid Circles
+◦ Players that stand in the circle will take significant damage
+Wagerlings
+• Spawn every 12% health starting at 90%
+• 5 wagerlings will spawn at a time
+• Slowly move toward Xev
+• If they reach Xev they will detonate, dealing raid wide damage and will not drop a coin purse
+• If they are killed before reaching Xev they will drop a coin purse on the ground
+Lucksworn Bookie
+Xev thought it would be interesting to even up the odds, just a little, and is providing you an ally to shift things into your favor
+• Turn in and spend coins to receive one of the following buffs:
+◦ Short duration fear immunity for the whole raid
+◦ Mana regen buff for the player that turned the coin in
+◦ Remove a random number of active Heads Up soaks
+Strategy: Deal with the randomness of Roll the Dice, prevent wagerlings from reaching Xev, and catch / avoid the heads up coins. All while requesting help from the bookie.
+Stage 2 (79% - 40%)
+Overview
+You've proven that your a tough lot and a a great deal of fun to play with. Xev wants to turn up the heat by raising the stakes, calling for more of his lucksworn friends to join in the game.
+Mechanics
+Xev Bristlebane
+Roll the Dice
+• Continues
+Heads Up
+• Continues
+Lucky or Not
+• Occurs every 100 seconds
+• Xev selects one lucky, random player
+◦ Teleports to the player and roots them in place
+◦ After a short delay one of two spells are cast
+■ Jackpot
+■ Player hit will have their attack speed and casting speeds increased
+■ Wrong Place Wrong Time
+■ Players hit will take damage and be knocked back
+• Xev will repeat this two more times (total of 3)
+Wagerlings
+• Continue to spawn
+• In addition Superior Wagerlings will spawn
+◦ Similar to standard wagerlings, but these are immune to ranged spells and CC
+Lucksworn
+• Spawn every 20% health
+◦ Four unique Lucksworn will spawn each time
+• Lucksworn must be killed in a specific order or they will respawn and fully heal
+• Lucksworn all have their own abilities (see below)
+Lucksworn Greed
+• Casts Forced Transfer on Xev's highest threat player
+◦ Absorbs healing received
+◦ Transfers that healing to Xev (% based)
+Lucksworn Doubt
+• Focuses a random player and begins to move toward them
+• If Doubt comes into contact with the focused player they will be killed and the raid will take damage
+Lucksworn Hope
+• Casts Lucksworn Empower on Xev
+◦ Decreases the cooldown on roll the dice
+◦ Lucky or Not's negative effect is empowered
+Lucksworn Control
+• Focuses a lucky random player and begins to move toward them
+• If Control comes into contact with the focused player they will be rooted in place
+◦ Control will then find a new target and duplicate (yay! more friends)
+Strategy: Pay attention to which Lucky or Not buff is being applied and either spread out to avoid damage or stack up to get the buffs. Really pay attention to the Lucksworn kill order to eliminate them quickly before things get really out of hand.
+Stage 3 (39% - 5%)
+Overview
+Xev is ready to bring this game to a close, but he isn't one to outright cheat. Instead he will just add more rules to the game. That way he can beat you fair and square.
+Mechanics
+Xev Bristlebane
+Roll the Dice
+• Continues
+• An additional roll option presents itself Roll the Dice: Luck Zone
+◦ If this is rolled a random Luck Zone will be spawned (see below)
+Heads Up
+• Continues
+Lucky or Not
+• Continues
+Fate Collapse
+• Occurs every 10% health starting at 30%
+• Xev teleports to the center of the arena and locks his health
+• Four color coded quadrants spawn from the center of the arena
+• Xev will call out a quadrant
+◦ Players will have a short amount of time to quickly get to that quadrant
+◦ Players that fail to get into the correct quadrant are hit with Crushing Laxity taking damage and reducing their movement
+■ This will make it more difficult for them to get to the next quadrant
+• Two more quadrants will called out (total of 3)
+• Once all quadrants are called Xev will return to the game, taking damage once more
+Luck Zones
+Xev is nothing if not fair, he will let luck decide this fight
+• Occurs every 100 seconds
+• Xev will spawn a random Luck Zone
+◦ Good Luck Zone
+■ Lucky Boon - Players that enter this zone will have their max HP increased
+◦ Bad Luck Zone
+■ Unlucky Hindrance - Players that enter this zone will take damage
+Wagerlings
+• Continue to spawn
+Lucksworn
+• Continue to spawn
+Lucksworn Bookie
+• Two new options are now available
+◦ Remove a Bad Luck Zone
+◦ Add a Good Luck Zone
+Strategy: Things escalate quickly here and there is a lot to keep track of. Keep a close eye on the Lucksworn, letting them roam around unchecked can spell disaster. Be sure to pay attention to the fate collapse callouts, failure on one can mean failure on them all. Utilize the bookie's buffs to help cross the finish line and show Xev that you came to win.
+Achievements
+Complete additional challenges for special recognition:
+1. All In: Do not let any Wagerlings self detonate
+2. Eye on the Prize: Catch ALL of the heads up tokens
+3. A Simple Game of Memory: Kill the Lucksworn in the correct order everytime
+Key Mechanics Summary
+Mechanic
+Effect
+Roll the Dice
+One of 5 / 6 random effects
+Heads Up
+Several areas are created - some must be soaked, some must be avoided
+Lucky or Not
+Xev roots a player in place and casts either a PBAoE buff or a damaging knockback
+Fate Collapse
+Get to the correct quadrant or take damage and be slowed
+Lucksworn Doubt
+If it comes into contact with its focus target it will kill that player
+Lucksworn Control
+If it comes into contact with its focus target it will root them and then duplicate

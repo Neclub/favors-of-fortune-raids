@@ -1,0 +1,158 @@
+Tier 2 – Plane of Madness Raid 1 – Fractured Vazaelle
+Raid Giver: Lady of Whispers
+Requirements: Level 130
+Background
+Vazaelle Kaleine fractured herself into five separate aspects of her madness, destabilizing the plane. To bring help get things under control (at least as much as you can in the Plane of Madness) you need to convince the others to reform.
+Encounter Overview
+During each stage of this five stage encounter you will face off against a different fractured version of Vazaelle, each with their own skills and abilities.
+• The Aberrant: Curses and roaming clouds of madness, the Aberrant delights in your insanity
+• The Voidless: Psychic shrieks and blasts will ravage your mind while confronting the Voidless
+• The Devout: Prepare to be judged
+• The Inevitable: Death is inevitable and so is she
+• The Mad: Fragments consumed and reformed
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 Vazaelle Kaleine The Aberrant (100% - 25%)
+Overview
+Your first encounter is with Vazelle Kaleine The Aberrant, she will utilize corruption and maddening clouds to drive you insane, driving you to attack your friends.
+Mechanics
+The Aberrant
+Maddening Influence
+• Occurs every 16% health
+• 3 players are targeted
+• Corruption DoT with 24 counters
+• Increases Attack Power
+• If dispelled it will jump to another player
+• If left to expire naturally it will charm the target
+Creeping Madness
+• Occurs every 45 seconds
+• 2 Clouds are created
+• Players that step into the cloud will gain a 'stack' of Creeping Madness
+◦ Light DoT
+◦ Target is charmed at 5 stacks
+Strategy: Remove the maddening influence, but don't let the buff go to waste. Avoid the creeping madness, it smells funny.
+Stage 2 Vazaelle Kaleine The Voidless (100% - 25%)
+Overview
+Your second encounter is with Vazelle Kaleine The Voidless, she will utilize psychic attacks to weaken and break your mind.
+Mechanics
+The Voidless
+Fractured Psyche
+• Occurs every 14% health
+• Random number of players are selected
+• Fractured psyches of the targeted players will spawn and begin to slowly chase their target
+• If the psyche is destroyed it will explode, dealing a large amount of damage to the raid
+Silencing Mist
+• Occurs every 30 seconds
+• 3 players are targeted
+• After a short delay they will create an area of mist
+• Players that move into the area will be silenced
+• Fractured Psyche that move into the mist will be rooted and when killed will no longer damage the raid
+Psychic Shriek
+• Occurs every 40 seconds
+• Cone AoE that will target a player
+◦ After a short delay the cone will stop tracking the player
+• Players hit by the cone will suffer DoT and be silenced
+Psychic Blast
+• Occurs every 35 seconds
+• Targets the highest threat player
+• Inflicts damage and reduces HP total to 25%
+Strategy: Spread to avoid the AoEs, drag the fractured psyche into the silencing mist to avoid their damage, and think about swapping tanks after they've been blasted.
+Stage 3 Vazaelle Kaleine The Devout (100% - 25%)
+Overview
+The third encounter is with Vazelle Kaleine The Devout and she is extremely angry. You have invaded her realm and she intends to punish you.
+Mechanics
+The Devout
+Dread Judgement
+• Occurs every 45 seconds
+• Massive PBAoE that inflicts raid wide damage and knocks everyone back
+• Shreds the highest threat player's armor, reducing their AC
+Madness Amalgamation
+• Occurs every 60 seconds
+• 2 amalgamations spawn and each focus a player
+• Amalgamations cannot be damage
+• After 30 seconds or if they get too close to their target they will detonate, dealing a large amount of damage to the raid
+• Moving an amalgamation near a statue will despawn the statue and the amalgamation
+Statues
+Several armored statues are positioned around room. Utilize them to deal with the amalgamations
+Strategy: Swap tanks on the knockback and drag amalgamations into statues, but keep in mind, there are only so many statues.
+Stage 4 Vazaelle Kaleine The Inevitable (100% - 25%)
+Overview
+Your first encounter is with Vazelle Kaleine The Aberrant, she will utilize corruption and maddening clouds to drive you insane, driving you to attack your friends.
+Mechanics
+The Aberrant
+Tainted Pools
+• Occurs every 30 seconds
+• 4 pools are created
+• Pools will grow over time
+• Players that move into a pool will be afflicted with Tainted Affliction
+◦ DoT
+Arcing Slash
+• Occurs every 45 seconds
+• Targets the highest threat player
+• Short range, high damage cone AoE
+• Applies a bleed to anyone hit
+◦ If a bleeding target is hit by a second arcing slash they will be exsanguinated and it is tough to live without blood
+Wither
+• Occurs every 40 seconds
+• 3 players are targeted
+• After a short delay they will errupt and apply Wither debuff to everyone around them
+• DoT
+• If a player with the Wither DoT moves into a Tainted Pool they will explode, dealing damage to the entire raid and despawning
+Strategy: Avoid standing in the Tainted Pools, try not to spread wither, and remember you can clean up the area by walking wither into a pool. Oh, and don't get exsanguinated.
+Stage 5 Vazaelle Kaleine The Mad (100% - 0%)
+Overview
+The final encounter sees you facing off against Vazaelle Kaleine, but only after she has consumed the other fragments of herself. Expect to see returning abilities from each of the other phases as you rush to defeat the mad goddess.
+Mechanics
+The Aberrant
+Maddening Influence
+• Occurs every 16% health
+• 3 players are targeted
+• Corruption DoT with 24 counters
+• Increases Attack Power
+• If dispelled it will jump to another player
+• If left to expire naturally it will charm the target
+Silencing Mist
+• Occurs every 30 seconds
+• 3 players are targeted
+• After a short delay they will create an area of mist
+• Players that move into the area will be silenced
+Tainted Pools
+• Occurs every 30 seconds
+• 4 pools are created
+• Pools will grow over time
+• Players that move into a pool will be afflicted with Tainted Affliction
+◦ DoT
+Arcing Slash
+• Occurs every 45 seconds
+• Targets the highest threat player
+• Short range, high damage cone AoE
+• Applies a bleed to anyone hit
+◦ If a bleeding target is hit by a second arcing slash they will be exsanguinated and it is tough to live without blood
+Wither
+• Occurs every 40 seconds
+• 3 players are targeted
+• After a short delay they will errupt and apply Wither debuff to everyone around them
+• DoT
+• If a player with the Wither DoT moves into a Tainted Pool they will explode, dealing damage to the entire raid and despawning
+Dread Judgement
+• Occurs every 45 seconds
+• Targeted Cone
+• Anyone not the target of the cone that is hit will take significant damage and be thrown
+Strategy: The play space is much smaller which makes dodging AoEs, clouds, and other mechanics all that more difficult. Take the strategies from the first 4 stages and burn the boss.
+Achievements
+Complete additional challenges for special recognition:
+1. In Control: No players were mind controlled
+2. Give In To Madness: At least 10 players were mind controlled
+3. Growing Affliction: Do not destroy any tainted pools
+Key Mechanics Summary
+Mechanic
+Effect
+Maddening Influence
+DoT that increases attack power, when dispelled it will jump to another player. If it isn't dispelled it will charm the target
+Creeping Madness
+Stacking DoT that will charm targets when it reaches 5 stacks
+Silencing Mist
+AoE mist that will silence players that move into it. When a fractured psyche is brought into the mist it will be rooted and will not explode when killed
+Tainted Pools
+Pool that applies a heavy DoT to players that move into them. The pools grow over time
+Arcing Slash
+Short range cone AoE that applies a heavy DoT. Players with the DoT that are hit again are killed

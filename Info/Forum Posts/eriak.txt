@@ -1,0 +1,164 @@
+Tier 3 – Plane of Guile Raid 2 – Eriak Zek
+Quest Giver: Eriak Zek, Ruler of the Plane of Guile
+Requirements: Level 130 and Tier 3 Favors of Fortune raids unlocked
+Background
+Through cunning manipulation and the desperation of others, Eriak Zek broke free from the chains that bound him to the Plane of War. To prove himself a worthy son of Rallos Zek, he challenged and defeated both of his siblings in combat, claiming his place as the ruler of the Plane of Guile. Now he stands ready to test your mettle with his arsenal of enchanted weapons and the traps of his domain.
+Encounter Overview
+Eriak Zek is a multi-phase encounter built around escalating complexity and pressure. The key themes are:
+• Weapon Mastery: Eriak wields five different weapons, each with unique mechanics and dangers
+• Control and Counterplay: Charm mechanics and puzzle-solving are critical to managing the encounter
+• Escalating Pressure: Each phase ramps up difficulty with new mechanics and increased add spawns
+• Strategic Decision-Making: Players must choose between addressing multiple simultaneous threats
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1: The Posture (100% - 80%)
+Overview
+Eriak begins by demonstrating his dominance through a display of martial prowess rather than committing fully to combat. This opening phase is short and serves as an introduction to managing multiple threats.
+Mechanics
+The Split:
+• 10 seconds after the fight starts, Eriak splits into 5 copies of himself
+• One copy behaves as a Tallon variant, while the other four act as Vallon variants
+• Only one of the five is the "real" Eriak—the others are illusions
+• The real Eriak is randomized each attempt, so players cannot predict which one is genuine
+Vallon Behavior:
+• Each Vallon copy casts Tactical Whirlwind Slash, a PBAE attack that damages everyone not in the group
+• The spell intensity scales based on how many other Vallon copies are nearby
+• Tank immunities are limited and only protect a single hit, so overlapping damage requires positioning awareness
+Tallon Behavior:
+• The Tallon variant teleports around the room, striking from different positions
+• It rapidly casts Barb of Tallon, a series of debilitating attacks with varying effects:
+◦ Targeted AoE attacks that damage and slow
+◦ Single-target stuns and knockbacks
+◦ Silences and amnesia effects
+• It combines these with Tallon's Power, which both dispels buffs and creates gravity flux effects
+Strategy: Focus DPS on eliminating the copies while identifying the real Eriak. The split only lasts until his health reaches 80%.
+Stage 2: Active Combat (80% - 40%)
+Overview
+Eriak stops posturing and commits to the fight. This phase introduces his weapon system, dangerous adds, and the first major control mechanics. The complexity increases significantly as multiple systems interact.
+Core Boss Mechanics
+• Eriak casts Tactical Whirlwind Slash continuously, forcing the raid to spread effectively
+• He periodically Knocks Down the main tank, requiring tank coordination
+• He spawns Sword Storm zones at various locations as area denial that the raid must navigate around
+Protection of Zek:
+• Eriak has a damage reduction buff that makes him harder to burst down
+• This buff is tied to the effectiveness of charmed adds—more on that below
+The Weapon System
+Eriak is a master blacksmith with five legendary weapons, each representing different combat strategies:
+The Axe:
+• Attacks in wide sweeping arcs with Axe Sweep
+• Reduces the armor of the main tank via Blacksmith's Corrosion, encouraging tank rotations
+The Knuckles:
+• Focuses on single-target devastation
+• Uses Aggressive Punch to stun and knockback targets
+• Improves Eriak's defenses when wielded with Eriak's Fortification
+The Spear & Net:
+• Throws a net at a single target with Confining Bonds, rooting and DoTing them
+• The netted target becomes vulnerable to a followup Spear of Zek, a massive line AoE that deals extreme damage
+• Netted players must have the root removed immediately
+The Daggers:
+• Improves Eriak's attack speed
+• Rapidly applies DoTs to multiple targets via Rapid Shanks
+• Marks a random target (with preference for healers) for Assassination of Zek—a deadly attack that kills instantly unless the target backs against a wall
+The Hammer:
+• Uses Slam attacks that hit an AoE around the impact point
+• Damage scales inversely with the number of players in the slam area—the fewer players present, the higher the damage
+• A visual decal warns where the slam will land; players must stack in the decal to reduce damage
+Weapon Transitions:
+• When Eriak switches weapons, the old weapon is thrown and becomes an independent add (though initially untargetable)
+• Each thrown weapon inherits abilities based on which weapon it is
+Add Management
+Harassers and Bruisers:
+• Adds spawn throughout this phase and become increasingly frequent
+• Harassers reduce outgoing damage of DPS classes
+• Bruisers lower the mitigation of tanks and hybrids
+• These adds are difficult to kill but can be charmed to fight alongside the raid
+Charming Strategy (The Desire Switch):
+• Charmed adds become allies and attack Eriak instead
+• Charmed Harassers strip Eriak's defensive proc (Razor Armor), making him vulnerable
+• Charmed Bruisers strip his damage reduction buff (Protection of Zek), allowing the raid to burn him faster
+• Timing charm usage is critical to maximizing burn phases
+The Water Sort Puzzle
+• A weapon rack sorting puzzle begins during this phase and continues through the rest of the encounter
+• The puzzle uses the same logic as a water sort puzzle: match weapon types on the same racks
+• Failing to progress on the puzzle has serious consequences in later phases
+• Adds spawn at specific locations tied to the puzzle—solving racks removes spawn points
+Anti-Archetype Adds:
+• Counter-healer adds increase casting time for healers if left alive too long
+• Counter-caster adds increase casting time for casters if left alive too long
+• Counter-melee adds apply slows to melee if left alive too long
+• These adds create pressure to balance killing them with managing the puzzle
+Strategy: Coordinate between players solving the puzzle and those managing adds. Prioritize charming adds at strategic moments to remove Eriak's buffs before burn windows.
+Stage 3: Escalation (40% - 20%)
+Overview
+All previous mechanics continue, but now Eriak introduces zone-wide Doom. This phase is characterized by a difficult choice: accept the damage from Doom, or use the Greed switch and accept penalties.
+Doom Mechanic
+Eriak's Doom:
+• Eriak begins casting Doom of the Blacksmith, a zone-wide effect that deals massive damage to all players
+• This occurs multiple times per phase, creating constant pressure
+• Doom can be prevented by activating the Greed switch
+The Greed Switch Penalty:
+• Using the Greed switch stops the Doom cast
+• However, this incurs Greedy Repercussions on all players:
+◦ All spells cost more mana
+◦ Melee attacks are slowed
+• Players must decide: take the Doom damage or accept the penalties?
+Strategic Considerations:
+• Sometimes it's preferable to split the raid: some players take Doom while others use Greed
+• Groups with strong healing and large health pools can survive Doom
+• Groups with limited mana pools might prefer to use Greed
+• Timing switch usage against other mechanics is crucial
+Increased Puzzle Pressure
+• The weapon rack puzzle now spawns 2 new adds per interval instead of 1
+• Area denial zones continue to spawn from Eriak's position
+• The raid must juggle Doom decisions, add management, and puzzle solving
+Stage 4: The Burn Accelerates (20% - 5%)
+Overview
+The encounter intensifies dramatically. Reaction windows shrink as all pressure mechanics scale upward simultaneously.
+Escalating Threats
+• Area denial zones increase in frequency and number
+• A second sword storm zone spawns on the opposite side of the arena
+• The weapon puzzle now spawns 4 new adds per interval
+• Add spawn timers decrease, forcing faster responses
+• Eriak's Tactical Whirlwind Slash becomes more damaging (changes spell variant)
+Critical Phase
+• Puzzle solving must accelerate significantly
+• Add management becomes frantic
+• Doom continues to apply pressure
+• Tank mitigation becomes critical as damage intake spikes
+Strategy: If the puzzle isn't solved by now, expect severe consequences at 5%. Prioritize finishing it during this phase.
+Stage 5: The Final Burn (5% - 0%)
+Overview
+This is the last-ditch effort phase. Most spawning mechanics stop, but cleanup failures become lethal.
+The Weapon Trap
+When Eriak reaches 5% health, he heals based on the number of weapons still active:
+• 1 weapon active = 1% heal
+• 2 weapons active = 2% heal
+• 3 weapons active = 3% heal
+• 4 weapons active = 5% heal
+• 5 weapons active = 8% heal
+This heal repeats each time he hits 5% health, potentially extending the fight indefinitely if weapons aren't killed.
+Add Explosions
+• For each percentage threshold below 5% (4%, 3%, 2%, 1%), Eriak explodes a portion of remaining non-weapon adds
+• If any adds remain when he dies, all of them explode
+• If the puzzle is still unsolved, additional adds spawn to explode
+Critical Strategy:
+• Kill all weapon adds before phase 5 if possible
+• Solve the puzzle completely to prevent additional spawns
+• Eliminate all adds from prior phases to avoid dangerous explosions
+• The fight can end quickly if weapons are dead and the puzzle is complete
+Stage 6: Resolution
+{Secret!, but the raid is won
+This is post raid story.}
+Achievements
+Complete additional challenges for special recognition:
+1. Master of Foresight: Solve the water sort puzzle before Eriak begins casting Doom
+2. Five-Fold Challenge: Allow all five weapons to remain alive when triggering Eriak's last-ditch effort at 5% health
+3. Perfect Execution: Prevent the last-ditch effort entirely by killing all weapons before the 5% threshold
+Spoiler: Key Mechanics and simple counter.
+Spoiler: Key Mechanics and simple counter.
+Final Tips
+• Communication is key: Call out weapon locations, puzzle progress, and add targets
+• Adapt to the phase: Each phase brings new threats; be ready to pivot strategies
+• Manage your mana/resources: The Greed penalty makes resource management critical
+• Cleanup matters: Weapons and adds left alive in phase 5 will cost you the kill
+• The puzzle is not optional: Solving it completely makes the final phase dramatically easier
+Prepare yourself for a battle against a god who embodies cunning itself. Victory requires mastery of multiple systems working in harmony.

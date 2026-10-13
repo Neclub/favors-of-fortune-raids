@@ -1,0 +1,252 @@
+Tier 3 – Plane of Guile Raid 1 – Chronicles of War
+Raid Giver: Tovigor Nolg
+Requirements: Level 130
+Background
+The Custodian of Knowledge, the Scribe of Guile, the Record Keeper, all names given to the being that knows everything about every battle ever fought and he is standing between you and the Lord of Guile.
+Encounter Overview
+The Record Keeper has spent his long existence watching others fight and that isn't about to change. He will not be engaging you directly, instead he will summon echoes of past battles that fight in his stead. The fight will take place over three stages, each stage adding another echo from the past to the mix. Drawing the echoes from the past does require effort and defeating them enacts a toll on the Record Keeper.
+• Echoes of the Past: The Record Keeper will not fight you directly, instead you will face off against echoes from past battles. These echoes are fragments or snapshots of those encounters
+• Wombo Combo: Each echo has their own set of abilities and some combinations may be more difficult than others
+• Library: The 'arena' is as much as part of this encounter as the echoes themselves. Limited space will make you think fast on your feet when adds, echoes, and abilities start occurring
+This is a 54-player raid for groups with gear from the latest expansion.
+Stage 1 (One Echo)
+Overview
+The Record Keeper has watched your battles, but wants to witness your strength first hand. To test the waters he will be summoning a single echo.
+Mechanics
+Record Keeper
+Summon Echo of Past Battles
+• One of Six echoes will be summoned
+◦ The echo is random and will change every attempt
+• Once the echo is defeated the encounter will progress to stage 2
+Books
+• Spawn every 60 seconds*
+◦ Only spawn if the echo does not have adds associated with it
+• 3 books spawn at a time
+Paper Cyclones
+• Spawn every 145 seconds*
+◦ Only spawn if the echo does not have adds associated with it
+• 4 cyclones spawn at a time
+• Relatively low health adds that explode, dealing damage to the raid, when killed
+• Cyclones can be mezzed
+◦ If mezzed they will not explode
+Strategy: Fight the echo, eliminate books, and be careful not to accidently destroy the cyclones until you are ready.
+Stage 2 (Two Echoes)
+Overview
+Things are getting interesting, the Record Keeper wants to make you sweat, so he is summoning two echoes.
+Mechanics
+Record Keeper
+Summon Echoes of Past Battles
+• Two of Six echoes will be summoned
+◦ The echoes are random and will change every attempt
+◦ The same echo from stage 1 will not be summoned
+• Once the echoes are defeated the encounter will progress to stage 3
+Books
+• Continue to spawn
+Paper Cyclones
+• Continue to spawn
+Strategy: Fight two echoes at the same time, eliminate books, and be careful not to accidently destroy the cyclones until you are ready.
+Stage 3 (70% - 0%)
+Overview
+The Record Keeper may have underestimated you, but he has a plan. What if you had to deal with three echoes at all times? That will surely defeat you.
+Mechanics
+Record Keeper
+Summon Echoes of Past Battles
+• Three of Six echoes will be summoned
+◦ The echoes are random and will change every attempt
+• When an echo is defeated it will cause feedback on the Record Keeper, dealing 10% of his health
+• There will be three echoes up at all times, when one is defeated another will spawn
+◦ No two of the same echo can be up at the same time
+Books
+• Continue to spawn
+Paper Cyclones
+• Continue to spawn
+Strategy: Three echoes will always be up during this stage, eliminate the more difficult ones quickly.
+The Echoes
+Overview
+Each echo is a snapshot of its original encounter.
+Miragul Reformed
+As a master of the arcane paths, Miragul will cast spells from various schools of magic while active.
+Power of the Synarcana
+• Occurs every 15 seconds
+• PBAoE that targets a random player
+• Deals dmg player and all players around them
+Lethal Lifetap
+• Occurs every 30 seconds
+• Deals dmg to a random player
+Spreading Evil
+• Occurs every 35 seconds
+• Deals dmg to a random player
+• Corruption slows movement speed and applies a DoT with 20 corruption charges
+Splart
+• Occurs every 25 seconds
+• Applies a DoT to a random player
+Self-Immolation
+• Occurs every 65 seconds
+• PBAoE that targets a random player
+• Applies a DoT to that player and all players around them
+Hulking Bodyguard
+• Summoned every 130 seconds
+Hatchet
+Hatchet hasn't gotten a lot of cardio recently, so he reserves his movement for when he really wants to get someone.
+Minotaur Gore
+• Occurs every 120 seconds
+• Singles out a player and chases them for 30 seconds
+• If he makes contact they will be hit by a PBAoE
+• Target player and all nearby players take dmg and are knocked down
+Decapitating Chop
+• Occurs every 35 seconds
+• 8 players will be selected to perform a random action
+◦ If they fail to perform the action, Hatchet will give them the... hatchet
+Meldrath the Malignant
+Malaise
+• Occurs every 70 seconds
+• Targets a random player
+• Applies a DoT and reduces spell casting speed, combat skill, and slows movement
+Spite
+• Occurs every 180 seconds
+• Corrupts a random player with 16 corruption counters
+• If it fails to be removed players in a ring around the target player take dmg
+Harvester's Gravestone
+• Spawns when Meldrath spawns
+• Spawns 3 Skeletons every 90 seconds
+• Spawns 2 Shadows every 180 seconds
+• Spawns Stinking Miasma every 270 seconds
+◦ Players that enter the stinking miasma will take dmg and lose a little mana and endurance
+Tick-Tock Bomb
+• Spawns every 70 seconds
+• After a short delay it will begin to wander around the area
+◦ If killed during this stage it will explode, dealing a small amount of dmg to the raid
+• After 15 seconds of wandering it will target a random player and slowly move toward them
+◦ If killed during this stage it will explode, dealing dmg to the raid
+• After 35 seconds it will detonate, dealing a large amount of dmg to the raid
+Steamworks Obliterator
+• Spawns every 90 seconds
+• Two obliterators will spawn at a time
+Repair Crew
+• Spawns every 50 seconds
+• Two repair crewman will be spawned
+• Move toward an active steamworks
+• If they spend 15 seconds near a steamwork it will be healed
+Builders
+• Spawns every 60 seconds
+• Two builders will be spawned
+• After 60 seconds they will build one of two Steamwork Creations
+◦ Steamwork Obliterator
+◦ Steamwork Terminator
+Tunat'Muram Cuu Vauax
+Say that three times fast.
+Berserk
+• Occurs every 25 seconds (after the previous Berserk fades)
+• Lasts for 25 seconds
+• While berserk melee attacks hit harder
+Single Out
+• Occurs every 15 seconds
+• Casts one of the following spells at a random player
+◦ Spirit Cleaver
+■ Applies a DoT with 297 poison counters
+■ Reduces Attack Power, mana, endurance, and all stats
+◦ Soul Consumption
+■ Deals dmg and reduces mana
+◦ Spear of Discord
+■ Deals dmg and stuns
+Unchecked Wrath
+• Occurs every 30 seconds
+• Casts one of the following AoE spells at a random player
+◦ Wave of Rage
+■ Deals dmg to players hit and applies a DoT with 396 poison counters
+■ Reduces INT and WIS
+■ Reduces mana by 50%
+◦ Ikaav Venom
+■ Applies a DoT to all players hit with 36 poison counters
+■ Reduces melee attack speed
+◦ Discord's Rebuke
+■ Deals a large amount of dmg to players hit
+Principal Indagatrix Lucia
+The first time she is summoned she will be summoned with her three students. While one of her students is still alive she cannot be taken below 20% health.
+Spells
+• Occurs every 60 seconds
+• She will cast one of the following spells (selected at random)
+◦ Vis Percussio
+■ Curses a player, causing their skills to have a chance to proc inflicting dmg and stun themselves
+◦ Vita Anuimis
+■ Curses a player, causing their skills to have a chance at draining their melee resources
+◦ Vita Tardius
+■ PBAoE that targets a random player
+■ Applies a DoT and reduces attack speed for targeted player and all players in a small radius
+◦ Claustro Vitoris
+■ Targets a random player, deals Dmg and stuns
+◦ Claustro Facultis
+■ Targets a random player, deals Dmg and reduces mana
+◦ Repenta Vitoris
+■ Applies a DoT to a random player
+◦ Ignas Maxio
+■ PBAoE that targets a random player
+■ Applies a DoT and reduces movement speed to all players around them
+◦ Humas Maxio
+■ PBAoE that targets a random player
+■ Deals Dmg, knocks them back, and stuns all players around them
+◦ Gravitas Maxio
+■ Targets a random player, deals dmg and continuously pushes them away
+Resonating Beam
+• Occurs every 45 seconds while one of her students are alive
+• Targets one of her students and fires the beam
+• Players hit by the beam will take significant damage, has a beneficial effect removed, has their mana reduced, and has their endurance reduced
+Resonating Blase
+• Occurs every 45 seconds while none of her students are alive
+• Players hit will suffer the same effects as the beam, but will also be stunned
+Shifting Focus
+• Occurs every 60 seconds
+• Drops hate
+• Targets a random player and teleports to them, setting them as the highest hate player
+Indagatrix Adria
+Vis Percussia or Vita Anuimis
+• Occurs every 45 seconds
+• Casts either Vis Percussia or Vita Anuimis
+Vita Tardius
+• Occurs every 15 seconds
+Indagator Tatio
+Claustro Vitoris
+• Occurs every 15 seconds
+Claustro Facultis
+• Occurs every 25 seconds
+Repenta Vitoris
+• Occurs every 30 seconds
+Indagator Ursus
+Ignas Maxio
+• Occurs every 20 seconds
+Humas Maxio
+• Occurs every 25 seconds
+Gravitas Maxio
+• Occurs every 40 seconds
+The First Creation
+Cures of the First Creation
+• Occurs every 100 to 120 seconds
+• Applies a curse to a random player with 6 counters
+• If the curse is not removed the player is slain
+Repulsion of the First Creation
+• Occurs every 100 to 120 seconds
+• Knocks everyone away from the First Creation
+• Shortly after casts Retribution of the First Creation
+Retribution of the First Creation
+• Occurs ~10 seconds after Repulsion of the First Creation
+• Massive PBAoE that does more dmg the further you are away from the First Creation
+Lava Elemental Protection
+• Stacking damage shield
+• Shield is more powerful for each Lava Golem that is currently active
+Lava Golems
+• A Lava Golem will spawn when the First Creation does
+• Spawns an additional Lava Golem every 100 seconds
+Achievements
+Complete additional challenges for special recognition:
+1. Shattered Echoes: Kill none of the echoes more than three times
+2. Deja Vu: Kill the same echo more than three times
+3. Handled It: Let none of the TikToks self detonate or detonate any paper cyclones
+Key Mechanics Summary
+Mechanic
+Effect
+Stage 1 - Solo Echo
+One random echo from a pool of six will spawn
+Stage 2 - Double Echo
+Two random echoes from a pool of the remaining five will spawn
+Stage 3 - The Triple Threat
+Three random echoes will be active at all times

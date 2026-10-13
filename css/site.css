@@ -45,9 +45,133 @@ body {
 }
 
 .sidebar-brand {
-  padding: 22px 18px 18px;
+  padding: 22px 18px 12px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sidebar-search {
+  padding: 0 10px 14px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 12px;
+}
+
+#spell-search {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+}
+
+#spell-search::placeholder { color: #8b95a6; }
+
+#spell-search:focus-visible,
+.search-raid:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.search-status {
+  margin: 8px 2px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: min(42vh, 420px);
+  margin-top: 8px;
+  overflow-y: auto;
+}
+
+.search-hit {
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.search-hit-spell {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.search-hit-spell img {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.search-hit-name {
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.search-hit-ids,
+.search-hit-effect {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.search-hit-effect {
+  font-weight: 500;
+}
+
+.search-mark {
+  background: var(--gold-soft);
+  color: inherit;
+  border-radius: 2px;
+}
+
+.search-hit-raids {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.search-raid {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold-soft);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.search-raid:hover {
+  background: var(--panel-hover);
+  border-color: var(--gold);
 }
 
 .brand-kicker {
@@ -401,6 +525,7 @@ ul.effects ul { margin: 4px 0; }
     border-bottom: 1px solid var(--border);
   }
   #content { padding: 22px 18px 46vh; }
+  .search-results { max-height: 28vh; }
   #spell-panel {
     position: fixed;
     top: auto;

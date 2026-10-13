@@ -4,8 +4,14 @@ const writeup = document.getElementById("writeup");
 let data = null;
 let selectedId = "";
 
+let cachedSpellNames = null;
+let spellIndex = [];
+
 function spellNames() {
-  return Object.keys(data.spells).sort((a, b) => b.length - a.length);
+  if (!cachedSpellNames) {
+    cachedSpellNames = Object.keys(data.spells).sort((a, b) => b.length - a.length);
+  }
+  return cachedSpellNames;
 }
 
 function el(tag, className, text) {
@@ -114,6 +120,7 @@ function appendSpell(parent, name) {
   if (matches.length > 1) {
     link.href = `https://spells.eqresource.com/spellsearch.php?name=${encodeURIComponent(name)}&class=&level=1&range=greater&expac=&source=beta&searchname=true&strict=true`;
   }
+  wrap.dataset.spell = name;
   wrap.append(link);
   const ids = el("span", "spell-ids");
   ids.append(" (");
@@ -135,13 +142,9 @@ function appendSpell(parent, name) {
   }
 }
 
-function appendLinkedText(parent, text) {
-  if (data.spells[text]) {
-    appendSpell(parent, text);
-    return;
-  }
+function spellSpans(text) {
+  if (data.spells[text]) return [[0, text.length, text]];
   const names = spellNames().filter((name) => name.includes(" ") || name.length > 8);
-  let cursor = 0;
   const spans = [];
   const used = new Array(text.length).fill(false);
   names.forEach((name) => {
@@ -160,6 +163,12 @@ function appendLinkedText(parent, text) {
     }
   });
   spans.sort((a, b) => a[0] - b[0]);
+  return spans;
+}
+
+function appendLinkedText(parent, text) {
+  const spans = spellSpans(text);
+  let cursor = 0;
   spans.forEach(([start, end, name]) => {
     if (start > cursor) parent.append(text.slice(cursor, start));
     appendSpell(parent, name);
@@ -253,7 +262,7 @@ function renderRaid(raid) {
   }
 }
 
-function selectRaid(id, updateHash) {
+function selectRaid(id, updateHash, keepCard) {
   const raid = data.tiers.flatMap((tier) => tier.raids).find((item) => item.id === id);
   if (!raid) return;
   selectedId = id;
@@ -264,14 +273,22 @@ function selectRaid(id, updateHash) {
     if (active) button.setAttribute("aria-current", "true");
     else button.removeAttribute("aria-current");
   });
-  const group = navList.querySelector(`.nav-btn[data-raid="${id}"]`)?.closest(".nav-group");
+  const active = navList.querySelector(`.nav-btn[data-raid="${id}"]`);
+  const group = active?.closest(".nav-group");
   if (group) {
     group.classList.remove("collapsed");
     const toggle = group.querySelector(".nav-group-toggle");
     if (toggle) toggle.setAttribute("aria-expanded", "true");
   }
+  if (active) {
+    const sidebar = document.getElementById("sidebar");
+    const button = active.getBoundingClientRect();
+    const frame = sidebar.getBoundingClientRect();
+    if (button.bottom > frame.bottom) sidebar.scrollTop += button.bottom - frame.bottom + 8;
+    else if (button.top < frame.top) sidebar.scrollTop -= frame.top - button.top + 8;
+  }
   renderRaid(raid);
-  showEmptyCard();
+  if (!keepCard) showEmptyCard();
   document.getElementById("content").scrollTop = 0;
   window.scrollTo(0, 0);
 }
@@ -310,10 +327,201 @@ function renderNav() {
   });
 }
 
+function raidTexts(raid) {
+  const texts = [];
+  function walkBullets(bullets) {
+    (bullets || []).forEach((bullet) => {
+      if (bullet.text) texts.push(bullet.text);
+      walkBullets(bullet.children);
+    });
+  }
+  (raid.stages || []).forEach((stage) => {
+    if (stage.title) texts.push(stage.title);
+    (stage.blocks || []).forEach((block) => {
+      if (block.title) texts.push(block.title);
+      (block.spellNames || []).forEach((name) => texts.push(name));
+      (block.prose || []).forEach((paragraph) => texts.push(paragraph));
+      walkBullets(block.bullets);
+    });
+  });
+  (raid.summary || []).forEach((row) => {
+    if (row.name) texts.push(row.name);
+    if (row.effect) texts.push(row.effect);
+  });
+  return texts;
+}
+
+function buildSpellIndex() {
+  const locations = new Map();
+  data.tiers.forEach((tier) => {
+    tier.raids.forEach((raid) => {
+      const names = new Set();
+      raidTexts(raid).forEach((text) => {
+        spellSpans(text).forEach((span) => names.add(span[2]));
+      });
+      names.forEach((name) => {
+        if (!locations.has(name)) locations.set(name, []);
+        locations.get(name).push({ id: raid.id, short: raid.short, tier: tier.label });
+      });
+    });
+  });
+  spellIndex = [...locations.entries()]
+    .map(([name, raids]) => ({ name, raids, matches: data.spells[name] || [] }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function matchingIds(entry, query) {
+  const q = query.trim();
+  const ids = entry.matches.map((match) => String(match.id));
+  if (/^\d+$/.test(q)) {
+    const matched = ids.filter((id) => id.startsWith(q));
+    if (matched.length) return matched;
+  }
+  return ids;
+}
+
+function searchSpells(query) {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const numeric = /^\d+$/.test(q);
+  const hits = spellIndex.filter((entry) => {
+    if (entry.name.toLowerCase().includes(q)) return true;
+    if (!numeric) return false;
+    return entry.matches.some((match) => String(match.id).startsWith(q));
+  });
+  hits.sort((a, b) => {
+    const rank = (entry) => {
+      const name = entry.name.toLowerCase();
+      const ids = entry.matches.map((match) => String(match.id));
+      if (numeric && ids.some((id) => id === q)) return 0;
+      if (name === q) return 1;
+      if (numeric && ids.some((id) => id.startsWith(q))) return 2;
+      if (name.startsWith(q)) return 3;
+      return 4;
+    };
+    return rank(a) - rank(b) || a.name.localeCompare(b.name);
+  });
+  return hits;
+}
+
+function highlightQuery(text, query) {
+  const q = query.trim();
+  const fragment = document.createDocumentFragment();
+  if (!q || /^\d+$/.test(q)) {
+    fragment.append(text);
+    return fragment;
+  }
+  const lower = text.toLowerCase();
+  const needle = q.toLowerCase();
+  let cursor = 0;
+  let index = lower.indexOf(needle, cursor);
+  while (index >= 0) {
+    if (index > cursor) fragment.append(text.slice(cursor, index));
+    fragment.append(el("mark", "search-mark", text.slice(index, index + needle.length)));
+    cursor = index + needle.length;
+    index = lower.indexOf(needle, cursor);
+  }
+  if (cursor < text.length) fragment.append(text.slice(cursor));
+  return fragment;
+}
+
+function openSpell(raidId, name, ids) {
+  selectRaid(raidId, true, true);
+  const nodes = [...writeup.querySelectorAll(".spell")].filter((node) => node.dataset.spell === name);
+  const matches = data.spells[name] || [];
+  const shown = ids.length ? matches.filter((match) => ids.includes(String(match.id))) : matches;
+  if (nodes.length) {
+    document.querySelectorAll(".is-open").forEach((node) => node.classList.remove("is-open"));
+    nodes[0].classList.add("is-open");
+    nodes[0].scrollIntoView({ block: "center", inline: "nearest" });
+  }
+  if (shown.length) fillCard(shown, name);
+  else if (matches.length) fillCard(matches, name);
+}
+
+const searchInput = document.getElementById("spell-search");
+const searchResults = document.getElementById("spell-search-results");
+const SEARCH_LIMIT = 25;
+
+function renderSearch(query) {
+  const q = query.trim();
+  searchResults.replaceChildren();
+  searchInput.setAttribute("aria-expanded", q ? "true" : "false");
+  if (!q || !spellIndex.length) return;
+
+  const hits = searchSpells(q);
+  const status = el("p", "search-status");
+  if (!hits.length) {
+    status.textContent = "No spells match.";
+    searchResults.append(status);
+    return;
+  }
+  const shown = hits.slice(0, SEARCH_LIMIT);
+  status.textContent = hits.length > shown.length
+    ? `Showing ${shown.length} of ${hits.length} spells. Keep typing to narrow the list.`
+    : `${hits.length} spell${hits.length === 1 ? "" : "s"}`;
+  const list = el("div", "search-results");
+  shown.forEach((entry) => {
+    const ids = matchingIds(entry, q);
+    const hit = el("article", "search-hit");
+    const spell = el("div", "search-hit-spell");
+    const icon = entry.matches.find((match) => ids.includes(String(match.id)) && match.icon) || entry.matches[0];
+    if (icon && icon.icon) {
+      const img = document.createElement("img");
+      img.src = icon.icon;
+      img.alt = "";
+      spell.append(img);
+    }
+    const title = el("div");
+    const name = el("div", "search-hit-name");
+    name.append(highlightQuery(entry.name, q));
+    const idLine = el("div", "search-hit-ids", ids.join(", "));
+    title.append(name, idLine);
+    const effect = (entry.matches.find((match) => ids.includes(String(match.id)) && match.effect) || {}).effect;
+    if (effect) title.append(el("div", "search-hit-effect", effect));
+    spell.append(title);
+    hit.append(spell);
+    const raids = el("div", "search-hit-raids");
+    entry.raids.forEach((raid) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "search-raid";
+      button.textContent = `${raid.tier} · ${raid.short}`;
+      button.setAttribute("aria-label", `Show ${entry.name} in ${raid.short}`);
+      button.addEventListener("click", () => openSpell(raid.id, entry.name, ids));
+      raids.append(button);
+    });
+    hit.append(raids);
+    list.append(hit);
+  });
+  searchResults.append(status, list);
+}
+
+function bindSearch() {
+  searchInput.addEventListener("input", () => renderSearch(searchInput.value));
+  searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      searchInput.value = "";
+      renderSearch("");
+      return;
+    }
+    if (event.key === "Enter") {
+      const first = searchResults.querySelector(".search-raid");
+      if (!first) return;
+      event.preventDefault();
+      first.click();
+    }
+  });
+}
+
 async function start() {
   const response = await fetch("data/raids.json");
   data = await response.json();
+  cachedSpellNames = null;
   renderNav();
+  buildSpellIndex();
+  bindSearch();
+  if (searchInput.value.trim()) renderSearch(searchInput.value);
   const fromHash = location.hash.replace("#", "");
   const known = data.tiers.flatMap((tier) => tier.raids).some((raid) => raid.id === fromHash);
   selectRaid(known ? fromHash : data.tiers[0].raids[0].id, false);

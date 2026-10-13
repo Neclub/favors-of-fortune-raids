@@ -5171,8 +5171,8 @@
           "Decrease Current Hit Points by 600600 per Tick",
           "Increase Corruption Counter by 24",
           "Increase Attack by 25",
-          "Cast if Cured:",
-          "Cast on Duration Fade:"
+          "Cast if Cured: Corrupting Pulse",
+          "Cast on Duration Fade: Ensorcel Psyche"
         ],
         "details": [
           {

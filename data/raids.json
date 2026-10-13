@@ -6,13 +6,21 @@
         "id": "68238",
         "icon": "https://spells.eqresource.com/spellicons/203Single0.jpe",
         "effect": "Decrease Current Hit Points by 650000",
-        "url": "https://spells.eqresource.com/spells.php?id=68238&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68238&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 650000",
+          "Stun for 1.5s"
+        ]
       },
       {
         "id": "74956",
         "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
         "effect": "Decrease Current Hit Points by 341250",
-        "url": "https://spells.eqresource.com/spells.php?id=74956&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74956&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 341250",
+          "Stun for 1.5s"
+        ]
       }
     ],
     "Arcing Slash": [
@@ -20,7 +28,10 @@
         "id": "75111",
         "icon": "https://spells.eqresource.com/spellicons/1927Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 700750 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75111&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75111&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 700750 per Tick"
+        ]
       }
     ],
     "Assassination of Zek": [
@@ -28,13 +39,19 @@
         "id": "68242",
         "icon": "https://spells.eqresource.com/spellicons/215Single0.jpe",
         "effect": "Decrease Current Hit Points by 9000000000",
-        "url": "https://spells.eqresource.com/spells.php?id=68242&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68242&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 9000000000"
+        ]
       },
       {
         "id": "74959",
         "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
         "effect": "Decrease Current Hit Points by 9000000000",
-        "url": "https://spells.eqresource.com/spells.php?id=74959&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74959&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 9000000000"
+        ]
       }
     ],
     "Aura of Greed": [
@@ -42,7 +59,13 @@
         "id": "75147",
         "icon": "https://spells.eqresource.com/spellicons/900Single0.jpe",
         "effect": "Decrease Hit Damage by 50% (v185)",
-        "url": "https://spells.eqresource.com/spells.php?id=75147&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75147&source=beta",
+        "slots": [
+          "Decrease Hit Damage by 50% (v185)",
+          "Decrease Spell Damage by 1% to 50% (v124, Before DoT Crit, After DD Crit)",
+          "Decrease Healing Taken by 1% to 50% (v393)",
+          "Increase Spell Damage Taken by 50% (v296, Before Crit)"
+        ]
       }
     ],
     "Aura of Poverty": [
@@ -50,7 +73,13 @@
         "id": "75148",
         "icon": "https://spells.eqresource.com/spellicons/901Single0.jpe",
         "effect": "Decrease Hit Damage by 50% (v185)",
-        "url": "https://spells.eqresource.com/spells.php?id=75148&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75148&source=beta",
+        "slots": [
+          "Decrease Hit Damage by 50% (v185)",
+          "Decrease Spell Damage by 1% to 50% (v124, Before DoT Crit, After DD Crit)",
+          "Decrease Healing Taken by 1% to 50% (v393)",
+          "Increase Spell Damage Taken by 50% (v296, Before Crit)"
+        ]
       }
     ],
     "Axe Sweep": [
@@ -58,19 +87,28 @@
         "id": "49945",
         "icon": "https://spells.eqresource.com/spellicons/161Directional%20AE0.jpe",
         "effect": "Melee Attack for 79100 with 10000% Accuracy Mod",
-        "url": "https://spells.eqresource.com/spells.php?id=49945&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=49945&source=beta",
+        "slots": [
+          "Melee Attack for 79100 with 10000% Accuracy Mod"
+        ]
       },
       {
         "id": "68236",
         "icon": "https://spells.eqresource.com/spellicons/174Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 1300000",
-        "url": "https://spells.eqresource.com/spells.php?id=68236&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68236&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1300000"
+        ]
       },
       {
         "id": "74954",
         "icon": "https://spells.eqresource.com/spellicons/-1Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 682500",
-        "url": "https://spells.eqresource.com/spells.php?id=74954&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74954&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 682500"
+        ]
       }
     ],
     "Back of the Line": [
@@ -78,13 +116,20 @@
         "id": "75129",
         "icon": "https://spells.eqresource.com/spellicons/945Single0.jpe",
         "effect": "Decrease Current Hit Points by 75500",
-        "url": "https://spells.eqresource.com/spells.php?id=75129&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75129&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 75500"
+        ]
       },
       {
         "id": "75130",
         "icon": "https://spells.eqresource.com/spellicons/945Single0.jpe",
         "effect": "Decrease Current Hit Points by 750500",
-        "url": "https://spells.eqresource.com/spells.php?id=75130&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75130&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 750500",
+          "Fling"
+        ]
       }
     ],
     "Barb of Tallon": [
@@ -92,115 +137,202 @@
         "id": "2449",
         "icon": "https://spells.eqresource.com/spellicons/139Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 2000 (Random: -1250 to -2750)",
-        "url": "https://spells.eqresource.com/spells.php?id=2449&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=2449&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 2000 (Random: -1250 to -2750)",
+          "Decrease Melee Haste by 40%",
+          "Decrease Movement Speed by 40%"
+        ]
       },
       {
         "id": "2450",
         "icon": "https://spells.eqresource.com/spellicons/51Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 2500 (Random: -1500 to -3500)",
-        "url": "https://spells.eqresource.com/spells.php?id=2450&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=2450&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 2500 (Random: -1500 to -3500)"
+        ]
       },
       {
         "id": "2451",
         "icon": "https://spells.eqresource.com/spellicons/41Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 300 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=2451&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=2451&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 300 per Tick",
+          "Decrease Armor Class by 33 to 44, Based on Class",
+          "Decrease Hate Generated by 60%"
+        ]
       },
       {
         "id": "2452",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
         "effect": "Decrease Current Hit Points by 2625 (Random: -1750 to -3500)",
-        "url": "https://spells.eqresource.com/spells.php?id=2452&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=2452&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 2625 (Random: -1750 to -3500)"
+        ]
       },
       {
         "id": "17272",
         "icon": "https://spells.eqresource.com/spellicons/139Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 13750 (Random: -13750 to -13750)",
-        "url": "https://spells.eqresource.com/spells.php?id=17272&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=17272&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 13750 (Random: -13750 to -13750)",
+          "Decrease Melee Haste by 40%",
+          "Decrease Movement Speed by 45%"
+        ]
       },
       {
         "id": "17273",
         "icon": "https://spells.eqresource.com/spellicons/51Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 14500 (Random: -14500 to -14500)",
-        "url": "https://spells.eqresource.com/spells.php?id=17273&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=17273&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 14500 (Random: -14500 to -14500)"
+        ]
       },
       {
         "id": "17274",
         "icon": "https://spells.eqresource.com/spellicons/41Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 7500 per Tick (Disease 16)",
-        "url": "https://spells.eqresource.com/spells.php?id=17274&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=17274&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 7500 per Tick",
+          "Decrease Armor Class by 53 to 70, Based on Class",
+          "Decrease Hate Generated by 160%",
+          "Increase Disease Counter by 16"
+        ]
       },
       {
         "id": "17275",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
         "effect": "Decrease Current Hit Points by 16500 (Random: -16500 to -16500)",
-        "url": "https://spells.eqresource.com/spells.php?id=17275&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=17275&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 16500 (Random: -16500 to -16500)"
+        ]
       },
       {
         "id": "17276",
         "icon": "https://spells.eqresource.com/spellicons/209Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 4000",
-        "url": "https://spells.eqresource.com/spells.php?id=17276&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=17276&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 4000",
+          "Decrease Current Hit Points by 4000",
+          "Decrease Current Hit Points by 4000",
+          "Decrease Current Hit Points by 4000"
+        ]
       },
       {
         "id": "39555",
         "icon": "https://spells.eqresource.com/spellicons/139Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 68750",
-        "url": "https://spells.eqresource.com/spells.php?id=39555&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39555&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 68750",
+          "Decrease Melee Haste by 40%",
+          "Decrease Movement Speed by 45%"
+        ]
       },
       {
         "id": "39556",
         "icon": "https://spells.eqresource.com/spellicons/51Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 52500",
-        "url": "https://spells.eqresource.com/spells.php?id=39556&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39556&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 52500",
+          "Stun for 1.5s up to Level 200"
+        ]
       },
       {
         "id": "39557",
         "icon": "https://spells.eqresource.com/spellicons/41Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 29500 per Tick (Disease 65)",
-        "url": "https://spells.eqresource.com/spells.php?id=39557&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39557&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 29500 per Tick",
+          "Decrease Armor Class by 265 to 350, Based on Class",
+          "Decrease Hate Generated by 200%",
+          "Increase Disease Counter by 65"
+        ]
       },
       {
         "id": "39558",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
         "effect": "Inhibit Spell Casting (Spell Silence)",
-        "url": "https://spells.eqresource.com/spells.php?id=39558&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39558&source=beta",
+        "slots": [
+          "Inhibit Spell Casting (Spell Silence)",
+          "Melee and Skill Silence"
+        ]
       },
       {
         "id": "39559",
         "icon": "https://spells.eqresource.com/spellicons/209Target%20AE0.jpe",
         "effect": "Decrease Spell Haste by 30%",
-        "url": "https://spells.eqresource.com/spells.php?id=39559&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39559&source=beta",
+        "slots": [
+          "Decrease Spell Haste by 30%",
+          "Limit Type: Exclude Combat Skills",
+          "Decrease Current Hit Points by 47500 per Tick"
+        ]
       },
       {
         "id": "68258",
         "icon": "https://spells.eqresource.com/spellicons/139Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 195000",
-        "url": "https://spells.eqresource.com/spells.php?id=68258&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68258&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 195000",
+          "Decrease Melee Haste by 40%",
+          "Decrease Movement Speed by 45%"
+        ]
       },
       {
         "id": "68259",
         "icon": "https://spells.eqresource.com/spellicons/51Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 148908",
-        "url": "https://spells.eqresource.com/spells.php?id=68259&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68259&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 148908",
+          "Stun for 1.5s up to Level 200"
+        ]
       },
       {
         "id": "68260",
         "icon": "https://spells.eqresource.com/spellicons/41Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 83672 per Tick (Disease 165)",
-        "url": "https://spells.eqresource.com/spells.php?id=68260&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68260&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 83672 per Tick",
+          "Decrease Armor Class by 265 to 350, Based on Class",
+          "Decrease Hate Generated by 200%",
+          "Increase Disease Counter by 165"
+        ]
       },
       {
         "id": "68261",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
         "effect": "Inhibit Spell Casting (Spell Silence)",
-        "url": "https://spells.eqresource.com/spells.php?id=68261&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68261&source=beta",
+        "slots": [
+          "Inhibit Spell Casting (Spell Silence)",
+          "Melee and Skill Silence"
+        ]
       },
       {
         "id": "68262",
         "icon": "https://spells.eqresource.com/spellicons/209Target%20AE0.jpe",
         "effect": "Decrease Spell Haste by 30%",
-        "url": "https://spells.eqresource.com/spells.php?id=68262&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68262&source=beta",
+        "slots": [
+          "Decrease Spell Haste by 30%",
+          "Limit Type: Exclude Combat Skills",
+          "Decrease Current Hit Points by 134727 per Tick"
+        ]
       }
     ],
     "Biting Sonnet": [
@@ -208,7 +340,11 @@
         "id": "75171",
         "icon": "https://spells.eqresource.com/spellicons/1343Single0.jpe",
         "effect": "Decrease Current Hit Points by 350000",
-        "url": "https://spells.eqresource.com/spells.php?id=75171&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75171&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 350000",
+          "Stun for 6s"
+        ]
       }
     ],
     "Black Listed": [
@@ -216,19 +352,30 @@
         "id": "75126",
         "icon": "https://spells.eqresource.com/spellicons/432Single0.jpe",
         "effect": "Decrease Current Hit Points by 500500 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75126&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75126&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 500500 per Tick",
+          "Cast on Duration Fade:"
+        ]
       },
       {
         "id": "75127",
         "icon": "https://spells.eqresource.com/spellicons/432Single0.jpe",
         "effect": "Decrease Current Hit Points by 600500",
-        "url": "https://spells.eqresource.com/spells.php?id=75127&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75127&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600500",
+          "Cast on Fade:"
+        ]
       },
       {
         "id": "75128",
         "icon": "https://spells.eqresource.com/spellicons/432Single0.jpe",
         "effect": "Decrease Current Hit Points by 4000000000",
-        "url": "https://spells.eqresource.com/spells.php?id=75128&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75128&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 4000000000"
+        ]
       }
     ],
     "Blacksmith's Corrosion": [
@@ -236,13 +383,19 @@
         "id": "68237",
         "icon": "https://spells.eqresource.com/spellicons/62Single0.jpe",
         "effect": "Decrease Armor Class by 331 to 438, Based on Class",
-        "url": "https://spells.eqresource.com/spells.php?id=68237&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68237&source=beta",
+        "slots": [
+          "Decrease Armor Class by 331 to 438, Based on Class"
+        ]
       },
       {
         "id": "74955",
         "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
         "effect": "Decrease Armor Class by 166 to 219, Based on Class",
-        "url": "https://spells.eqresource.com/spells.php?id=74955&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74955&source=beta",
+        "slots": [
+          "Decrease Armor Class by 166 to 219, Based on Class"
+        ]
       }
     ],
     "Bramble Shield": [
@@ -250,7 +403,11 @@
         "id": "75192",
         "icon": "https://spells.eqresource.com/spellicons/1740Single0.jpe",
         "effect": "Increase Damage Shield by 1250",
-        "url": "https://spells.eqresource.com/spells.php?id=75192&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75192&source=beta",
+        "slots": [
+          "Increase Damage Shield by 1250",
+          "Increase Chance to Reflect Spell by 15% for 45% Base Damage"
+        ]
       }
     ],
     "Briar Shackles": [
@@ -258,7 +415,10 @@
         "id": "75189",
         "icon": "https://spells.eqresource.com/spellicons/997Single0.jpe",
         "effect": "Decrease Movement Speed by 250%",
-        "url": "https://spells.eqresource.com/spells.php?id=75189&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75189&source=beta",
+        "slots": [
+          "Decrease Movement Speed by 250%"
+        ]
       }
     ],
     "Cacophonous Note": [
@@ -266,7 +426,11 @@
         "id": "75177",
         "icon": "https://spells.eqresource.com/spellicons/695Single0.jpe",
         "effect": "Decrease Current Hit Points by 440000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75177&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75177&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 440000 per Tick",
+          "Decrease Movement Speed by 180%"
+        ]
       }
     ],
     "Claustro Facultis": [
@@ -274,13 +438,21 @@
         "id": "48042",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
         "effect": "Decrease Current Hit Points by 87880",
-        "url": "https://spells.eqresource.com/spells.php?id=48042&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48042&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 87880",
+          "Decrease Current Mana by 3510 (v417)"
+        ]
       },
       {
         "id": "75036",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
         "effect": "Decrease Current Hit Points by 275000",
-        "url": "https://spells.eqresource.com/spells.php?id=75036&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75036&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 275000",
+          "Decrease Current Mana by 3510 (v417)"
+        ]
       }
     ],
     "Claustro Vitoris": [
@@ -288,25 +460,41 @@
         "id": "47478",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
         "effect": "Decrease Current Hit Points by 65000",
-        "url": "https://spells.eqresource.com/spells.php?id=47478&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=47478&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 65000",
+          "Stun for 1s"
+        ]
       },
       {
         "id": "48041",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
         "effect": "Decrease Current Hit Points by 96148",
-        "url": "https://spells.eqresource.com/spells.php?id=48041&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48041&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 96148",
+          "Stun for 1s"
+        ]
       },
       {
         "id": "75030",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
         "effect": "Decrease Current Hit Points by 325000",
-        "url": "https://spells.eqresource.com/spells.php?id=75030&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75030&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 325000",
+          "Stun for 1s"
+        ]
       },
       {
         "id": "75035",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
         "effect": "Decrease Current Hit Points by 350000",
-        "url": "https://spells.eqresource.com/spells.php?id=75035&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75035&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 350000",
+          "Stun for 1s"
+        ]
       }
     ],
     "Coerced Loyalty": [
@@ -314,7 +502,11 @@
         "id": "75200",
         "icon": "https://spells.eqresource.com/spellicons/115Target%20AE0.jpe",
         "effect": "Charm up to Level 300",
-        "url": "https://spells.eqresource.com/spells.php?id=75200&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75200&source=beta",
+        "slots": [
+          "Charm up to Level 300",
+          "Decrease Chance of Charm Breaking by 50%"
+        ]
       }
     ],
     "Confining Bonds": [
@@ -322,13 +514,21 @@
         "id": "68240",
         "icon": "https://spells.eqresource.com/spellicons/145Single0.jpe",
         "effect": "Root",
-        "url": "https://spells.eqresource.com/spells.php?id=68240&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68240&source=beta",
+        "slots": [
+          "Root",
+          "Decrease Current Hit Points by 195000 per Tick"
+        ]
       },
       {
         "id": "74957",
         "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
         "effect": "Root",
-        "url": "https://spells.eqresource.com/spells.php?id=74957&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74957&source=beta",
+        "slots": [
+          "Root",
+          "Decrease Current Hit Points by 85313 per Tick"
+        ]
       }
     ],
     "Crushing Laxity": [
@@ -336,7 +536,11 @@
         "id": "75082",
         "icon": "https://spells.eqresource.com/spellicons/909Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 750000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75082&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75082&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 750000 per Tick",
+          "Decrease Movement Speed by 40%"
+        ]
       }
     ],
     "Curse of the Broken Heart": [
@@ -344,7 +548,11 @@
         "id": "75157",
         "icon": "https://spells.eqresource.com/spellicons/1168Single0.jpe",
         "effect": "Decrease Current Hit Points by 500500 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75157&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75157&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 500500 per Tick",
+          "Decrease Movement Speed by 25%"
+        ]
       }
     ],
     "Decapitating Chop": [
@@ -352,13 +560,21 @@
         "id": "7234",
         "icon": "https://spells.eqresource.com/spellicons/43Single0.jpe",
         "effect": "Feign Death (1% Chance)",
-        "url": "https://spells.eqresource.com/spells.php?id=7234&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=7234&source=beta",
+        "slots": [
+          "Feign Death (1% Chance)",
+          "Decrease Current Hit Points by 100000"
+        ]
       },
       {
         "id": "75014",
         "icon": "https://spells.eqresource.com/spellicons/43Single0.jpe",
         "effect": "Feign Death (1% Chance)",
-        "url": "https://spells.eqresource.com/spells.php?id=75014&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75014&source=beta",
+        "slots": [
+          "Feign Death (1% Chance)",
+          "Decrease Current Hit Points by 4000000000"
+        ]
       }
     ],
     "Discord's Rebuke": [
@@ -366,13 +582,19 @@
         "id": "4739",
         "icon": "https://spells.eqresource.com/spellicons/47Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 3000",
-        "url": "https://spells.eqresource.com/spells.php?id=4739&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=4739&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 3000"
+        ]
       },
       {
         "id": "75025",
         "icon": "https://spells.eqresource.com/spellicons/47Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 475000",
-        "url": "https://spells.eqresource.com/spells.php?id=75025&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75025&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 475000"
+        ]
       }
     ],
     "Doom of the Blacksmith": [
@@ -380,7 +602,10 @@
         "id": "68265",
         "icon": "https://spells.eqresource.com/spellicons/167Single0.jpe",
         "effect": "Decrease Current Hit Points by 9000000000",
-        "url": "https://spells.eqresource.com/spells.php?id=68265&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68265&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 9000000000"
+        ]
       }
     ],
     "Draining Touch": [
@@ -388,7 +613,11 @@
         "id": "75186",
         "icon": "https://spells.eqresource.com/spellicons/1085Single0.jpe",
         "effect": "Decrease Spell Damage by 1% to 20% (v124, Before DoT Crit, After DD Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75186&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75186&source=beta",
+        "slots": [
+          "Decrease Spell Damage by 1% to 20% (v124, Before DoT Crit, After DD Crit)",
+          "Decrease Hit Damage by 20% (v185)"
+        ]
       }
     ],
     "Dread Judgement": [
@@ -396,19 +625,31 @@
         "id": "75107",
         "icon": "https://spells.eqresource.com/spellicons/937Caster%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 250000",
-        "url": "https://spells.eqresource.com/spells.php?id=75107&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75107&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 250000",
+          "Fling"
+        ]
       },
       {
         "id": "75108",
         "icon": "https://spells.eqresource.com/spellicons/936Single0.jpe",
         "effect": "Decrease Armor Class by 994 to 1313, Based on Class",
-        "url": "https://spells.eqresource.com/spells.php?id=75108&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75108&source=beta",
+        "slots": [
+          "Decrease Armor Class by 994 to 1313, Based on Class"
+        ]
       },
       {
         "id": "75109",
         "icon": "https://spells.eqresource.com/spellicons/936Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 650000",
-        "url": "https://spells.eqresource.com/spells.php?id=75109&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75109&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 650000",
+          "Fling",
+          "Decrease Armor Class by 994 to 1313, Based on Class"
+        ]
       }
     ],
     "Empowering Rhetoric": [
@@ -416,7 +657,12 @@
         "id": "75166",
         "icon": "https://spells.eqresource.com/spellicons/1342Single0.jpe",
         "effect": "Decrease Spell and DoT Damage Taken by 1% to 50% (v483, After Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75166&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75166&source=beta",
+        "slots": [
+          "Decrease Spell and DoT Damage Taken by 1% to 50% (v483, After Crit)",
+          "Limit Spells:",
+          "Limit Type: Include Non-Focusable"
+        ]
       }
     ],
     "Eriak's Doom": [
@@ -424,7 +670,13 @@
         "id": "68247",
         "icon": "https://spells.eqresource.com/spellicons/14Caster%20PB0.jpe",
         "effect": "Cast on Duration Fade:",
-        "url": "https://spells.eqresource.com/spells.php?id=68247&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68247&source=beta",
+        "slots": [
+          "Cast on Duration Fade:",
+          "Increase Curse Counter by 99",
+          "Increase Spell Damage Taken by 1 (v297, Before Crit)",
+          "Limit Spells:"
+        ]
       }
     ],
     "Eriak's Fortification": [
@@ -432,7 +684,12 @@
         "id": "68239",
         "icon": "https://spells.eqresource.com/spellicons/98Self0.jpe",
         "effect": "Absorb Spell Damage: 50%",
-        "url": "https://spells.eqresource.com/spells.php?id=68239&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68239&source=beta",
+        "slots": [
+          "Absorb Spell Damage: 50%",
+          "Absorb Melee Damage: 50%",
+          "Absorb DoT Damage: 50%"
+        ]
       }
     ],
     "Falling Debris": [
@@ -440,7 +697,10 @@
         "id": "75122",
         "icon": "https://spells.eqresource.com/spellicons/596Caster%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 450000",
-        "url": "https://spells.eqresource.com/spells.php?id=75122&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75122&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 450000"
+        ]
       }
     ],
     "Feral Toxin": [
@@ -448,7 +708,11 @@
         "id": "75132",
         "icon": "https://spells.eqresource.com/spellicons/1299Single0.jpe",
         "effect": "Decrease Current Hit Points by 550000 per Tick (Poison 120)",
-        "url": "https://spells.eqresource.com/spells.php?id=75132&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75132&source=beta",
+        "slots": [
+          "Increase Poison Counter by 120",
+          "Decrease Current Hit Points by 550000 per Tick"
+        ]
       }
     ],
     "Forced Transfer": [
@@ -456,7 +720,11 @@
         "id": "75077",
         "icon": "https://spells.eqresource.com/spellicons/921Single0.jpe",
         "effect": "Decrease Healing Taken by 1% to 75% (v393)",
-        "url": "https://spells.eqresource.com/spells.php?id=75077&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75077&source=beta",
+        "slots": [
+          "Decrease Healing Taken by 1% to 75% (v393)",
+          "Cast on Limit Match:"
+        ]
       }
     ],
     "Fractured Psyche": [
@@ -464,7 +732,10 @@
         "id": "75100",
         "icon": "https://spells.eqresource.com/spellicons/806Caster%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 800800",
-        "url": "https://spells.eqresource.com/spells.php?id=75100&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75100&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 800800"
+        ]
       }
     ],
     "Gift of Giving": [
@@ -472,7 +743,10 @@
         "id": "75183",
         "icon": "https://spells.eqresource.com/spellicons/1090Single0.jpe",
         "effect": "Increase Healing by 20% (v125, Before Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75183&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75183&source=beta",
+        "slots": [
+          "Increase Healing by 20% (v125, Before Crit)"
+        ]
       }
     ],
     "Gravitas Maxio": [
@@ -480,13 +754,21 @@
         "id": "48047",
         "icon": "https://spells.eqresource.com/spellicons/37Single0.jpe",
         "effect": "Gradual Pull to 0 Units Away (Force=110) up to Your Level",
-        "url": "https://spells.eqresource.com/spells.php?id=48047&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48047&source=beta",
+        "slots": [
+          "Gradual Pull to 0 Units Away (Force=110) up to Your Level",
+          "Decrease Current Hit Points by 19543 per Tick"
+        ]
       },
       {
         "id": "75040",
         "icon": "https://spells.eqresource.com/spellicons/37Single0.jpe",
         "effect": "Gradual Pull to 0 Units Away (Force=110) up to Your Level",
-        "url": "https://spells.eqresource.com/spells.php?id=75040&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75040&source=beta",
+        "slots": [
+          "Gradual Pull to 0 Units Away (Force=110) up to Your Level",
+          "Decrease Current Hit Points by 175000 per Tick"
+        ]
       }
     ],
     "Greedy Repercussions": [
@@ -494,7 +776,13 @@
         "id": "68248",
         "icon": "https://spells.eqresource.com/spellicons/187Caster%20PB0.jpe",
         "effect": "Increase Spell Mana Cost by 1% to 30%",
-        "url": "https://spells.eqresource.com/spells.php?id=68248&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68248&source=beta",
+        "slots": [
+          "Increase Spell Mana Cost by 1% to 30%",
+          "Decrease Melee Haste by 30% (v371, Incremental)",
+          "Decrease Current Hit Points by 1 per Tick",
+          "Decrease Current Hit Points by 1"
+        ]
       }
     ],
     "Humas Maxio": [
@@ -502,13 +790,23 @@
         "id": "48044",
         "icon": "https://spells.eqresource.com/spellicons/169Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 88560",
-        "url": "https://spells.eqresource.com/spells.php?id=48044&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48044&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 88560",
+          "Push Back 3 Units and Up 3 Units",
+          "Stun for 2s"
+        ]
       },
       {
         "id": "75038",
         "icon": "https://spells.eqresource.com/spellicons/169Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 444000",
-        "url": "https://spells.eqresource.com/spells.php?id=75038&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75038&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 444000",
+          "Push Back 3 Units and Up 3 Units",
+          "Stun for 2s"
+        ]
       }
     ],
     "Ignas Maxio": [
@@ -516,13 +814,21 @@
         "id": "48043",
         "icon": "https://spells.eqresource.com/spellicons/54Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 45999 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=48043&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48043&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 45999 per Tick",
+          "Decrease Movement Speed by 65%"
+        ]
       },
       {
         "id": "75037",
         "icon": "https://spells.eqresource.com/spellicons/54Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 299000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75037&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75037&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 299000 per Tick",
+          "Decrease Movement Speed by 65%"
+        ]
       }
     ],
     "Ikaav Venom": [
@@ -530,7 +836,12 @@
         "id": "17057",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
         "effect": "Decrease Current Hit Points by 7500 (Poison 50); Decrease Current Hit Points by 5000 per Tick (Poison 50)",
-        "url": "https://spells.eqresource.com/spells.php?id=17057&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=17057&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 7500",
+          "Decrease Current Hit Points by 5000 per Tick",
+          "Increase Poison Counter by 50"
+        ]
       }
     ],
     "Invigorating Essence": [
@@ -538,7 +849,11 @@
         "id": "75184",
         "icon": "https://spells.eqresource.com/spellicons/780Single0.jpe",
         "effect": "Increase Current Mana by 0.25% of Total Mana per Tick, Max: 0",
-        "url": "https://spells.eqresource.com/spells.php?id=75184&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75184&source=beta",
+        "slots": [
+          "Increase Current Mana by 0.25% of Total Mana per Tick, Max: 0",
+          "Increase Current Endurance by 0.25% of Total Endurance per Tick, Max: 0"
+        ]
       }
     ],
     "Jackpot": [
@@ -546,7 +861,11 @@
         "id": "75074",
         "icon": "https://spells.eqresource.com/spellicons/855Caster%20AE0.jpe",
         "effect": "Decrease Weapon Delay by 33.8%",
-        "url": "https://spells.eqresource.com/spells.php?id=75074&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75074&source=beta",
+        "slots": [
+          "Decrease Weapon Delay by 33.8%",
+          "Decrease Cast Time by 2s"
+        ]
       }
     ],
     "Languorous Runes": [
@@ -554,7 +873,10 @@
         "id": "75188",
         "icon": "https://spells.eqresource.com/spellicons/877Single0.jpe",
         "effect": "Decrease Spell Mana Cost by 25%",
-        "url": "https://spells.eqresource.com/spells.php?id=75188&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75188&source=beta",
+        "slots": [
+          "Decrease Spell Mana Cost by 25%"
+        ]
       }
     ],
     "Lava Elemental Protection": [
@@ -562,121 +884,181 @@
         "id": "23057",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 100",
-        "url": "https://spells.eqresource.com/spells.php?id=23057&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23057&source=beta",
+        "slots": [
+          "Increase Damage Shield by 100"
+        ]
       },
       {
         "id": "23058",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 200",
-        "url": "https://spells.eqresource.com/spells.php?id=23058&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23058&source=beta",
+        "slots": [
+          "Increase Damage Shield by 200"
+        ]
       },
       {
         "id": "23059",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 300",
-        "url": "https://spells.eqresource.com/spells.php?id=23059&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23059&source=beta",
+        "slots": [
+          "Increase Damage Shield by 300"
+        ]
       },
       {
         "id": "23060",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 400",
-        "url": "https://spells.eqresource.com/spells.php?id=23060&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23060&source=beta",
+        "slots": [
+          "Increase Damage Shield by 400"
+        ]
       },
       {
         "id": "23061",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 500",
-        "url": "https://spells.eqresource.com/spells.php?id=23061&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23061&source=beta",
+        "slots": [
+          "Increase Damage Shield by 500"
+        ]
       },
       {
         "id": "23062",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 600",
-        "url": "https://spells.eqresource.com/spells.php?id=23062&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23062&source=beta",
+        "slots": [
+          "Increase Damage Shield by 600"
+        ]
       },
       {
         "id": "23063",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 700",
-        "url": "https://spells.eqresource.com/spells.php?id=23063&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23063&source=beta",
+        "slots": [
+          "Increase Damage Shield by 700"
+        ]
       },
       {
         "id": "23064",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 800",
-        "url": "https://spells.eqresource.com/spells.php?id=23064&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23064&source=beta",
+        "slots": [
+          "Increase Damage Shield by 800"
+        ]
       },
       {
         "id": "23065",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 900",
-        "url": "https://spells.eqresource.com/spells.php?id=23065&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23065&source=beta",
+        "slots": [
+          "Increase Damage Shield by 900"
+        ]
       },
       {
         "id": "23066",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 1000",
-        "url": "https://spells.eqresource.com/spells.php?id=23066&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23066&source=beta",
+        "slots": [
+          "Increase Damage Shield by 1000"
+        ]
       },
       {
         "id": "75043",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 1000",
-        "url": "https://spells.eqresource.com/spells.php?id=75043&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75043&source=beta",
+        "slots": [
+          "Increase Damage Shield by 1000"
+        ]
       },
       {
         "id": "75044",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 2000",
-        "url": "https://spells.eqresource.com/spells.php?id=75044&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75044&source=beta",
+        "slots": [
+          "Increase Damage Shield by 2000"
+        ]
       },
       {
         "id": "75045",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 3000",
-        "url": "https://spells.eqresource.com/spells.php?id=75045&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75045&source=beta",
+        "slots": [
+          "Increase Damage Shield by 3000"
+        ]
       },
       {
         "id": "75046",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 4000",
-        "url": "https://spells.eqresource.com/spells.php?id=75046&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75046&source=beta",
+        "slots": [
+          "Increase Damage Shield by 4000"
+        ]
       },
       {
         "id": "75047",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 5000",
-        "url": "https://spells.eqresource.com/spells.php?id=75047&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75047&source=beta",
+        "slots": [
+          "Increase Damage Shield by 5000"
+        ]
       },
       {
         "id": "75048",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 6000",
-        "url": "https://spells.eqresource.com/spells.php?id=75048&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75048&source=beta",
+        "slots": [
+          "Increase Damage Shield by 6000"
+        ]
       },
       {
         "id": "75049",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 7000",
-        "url": "https://spells.eqresource.com/spells.php?id=75049&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75049&source=beta",
+        "slots": [
+          "Increase Damage Shield by 7000"
+        ]
       },
       {
         "id": "75050",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 8000",
-        "url": "https://spells.eqresource.com/spells.php?id=75050&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75050&source=beta",
+        "slots": [
+          "Increase Damage Shield by 8000"
+        ]
       },
       {
         "id": "75051",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 16000",
-        "url": "https://spells.eqresource.com/spells.php?id=75051&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75051&source=beta",
+        "slots": [
+          "Increase Damage Shield by 16000"
+        ]
       },
       {
         "id": "75052",
         "icon": "https://spells.eqresource.com/spellicons/157Self0.jpe",
         "effect": "Increase Damage Shield by 32000",
-        "url": "https://spells.eqresource.com/spells.php?id=75052&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75052&source=beta",
+        "slots": [
+          "Increase Damage Shield by 32000"
+        ]
       }
     ],
     "Lethal Lifetap": [
@@ -684,13 +1066,19 @@
         "id": "12204",
         "icon": "https://spells.eqresource.com/spellicons/47Lifetap0.jpe",
         "effect": "Decrease Current Hit Points by 45000",
-        "url": "https://spells.eqresource.com/spells.php?id=12204&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=12204&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 45000"
+        ]
       },
       {
         "id": "75004",
         "icon": "https://spells.eqresource.com/spellicons/47Lifetap0.jpe",
         "effect": "Decrease Current Hit Points by 450000",
-        "url": "https://spells.eqresource.com/spells.php?id=75004&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75004&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 450000"
+        ]
       }
     ],
     "Lingering Hymn": [
@@ -698,7 +1086,12 @@
         "id": "75165",
         "icon": "https://spells.eqresource.com/spellicons/806Single0.jpe",
         "effect": "Decrease Current Hit Points by 350000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75165&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75165&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 350000 per Tick",
+          "Inhibit Spell Casting (Spell Silence)",
+          "Melee and Skill Silence"
+        ]
       }
     ],
     "Lockjaw Trap": [
@@ -706,7 +1099,11 @@
         "id": "75137",
         "icon": "https://spells.eqresource.com/spellicons/1009Single0.jpe",
         "effect": "Decrease Current Hit Points by 600600",
-        "url": "https://spells.eqresource.com/spells.php?id=75137&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75137&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600600",
+          "Root"
+        ]
       }
     ],
     "Lucksworn Empower": [
@@ -714,7 +1111,8 @@
         "id": "75080",
         "icon": "https://spells.eqresource.com/spellicons/968Single0.jpe",
         "effect": "",
-        "url": "https://spells.eqresource.com/spells.php?id=75080&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75080&source=beta",
+        "slots": []
       }
     ],
     "Lucky Boon": [
@@ -722,7 +1120,10 @@
         "id": "75083",
         "icon": "https://spells.eqresource.com/spellicons/851Caster%20AE0.jpe",
         "effect": "Increase Max Hit Points by 45%",
-        "url": "https://spells.eqresource.com/spells.php?id=75083&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75083&source=beta",
+        "slots": [
+          "Increase Max Hit Points by 45%"
+        ]
       }
     ],
     "Lucky in Life": [
@@ -730,7 +1131,13 @@
         "id": "75195",
         "icon": "https://spells.eqresource.com/spellicons/851Single0.jpe",
         "effect": "Increase Spell Damage by 5% (v124, Before DoT Crit, After DD Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75195&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75195&source=beta",
+        "slots": [
+          "Increase Spell Damage by 5% (v124, Before DoT Crit, After DD Crit)",
+          "Increase Hit Damage by 5% (v185)",
+          "Increase Current Mana by 0.5% of Total Mana per Tick, Max: 0",
+          "Increase Current Endurance by 0.5% of Total Endurance per Tick, Max: 0"
+        ]
       }
     ],
     "Maddening Influence": [
@@ -738,7 +1145,14 @@
         "id": "75092",
         "icon": "https://spells.eqresource.com/spellicons/778Single0.jpe",
         "effect": "Decrease Current Hit Points by 600600 per Tick (Corruption 24)",
-        "url": "https://spells.eqresource.com/spells.php?id=75092&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75092&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600600 per Tick",
+          "Increase Corruption Counter by 24",
+          "Increase Attack by 25",
+          "Cast if Cured:",
+          "Cast on Duration Fade:"
+        ]
       }
     ],
     "Malaise": [
@@ -746,7 +1160,13 @@
         "id": "110",
         "icon": "https://spells.eqresource.com/spellicons/55Single0.jpe",
         "effect": "Decrease Cold Resist by 20",
-        "url": "https://spells.eqresource.com/spells.php?id=110&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=110&source=beta",
+        "slots": [
+          "Decrease Cold Resist by 20",
+          "Decrease Magic Resist by 20",
+          "Decrease Poison Resist by 20",
+          "Decrease Fire Resist by 20"
+        ]
       }
     ],
     "Minotaur Gore": [
@@ -754,19 +1174,31 @@
         "id": "7231",
         "icon": "https://spells.eqresource.com/spellicons/43Caster%20PB0.jpe",
         "effect": "Feign Death (1% Chance)",
-        "url": "https://spells.eqresource.com/spells.php?id=7231&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=7231&source=beta",
+        "slots": [
+          "Feign Death (1% Chance)",
+          "Decrease Current Hit Points by 100000"
+        ]
       },
       {
         "id": "13023",
         "icon": "https://spells.eqresource.com/spellicons/43Caster%20PB0.jpe",
         "effect": "Feign Death (1% Chance)",
-        "url": "https://spells.eqresource.com/spells.php?id=13023&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=13023&source=beta",
+        "slots": [
+          "Feign Death (1% Chance)",
+          "Decrease Current Hit Points by 50000"
+        ]
       },
       {
         "id": "75013",
         "icon": "https://spells.eqresource.com/spellicons/43Caster%20PB0.jpe",
         "effect": "Feign Death (1% Chance)",
-        "url": "https://spells.eqresource.com/spells.php?id=75013&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75013&source=beta",
+        "slots": [
+          "Feign Death (1% Chance)",
+          "Decrease Current Hit Points by 650000"
+        ]
       }
     ],
     "Not on the List": [
@@ -774,7 +1206,10 @@
         "id": "75115",
         "icon": "https://spells.eqresource.com/spellicons/1065Single0.jpe",
         "effect": "Decrease Current Hit Points by 700500",
-        "url": "https://spells.eqresource.com/spells.php?id=75115&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75115&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 700500"
+        ]
       }
     ],
     "Piercing Shot": [
@@ -782,19 +1217,29 @@
         "id": "5720",
         "icon": "https://spells.eqresource.com/spellicons/139Single0.jpe",
         "effect": "Decrease Current Hit Points by 250",
-        "url": "https://spells.eqresource.com/spells.php?id=5720&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=5720&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 250",
+          "Decrease Armor Class by 7 to 9, Based on Class"
+        ]
       },
       {
         "id": "39655",
         "icon": "https://spells.eqresource.com/spellicons/184Single0.jpe",
         "effect": "Decrease Current Hit Points by 5000",
-        "url": "https://spells.eqresource.com/spells.php?id=39655&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39655&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 5000"
+        ]
       },
       {
         "id": "75153",
         "icon": "https://spells.eqresource.com/spellicons/1746Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 1600600",
-        "url": "https://spells.eqresource.com/spells.php?id=75153&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75153&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1600600"
+        ]
       }
     ],
     "Power of the Synarcana": [
@@ -802,13 +1247,19 @@
         "id": "12196",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 20000",
-        "url": "https://spells.eqresource.com/spells.php?id=12196&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=12196&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 20000"
+        ]
       },
       {
         "id": "75003",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 200000",
-        "url": "https://spells.eqresource.com/spells.php?id=75003&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75003&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 200000"
+        ]
       }
     ],
     "Protection of Zek": [
@@ -816,7 +1267,12 @@
         "id": "68235",
         "icon": "https://spells.eqresource.com/spellicons/78Self0.jpe",
         "effect": "Decrease Spell Damage Taken by 1% to 20% (v296, Before Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=68235&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68235&source=beta",
+        "slots": [
+          "Decrease Spell Damage Taken by 1% to 20% (v296, Before Crit)",
+          "Decrease Damage Shield Taken by 20%",
+          "Decrease Hit Damage Taken by 20%"
+        ]
       }
     ],
     "Protective Embrace": [
@@ -824,7 +1280,12 @@
         "id": "75182",
         "icon": "https://spells.eqresource.com/spellicons/148Single0.jpe",
         "effect": "Absorb Spell Damage: 15%, Max per Hit: 300000",
-        "url": "https://spells.eqresource.com/spells.php?id=75182&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75182&source=beta",
+        "slots": [
+          "Absorb Spell Damage: 15%, Max per Hit: 300000",
+          "Absorb Melee Damage: 15%, Max per Hit: 300000",
+          "Absorb DoT Damage: 15%, Max per Hit: 300000"
+        ]
       }
     ],
     "Psychic Blast": [
@@ -832,13 +1293,19 @@
         "id": "75104",
         "icon": "https://spells.eqresource.com/spellicons/1144Single0.jpe",
         "effect": "Decrease Current Hit Points by 800800",
-        "url": "https://spells.eqresource.com/spells.php?id=75104&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75104&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 800800"
+        ]
       },
       {
         "id": "75105",
         "icon": "https://spells.eqresource.com/spellicons/1144Single0.jpe",
         "effect": "Cap Hit Points at 25%",
-        "url": "https://spells.eqresource.com/spells.php?id=75105&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75105&source=beta",
+        "slots": [
+          "Cap Hit Points at 25%"
+        ]
       }
     ],
     "Psychic Shriek": [
@@ -846,7 +1313,11 @@
         "id": "75103",
         "icon": "https://spells.eqresource.com/spellicons/1145Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 600500 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75103&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75103&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600500 per Tick",
+          "Inhibit Spell Casting (Spell Silence)"
+        ]
       }
     ],
     "Quickened Reflexes": [
@@ -854,7 +1325,11 @@
         "id": "75185",
         "icon": "https://spells.eqresource.com/spellicons/926Single0.jpe",
         "effect": "Increase Melee Haste by 45%",
-        "url": "https://spells.eqresource.com/spells.php?id=75185&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75185&source=beta",
+        "slots": [
+          "Increase Melee Haste by 45%",
+          "Decrease Cast Time by 0.75s"
+        ]
       }
     ],
     "Rake": [
@@ -862,43 +1337,70 @@
         "id": "8782",
         "icon": "https://spells.eqresource.com/spellicons/180Single0.jpe",
         "effect": "Hand to Hand Attack for 65 with 10000% Accuracy Mod",
-        "url": "https://spells.eqresource.com/spells.php?id=8782&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=8782&source=beta",
+        "slots": [
+          "Hand to Hand Attack for 65 with 10000% Accuracy Mod",
+          "Hand to Hand Attack for 65 with 10000% Accuracy Mod",
+          "Hand to Hand Attack for 65 with 10000% Accuracy Mod"
+        ]
       },
       {
         "id": "45478",
         "icon": "https://spells.eqresource.com/spellicons/117Single0.jpe",
         "effect": "Decrease Current Hit Points by 99999",
-        "url": "https://spells.eqresource.com/spells.php?id=45478&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=45478&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 99999",
+          "Decrease Movement Speed by 35%"
+        ]
       },
       {
         "id": "52393",
         "icon": "https://spells.eqresource.com/spellicons/8Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 135165 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=52393&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=52393&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 135165 per Tick",
+          "Decrease Current Hit Points by 111111"
+        ]
       },
       {
         "id": "75134",
         "icon": "https://spells.eqresource.com/spellicons/593Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 600600",
-        "url": "https://spells.eqresource.com/spells.php?id=75134&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75134&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600600",
+          "Inhibit Spell Casting (Spell Silence)"
+        ]
       },
       {
         "id": "75135",
         "icon": "https://spells.eqresource.com/spellicons/593Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 600600",
-        "url": "https://spells.eqresource.com/spells.php?id=75135&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75135&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600600",
+          "Inhibit Spell Casting (Spell Silence)"
+        ]
       },
       {
         "id": "75151",
         "icon": "https://spells.eqresource.com/spellicons/593Directional%20AE0.jpe",
         "effect": "Fling",
-        "url": "https://spells.eqresource.com/spells.php?id=75151&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75151&source=beta",
+        "slots": [
+          "Fling"
+        ]
       },
       {
         "id": "75152",
         "icon": "https://spells.eqresource.com/spellicons/593Directional%20AE0.jpe",
         "effect": "Fling",
-        "url": "https://spells.eqresource.com/spells.php?id=75152&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75152&source=beta",
+        "slots": [
+          "Fling"
+        ]
       }
     ],
     "Rapid Fire": [
@@ -906,13 +1408,22 @@
         "id": "32119",
         "icon": "https://spells.eqresource.com/spellicons/48Single0.jpe",
         "effect": "Decrease Current Hit Points by 62012 (Random: -52500 to -71525)",
-        "url": "https://spells.eqresource.com/spells.php?id=32119&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=32119&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 62012 (Random: -52500 to -71525)",
+          "Decrease Current Hit Points by 62012 (Random: -52500 to -71525)",
+          "Decrease Current Hit Points by 62012 (Random: -52500 to -71525)",
+          "Decrease Current Hit Points by 62012 (Random: -52500 to -71525)"
+        ]
       },
       {
         "id": "75178",
         "icon": "https://spells.eqresource.com/spellicons/1768Single0.jpe",
         "effect": "Decrease Current Hit Points by 660000",
-        "url": "https://spells.eqresource.com/spells.php?id=75178&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75178&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 660000"
+        ]
       }
     ],
     "Rapid Shanks": [
@@ -920,13 +1431,20 @@
         "id": "68243",
         "icon": "https://spells.eqresource.com/spellicons/8Single0.jpe",
         "effect": "Decrease Current Hit Points by 195000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=68243&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68243&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 195000 per Tick"
+        ]
       },
       {
         "id": "74960",
         "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
         "effect": "Summon Pet:",
-        "url": "https://spells.eqresource.com/spells.php?id=74960&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74960&source=beta",
+        "slots": [
+          "Summon Pet:",
+          "Decrease Current Hit Points by 85313"
+        ]
       }
     ],
     "Razor Armor": [
@@ -934,13 +1452,19 @@
         "id": "68251",
         "icon": "https://spells.eqresource.com/spellicons/156Self0.jpe",
         "effect": "Add Defensive Proc:",
-        "url": "https://spells.eqresource.com/spells.php?id=68251&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68251&source=beta",
+        "slots": [
+          "Add Defensive Proc:"
+        ]
       },
       {
         "id": "74965",
         "icon": "https://spells.eqresource.com/spellicons/-1Self0.jpe",
         "effect": "Add Defensive Proc:",
-        "url": "https://spells.eqresource.com/spells.php?id=74965&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74965&source=beta",
+        "slots": [
+          "Add Defensive Proc:"
+        ]
       }
     ],
     "Repenta Vitoris": [
@@ -948,19 +1472,28 @@
         "id": "47480",
         "icon": "https://spells.eqresource.com/spellicons/21Single0.jpe",
         "effect": "Decrease Current Hit Points by 37892 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=47480&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=47480&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 37892 per Tick"
+        ]
       },
       {
         "id": "48046",
         "icon": "https://spells.eqresource.com/spellicons/21Single0.jpe",
         "effect": "Decrease Current Hit Points by 29147 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=48046&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48046&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 29147 per Tick"
+        ]
       },
       {
         "id": "75032",
         "icon": "https://spells.eqresource.com/spellicons/21Single0.jpe",
         "effect": "Decrease Current Hit Points by 456789 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75032&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75032&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 456789 per Tick"
+        ]
       }
     ],
     "Repulsion of the First Creation": [
@@ -968,13 +1501,21 @@
         "id": "23056",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 10000",
-        "url": "https://spells.eqresource.com/spells.php?id=23056&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23056&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 10000",
+          "Push Back 3 Units and Up 12 Units"
+        ]
       },
       {
         "id": "75042",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 125000",
-        "url": "https://spells.eqresource.com/spells.php?id=75042&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75042&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 125000",
+          "Push Back 3 Units and Up 12 Units"
+        ]
       }
     ],
     "Resonating Beam": [
@@ -982,13 +1523,25 @@
         "id": "48051",
         "icon": "https://spells.eqresource.com/spellicons/161Frontal%20AE0.jpe",
         "effect": "Dispel Beneficial (100% Chance)",
-        "url": "https://spells.eqresource.com/spells.php?id=48051&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48051&source=beta",
+        "slots": [
+          "Dispel Beneficial (100% Chance)",
+          "Decrease Current Hit Points by 112000",
+          "Decrease Current Mana by 4500 (v417)",
+          "Decrease Current Endurance by 1850"
+        ]
       },
       {
         "id": "75058",
         "icon": "https://spells.eqresource.com/spellicons/161Frontal%20AE0.jpe",
         "effect": "Dispel Beneficial (100% Chance)",
-        "url": "https://spells.eqresource.com/spells.php?id=75058&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75058&source=beta",
+        "slots": [
+          "Dispel Beneficial (100% Chance)",
+          "Decrease Current Hit Points by 600000",
+          "Decrease Current Mana by 4500 (v417)",
+          "Decrease Current Endurance by 1850"
+        ]
       }
     ],
     "Retribution of the First Creation": [
@@ -996,13 +1549,19 @@
         "id": "23077",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 12000",
-        "url": "https://spells.eqresource.com/spells.php?id=23077&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=23077&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 12000"
+        ]
       },
       {
         "id": "75053",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 325000",
-        "url": "https://spells.eqresource.com/spells.php?id=75053&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75053&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 325000"
+        ]
       }
     ],
     "Roll the Dice: Befuddle": [
@@ -1010,7 +1569,11 @@
         "id": "75063",
         "icon": "https://spells.eqresource.com/spellicons/963Single0.jpe",
         "effect": "Decrease Melee Haste by 50%",
-        "url": "https://spells.eqresource.com/spells.php?id=75063&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75063&source=beta",
+        "slots": [
+          "Decrease Melee Haste by 50%",
+          "Decrease Effective Casting Level by 50"
+        ]
       }
     ],
     "Roll the Dice: Fear": [
@@ -1018,7 +1581,12 @@
         "id": "75064",
         "icon": "https://spells.eqresource.com/spellicons/154Single0.jpe",
         "effect": "Fear up to Level 255",
-        "url": "https://spells.eqresource.com/spells.php?id=75064&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75064&source=beta",
+        "slots": [
+          "Fear up to Level 255",
+          "Increase Spell and DoT Damage Taken by 25% (v483, After Crit)",
+          "Limit: Different Caster"
+        ]
       }
     ],
     "Roll the Dice: Resource Burn": [
@@ -1026,7 +1594,10 @@
         "id": "75065",
         "icon": "https://spells.eqresource.com/spellicons/901Single0.jpe",
         "effect": "Mana Burn, Max Damage: 80000",
-        "url": "https://spells.eqresource.com/spells.php?id=75065&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75065&source=beta",
+        "slots": [
+          "Mana Burn, Max Damage: 80000"
+        ]
       }
     ],
     "Roll the Dice: Wallop": [
@@ -1034,7 +1605,10 @@
         "id": "75066",
         "icon": "https://spells.eqresource.com/spellicons/545Single0.jpe",
         "effect": "Decrease Current Hit Points by 600600",
-        "url": "https://spells.eqresource.com/spells.php?id=75066&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75066&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600600"
+        ]
       }
     ],
     "Sapping Buds": [
@@ -1042,7 +1616,10 @@
         "id": "75187",
         "icon": "https://spells.eqresource.com/spellicons/722Single0.jpe",
         "effect": "Decrease Healing by 1% to 10% (v125, Before Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75187&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75187&source=beta",
+        "slots": [
+          "Decrease Healing by 1% to 10% (v125, Before Crit)"
+        ]
       }
     ],
     "Scornful Touch": [
@@ -1050,7 +1627,11 @@
         "id": "75156",
         "icon": "https://spells.eqresource.com/spellicons/1092Single0.jpe",
         "effect": "Increase Melee Haste by 10%",
-        "url": "https://spells.eqresource.com/spells.php?id=75156&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75156&source=beta",
+        "slots": [
+          "Increase Melee Haste by 10%",
+          "Increase Hit Damage by 10% (v185)"
+        ]
       }
     ],
     "Self-Immolation": [
@@ -1058,13 +1639,19 @@
         "id": "19920",
         "icon": "https://spells.eqresource.com/spellicons/53Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 8915",
-        "url": "https://spells.eqresource.com/spells.php?id=19920&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=19920&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 8915"
+        ]
       },
       {
         "id": "75009",
         "icon": "https://spells.eqresource.com/spellicons/53Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 82994",
-        "url": "https://spells.eqresource.com/spells.php?id=75009&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75009&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 82994"
+        ]
       }
     ],
     "Shatter Shot": [
@@ -1072,7 +1659,10 @@
         "id": "75154",
         "icon": "https://spells.eqresource.com/spellicons/1773Caster%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 800800",
-        "url": "https://spells.eqresource.com/spells.php?id=75154&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75154&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 800800"
+        ]
       }
     ],
     "Silencing Mist": [
@@ -1080,7 +1670,10 @@
         "id": "75101",
         "icon": "https://spells.eqresource.com/spellicons/607Caster%20AE0.jpe",
         "effect": "Inhibit Spell Casting (Spell Silence)",
-        "url": "https://spells.eqresource.com/spells.php?id=75101&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75101&source=beta",
+        "slots": [
+          "Inhibit Spell Casting (Spell Silence)"
+        ]
       }
     ],
     "Slow Your Roll": [
@@ -1088,7 +1681,12 @@
         "id": "75138",
         "icon": "https://spells.eqresource.com/spellicons/17Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 750000",
-        "url": "https://spells.eqresource.com/spells.php?id=75138&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75138&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 750000",
+          "Decrease Melee Haste by 10% (v371, Incremental)",
+          "Increase Cast Time by 1s"
+        ]
       }
     ],
     "Sneeze": [
@@ -1096,7 +1694,10 @@
         "id": "39118",
         "icon": "https://spells.eqresource.com/spellicons/19Caster%20PB0.jpe",
         "effect": "Push Back 2 Units and Up 2 Units",
-        "url": "https://spells.eqresource.com/spells.php?id=39118&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39118&source=beta",
+        "slots": [
+          "Push Back 2 Units and Up 2 Units"
+        ]
       }
     ],
     "Soothing Ballad": [
@@ -1104,7 +1705,12 @@
         "id": "75160",
         "icon": "https://spells.eqresource.com/spellicons/781Single0.jpe",
         "effect": "Decrease Spell and DoT Damage Taken by 1% to 50% (v483, After Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75160&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75160&source=beta",
+        "slots": [
+          "Decrease Spell and DoT Damage Taken by 1% to 50% (v483, After Crit)",
+          "Limit Spells:",
+          "Limit Type: Include Non-Focusable"
+        ]
       }
     ],
     "Soul Consumption": [
@@ -1112,25 +1718,39 @@
         "id": "852",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
         "effect": "Decrease Current Hit Points by 2700",
-        "url": "https://spells.eqresource.com/spells.php?id=852&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=852&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 2700",
+          "Decrease Current Mana by 2700"
+        ]
       },
       {
         "id": "1930",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
         "effect": "Decrease Current Hit Points by 50 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=1930&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=1930&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 50 per Tick"
+        ]
       },
       {
         "id": "17141",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
         "effect": "Decrease Current Hit Points by 500 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=17141&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=17141&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 500 per Tick"
+        ]
       },
       {
         "id": "75056",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
         "effect": "Decrease Current Hit Points by 375000",
-        "url": "https://spells.eqresource.com/spells.php?id=75056&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75056&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 375000",
+          "Decrease Current Mana by 2700"
+        ]
       }
     ],
     "Spear of Discord": [
@@ -1138,13 +1758,21 @@
         "id": "4727",
         "icon": "https://spells.eqresource.com/spellicons/172Single0.jpe",
         "effect": "Decrease Current Hit Points by 6175",
-        "url": "https://spells.eqresource.com/spells.php?id=4727&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=4727&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 6175",
+          "Stun NPC for 10s (PC for 5.25s)"
+        ]
       },
       {
         "id": "75057",
         "icon": "https://spells.eqresource.com/spellicons/172Single0.jpe",
         "effect": "Decrease Current Hit Points by 425000",
-        "url": "https://spells.eqresource.com/spells.php?id=75057&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75057&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 425000",
+          "Stun NPC for 10s (PC for 5.25s)"
+        ]
       }
     ],
     "Spear of Zek": [
@@ -1152,13 +1780,19 @@
         "id": "68241",
         "icon": "https://spells.eqresource.com/spellicons/216Directional%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 1755000",
-        "url": "https://spells.eqresource.com/spells.php?id=68241&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68241&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1755000"
+        ]
       },
       {
         "id": "74958",
         "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
         "effect": "Decrease Current Hit Points by 341250",
-        "url": "https://spells.eqresource.com/spells.php?id=74958&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=74958&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 341250"
+        ]
       }
     ],
     "Speed": [
@@ -1166,7 +1800,10 @@
         "id": "4348",
         "icon": "https://spells.eqresource.com/spellicons/161Self0.jpe",
         "effect": "Increase Melee Haste by 10%",
-        "url": "https://spells.eqresource.com/spells.php?id=4348&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=4348&source=beta",
+        "slots": [
+          "Increase Melee Haste by 10%"
+        ]
       }
     ],
     "Spirit Cleaver": [
@@ -1174,13 +1811,29 @@
         "id": "4729",
         "icon": "https://spells.eqresource.com/spellicons/173Single0.jpe",
         "effect": "Decrease Current Hit Points by 1225 per Tick (Poison 297)",
-        "url": "https://spells.eqresource.com/spells.php?id=4729&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=4729&source=beta",
+        "slots": [
+          "Decrease Attack by 500",
+          "Decrease Current Hit Points by 1225 per Tick",
+          "Decrease Current Mana by 400 per Tick",
+          "Decrease Current Endurance by 400 per Tick",
+          "Decrease Base Stats by 350",
+          "Increase Poison Counter by 297"
+        ]
       },
       {
         "id": "75024",
         "icon": "https://spells.eqresource.com/spellicons/173Single0.jpe",
         "effect": "Decrease Current Hit Points by 122500 per Tick (Poison 297)",
-        "url": "https://spells.eqresource.com/spells.php?id=75024&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75024&source=beta",
+        "slots": [
+          "Decrease Attack by 500",
+          "Decrease Current Hit Points by 122500 per Tick",
+          "Decrease Current Mana by 400 per Tick",
+          "Decrease Current Endurance by 400 per Tick",
+          "Decrease Base Stats by 350",
+          "Increase Poison Counter by 297"
+        ]
       }
     ],
     "Spite": [
@@ -1188,7 +1841,11 @@
         "id": "40778",
         "icon": "https://spells.eqresource.com/spellicons/153Hatelist0.jpe",
         "effect": "Decrease Current Hit Points by 25000 per Tick (Scales, Base Level: 105)",
-        "url": "https://spells.eqresource.com/spells.php?id=40778&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=40778&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 25000 per Tick (Scales, Base Level: 105)",
+          "Decrease Current Mana by 10000 per Tick (Scales, Base Level: 105) (v417)"
+        ]
       }
     ],
     "Splart": [
@@ -1196,13 +1853,19 @@
         "id": "19035",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
         "effect": "Decrease Current Hit Points by 63 per Tick (Growing @ 64/Tick)",
-        "url": "https://spells.eqresource.com/spells.php?id=19035&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=19035&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 63 per Tick (Growing @ 64/Tick)"
+        ]
       },
       {
         "id": "75007",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
         "effect": "Decrease Current Hit Points by 63 per Tick (Growing @ 64/Tick)",
-        "url": "https://spells.eqresource.com/spells.php?id=75007&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75007&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 63 per Tick (Growing @ 64/Tick)"
+        ]
       }
     ],
     "Spreading Evil": [
@@ -1210,13 +1873,25 @@
         "id": "12209",
         "icon": "https://spells.eqresource.com/spellicons/160Single0.jpe",
         "effect": "Decrease Current Hit Points by 35000 (Corruption 20); Decrease Current Hit Points by 10000 per Tick (Corruption 20)",
-        "url": "https://spells.eqresource.com/spells.php?id=12209&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=12209&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 35000",
+          "Decrease Current Hit Points by 10000 per Tick",
+          "Decrease Melee Haste by 70% (v371, Incremental)",
+          "Increase Corruption Counter by 20"
+        ]
       },
       {
         "id": "75005",
         "icon": "https://spells.eqresource.com/spellicons/160Single0.jpe",
         "effect": "Decrease Current Hit Points by 350000 (Corruption 20); Decrease Current Hit Points by 100000 per Tick (Corruption 20)",
-        "url": "https://spells.eqresource.com/spells.php?id=75005&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75005&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 350000",
+          "Decrease Current Hit Points by 100000 per Tick",
+          "Decrease Melee Haste by 70% (v371, Incremental)",
+          "Increase Corruption Counter by 20"
+        ]
       }
     ],
     "Stinking Miasma": [
@@ -1224,13 +1899,23 @@
         "id": "12087",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
         "effect": "Decrease Current Hit Points by 6000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=12087&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=12087&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 6000 per Tick",
+          "Decrease Current Mana by 6000 per Tick",
+          "Decrease Current Endurance by 1500 per Tick"
+        ]
       },
       {
         "id": "75061",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
         "effect": "Decrease Current Hit Points by 600000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75061&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75061&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600000 per Tick",
+          "Decrease Current Mana by 6000 per Tick",
+          "Decrease Current Endurance by 1500 per Tick"
+        ]
       }
     ],
     "Stolen Words": [
@@ -1238,13 +1923,19 @@
         "id": "75190",
         "icon": "https://spells.eqresource.com/spellicons/820Single0.jpe",
         "effect": "Inhibit Spell Casting (Spell Silence)",
-        "url": "https://spells.eqresource.com/spells.php?id=75190&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75190&source=beta",
+        "slots": [
+          "Inhibit Spell Casting (Spell Silence)"
+        ]
       },
       {
         "id": "75201",
         "icon": "https://spells.eqresource.com/spellicons/820Single0.jpe",
         "effect": "Decrease Current Hit Points by 100 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75201&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75201&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 100 per Tick"
+        ]
       }
     ],
     "Stronger Together": [
@@ -1252,7 +1943,10 @@
         "id": "75141",
         "icon": "https://spells.eqresource.com/spellicons/1210Single0.jpe",
         "effect": "Increase Melee Haste by 25%",
-        "url": "https://spells.eqresource.com/spells.php?id=75141&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75141&source=beta",
+        "slots": [
+          "Increase Melee Haste by 25%"
+        ]
       }
     ],
     "Sword Storm": [
@@ -1260,7 +1954,10 @@
         "id": "68263",
         "icon": "https://spells.eqresource.com/spellicons/50Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 1072500",
-        "url": "https://spells.eqresource.com/spells.php?id=68263&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68263&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1072500"
+        ]
       }
     ],
     "Tainted Affliction": [
@@ -1268,7 +1965,10 @@
         "id": "75110",
         "icon": "https://spells.eqresource.com/spellicons/892Single0.jpe",
         "effect": "Decrease Current Hit Points by 450000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75110&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75110&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 450000 per Tick"
+        ]
       }
     ],
     "Taking Your Stuff": [
@@ -1276,7 +1976,11 @@
         "id": "75140",
         "icon": "https://spells.eqresource.com/spellicons/896Caster%20AE0.jpe",
         "effect": "Decrease Current Mana by 0.1% of Total Mana, Max: 0",
-        "url": "https://spells.eqresource.com/spells.php?id=75140&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75140&source=beta",
+        "slots": [
+          "Decrease Current Mana by 0.1% of Total Mana, Max: 0",
+          "Decrease Current Endurance by 0.1% of Total Endurance, Max: 0"
+        ]
       }
     ],
     "Tallon's Power": [
@@ -1284,7 +1988,14 @@
         "id": "68257",
         "icon": "https://spells.eqresource.com/spellicons/12Caster%20PB0.jpe",
         "effect": "Dispel (1000)",
-        "url": "https://spells.eqresource.com/spells.php?id=68257&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=68257&source=beta",
+        "slots": [
+          "Dispel (1000)",
+          "Dispel (1000)",
+          "Dispel (1000)",
+          "Dispel (1000)",
+          "Dispel (1000)"
+        ]
       }
     ],
     "Tranquil Rhythm": [
@@ -1292,7 +2003,12 @@
         "id": "75172",
         "icon": "https://spells.eqresource.com/spellicons/701Single0.jpe",
         "effect": "Decrease Spell and DoT Damage Taken by 1% to 50% (v483, After Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75172&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75172&source=beta",
+        "slots": [
+          "Decrease Spell and DoT Damage Taken by 1% to 50% (v483, After Crit)",
+          "Limit Spells:",
+          "Limit Type: Include Non-Focusable"
+        ]
       }
     ],
     "Unlucky Hindrance": [
@@ -1300,7 +2016,10 @@
         "id": "75084",
         "icon": "https://spells.eqresource.com/spellicons/485Caster%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 200000",
-        "url": "https://spells.eqresource.com/spells.php?id=75084&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75084&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 200000"
+        ]
       }
     ],
     "Unlucky in Life": [
@@ -1308,7 +2027,12 @@
         "id": "75197",
         "icon": "https://spells.eqresource.com/spellicons/1140Single0.jpe",
         "effect": "Decrease Spell Damage by 1% to 10% (v124, Before DoT Crit, After DD Crit)",
-        "url": "https://spells.eqresource.com/spells.php?id=75197&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75197&source=beta",
+        "slots": [
+          "Decrease Spell Damage by 1% to 10% (v124, Before DoT Crit, After DD Crit)",
+          "Decrease Hit Damage by 10% (v185)",
+          "Stun for 6s"
+        ]
       }
     ],
     "Unrequited Love": [
@@ -1316,7 +2040,13 @@
         "id": "75158",
         "icon": "https://spells.eqresource.com/spellicons/1170Caster%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 500500",
-        "url": "https://spells.eqresource.com/spells.php?id=75158&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75158&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 500500",
+          "Decrease Current Hit Points by 750000 per Tick",
+          "Decrease Melee Haste by 10% (v371, Incremental)",
+          "Increase Cast Time by 1s"
+        ]
       }
     ],
     "Vis Percussio": [
@@ -1324,13 +2054,19 @@
         "id": "48039",
         "icon": "https://spells.eqresource.com/spellicons/198Self0.jpe",
         "effect": "Cast on Skill Use:",
-        "url": "https://spells.eqresource.com/spells.php?id=48039&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48039&source=beta",
+        "slots": [
+          "Cast on Skill Use:"
+        ]
       },
       {
         "id": "75033",
         "icon": "https://spells.eqresource.com/spellicons/198Self0.jpe",
         "effect": "Cast on Skill Use:",
-        "url": "https://spells.eqresource.com/spells.php?id=75033&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75033&source=beta",
+        "slots": [
+          "Cast on Skill Use:"
+        ]
       }
     ],
     "Vita Anuimis": [
@@ -1338,13 +2074,19 @@
         "id": "48040",
         "icon": "https://spells.eqresource.com/spellicons/199Self0.jpe",
         "effect": "Cast on Skill Use:",
-        "url": "https://spells.eqresource.com/spells.php?id=48040&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48040&source=beta",
+        "slots": [
+          "Cast on Skill Use:"
+        ]
       },
       {
         "id": "75034",
         "icon": "https://spells.eqresource.com/spellicons/199Self0.jpe",
         "effect": "Cast on Skill Use:",
-        "url": "https://spells.eqresource.com/spells.php?id=75034&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75034&source=beta",
+        "slots": [
+          "Cast on Skill Use:"
+        ]
       }
     ],
     "Vita Tardius": [
@@ -1352,25 +2094,41 @@
         "id": "47479",
         "icon": "https://spells.eqresource.com/spellicons/174Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 33330 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=47479&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=47479&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 33330 per Tick",
+          "Decrease Melee Haste by 55%"
+        ]
       },
       {
         "id": "48045",
         "icon": "https://spells.eqresource.com/spellicons/174Caster%20PB0.jpe",
         "effect": "Decrease Melee Haste by 55% (v371, Incremental)",
-        "url": "https://spells.eqresource.com/spells.php?id=48045&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=48045&source=beta",
+        "slots": [
+          "Decrease Melee Haste by 55% (v371, Incremental)",
+          "Decrease Current Hit Points by 22122 per Tick"
+        ]
       },
       {
         "id": "75031",
         "icon": "https://spells.eqresource.com/spellicons/174Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 222000 per Tick",
-        "url": "https://spells.eqresource.com/spells.php?id=75031&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75031&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 222000 per Tick",
+          "Decrease Melee Haste by 55%"
+        ]
       },
       {
         "id": "75039",
         "icon": "https://spells.eqresource.com/spellicons/174Caster%20PB0.jpe",
         "effect": "Decrease Melee Haste by 55% (v371, Incremental)",
-        "url": "https://spells.eqresource.com/spells.php?id=75039&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75039&source=beta",
+        "slots": [
+          "Decrease Melee Haste by 55% (v371, Incremental)",
+          "Decrease Current Hit Points by 150000 per Tick"
+        ]
       }
     ],
     "Wave of Rage": [
@@ -1378,13 +2136,29 @@
         "id": "4728",
         "icon": "https://spells.eqresource.com/spellicons/8Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 4050 (Poison 396); Decrease Current Hit Points by 500 per Tick (Poison 396)",
-        "url": "https://spells.eqresource.com/spells.php?id=4728&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=4728&source=beta",
+        "slots": [
+          "Increase Spell Mana Cost by 1% to 50%",
+          "Decrease Current Hit Points by 4050",
+          "Decrease Current Hit Points by 500 per Tick",
+          "Decrease Intelligence by 400",
+          "Decrease Wisdom by 400",
+          "Increase Poison Counter by 396"
+        ]
       },
       {
         "id": "75023",
         "icon": "https://spells.eqresource.com/spellicons/8Caster%20PB0.jpe",
         "effect": "Decrease Current Hit Points by 325000 (Poison 396); Decrease Current Hit Points by 150000 per Tick (Poison 396)",
-        "url": "https://spells.eqresource.com/spells.php?id=75023&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75023&source=beta",
+        "slots": [
+          "Increase Spell Mana Cost by 1% to 50%",
+          "Decrease Current Hit Points by 325000",
+          "Decrease Current Hit Points by 150000 per Tick",
+          "Decrease Intelligence by 400",
+          "Decrease Wisdom by 400",
+          "Increase Poison Counter by 396"
+        ]
       }
     ],
     "Wither": [
@@ -1392,13 +2166,22 @@
         "id": "39657",
         "icon": "https://spells.eqresource.com/spellicons/94Single0.jpe",
         "effect": "Decrease Current Hit Points by 6000 per Tick (Poison 10)",
-        "url": "https://spells.eqresource.com/spells.php?id=39657&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=39657&source=beta",
+        "slots": [
+          "Increase Hit Damage Taken by 25%",
+          "Decrease Current Hit Points by 6000 per Tick",
+          "Increase Poison Counter by 10"
+        ]
       },
       {
         "id": "75113",
         "icon": "https://spells.eqresource.com/spellicons/1140Single0.jpe",
         "effect": "Decrease Current Hit Points by 350000 per Tick (Corruption 30)",
-        "url": "https://spells.eqresource.com/spells.php?id=75113&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75113&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 350000 per Tick",
+          "Increase Corruption Counter by 30"
+        ]
       }
     ],
     "Wrong Place Wrong Time": [
@@ -1406,7 +2189,11 @@
         "id": "75075",
         "icon": "https://spells.eqresource.com/spellicons/663Target%20AE0.jpe",
         "effect": "Decrease Current Hit Points by 600000",
-        "url": "https://spells.eqresource.com/spells.php?id=75075&source=beta"
+        "url": "https://spells.eqresource.com/spells.php?id=75075&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600000",
+          "Fling"
+        ]
       }
     ]
   },

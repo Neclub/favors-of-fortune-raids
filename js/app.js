@@ -19,6 +19,12 @@ function spellPage(id) {
   return `https://spells.eqresource.com/spells.php?id=${id}&source=beta`;
 }
 
+function openInNewTab(link) {
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  return link;
+}
+
 const card = document.createElement("div");
 card.id = "spell-card";
 card.hidden = true;
@@ -50,7 +56,12 @@ function fillCard(matches, name) {
     title.append(el("div", "spell-card-id", `Beta ${match.id}`));
     head.append(img, title);
     block.append(head);
-    if (match.effect) block.append(el("p", "spell-card-effect", match.effect));
+    const slots = match.slots && match.slots.length ? match.slots : (match.effect ? [match.effect] : []);
+    if (slots.length) {
+      const list = el("ul", "spell-card-slots");
+      slots.forEach((text) => list.append(el("li", "", text)));
+      block.append(list);
+    }
     card.append(block);
   });
 }
@@ -96,7 +107,7 @@ function appendSpell(parent, name) {
     img.height = 22;
     wrap.append(img);
   });
-  const link = document.createElement("a");
+  const link = openInNewTab(document.createElement("a"));
   link.href = matches.length === 1 ? matches[0].url : matches[0].url;
   link.textContent = name;
   if (matches.length > 1) {
@@ -107,7 +118,7 @@ function appendSpell(parent, name) {
   ids.append(" (");
   matches.forEach((match, index) => {
     if (index) ids.append(", ");
-    const idLink = document.createElement("a");
+    const idLink = openInNewTab(document.createElement("a"));
     idLink.href = match.url || spellPage(match.id);
     idLink.textContent = match.id;
     ids.append(idLink);
@@ -169,7 +180,7 @@ function appendCopies(parent, name) {
     img.width = 22;
     img.height = 22;
     item.append(img, " ");
-    const link = document.createElement("a");
+    const link = openInNewTab(document.createElement("a"));
     link.href = match.url;
     link.textContent = match.id;
     item.append(link);
@@ -200,7 +211,7 @@ function renderRaid(raid) {
   writeup.append(title);
   if (raid.giver) writeup.append(el("p", "meta", raid.giver));
   if (raid.requirements) writeup.append(el("p", "meta", raid.requirements));
-  const forum = document.createElement("a");
+  const forum = openInNewTab(document.createElement("a"));
   forum.className = "forum-link";
   forum.href = raid.forum;
   forum.textContent = "Open the forum writeup";

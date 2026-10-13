@@ -2,6 +2,7 @@
 
 import importlib.util
 import json
+import sys
 from pathlib import Path
 from urllib.parse import quote
 
@@ -37,15 +38,24 @@ def spell_page(spell_id):
     return f"https://spells.eqresource.com/spells.php?id={spell_id}&source=beta"
 
 
-def matches_for(module, name):
+def slot_pages():
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from build_spreadsheet import load_pages
+
+    return load_pages()
+
+
+def matches_for(module, name, pages):
     info = module.LOOKUP.get(name) or {}
     spells = []
     for match in info.get("matches") or []:
+        page = pages.get(str(match["id"])) or {}
         spells.append(
             {
                 "id": match["id"],
                 "icon": icon_url(match["icon"]),
                 "effect": match.get("effect") or "",
+                "slots": page.get("slots") or [],
                 "url": spell_page(match["id"]),
             }
         )
@@ -72,9 +82,10 @@ def item_dict(module, item):
 
 def main():
     module = load_builder()
+    pages = slot_pages()
     spells = {}
     for name, info in module.LOOKUP.items():
-        found = matches_for(module, name)
+        found = matches_for(module, name, pages)
         if found:
             spells[name] = found
 

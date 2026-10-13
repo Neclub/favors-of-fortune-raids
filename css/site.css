@@ -316,8 +316,15 @@ ul.effects ul { margin: 4px 0; }
   color: #d5deee;
 }
 
-.spell-card-effect {
+.spell-card-slots {
   margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.spell-card-slots li {
+  margin: 0;
+  padding: 3px 0;
   font-size: 16px;
   line-height: 1.45;
 }

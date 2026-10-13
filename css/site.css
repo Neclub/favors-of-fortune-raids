@@ -268,8 +268,8 @@ ul.effects ul { margin: 4px 0; }
 #spell-card {
   position: fixed;
   z-index: 20;
-  width: min(440px, calc(100vw - 24px));
-  max-height: min(70vh, 520px);
+  width: min(520px, calc(100vw - 24px));
+  max-height: min(80vh, 680px);
   overflow: auto;
   padding: 0;
   background: #2a3140;
@@ -327,6 +327,28 @@ ul.effects ul { margin: 4px 0; }
   padding: 3px 0;
   font-size: 16px;
   line-height: 1.45;
+}
+
+.spell-card-details {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #465266;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 14px;
+  row-gap: 4px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.spell-card-details dt {
+  margin: 0;
+  color: #d5deee;
+  font-weight: 650;
+}
+
+.spell-card-details dd {
+  margin: 0;
 }
 
 @media (max-width: 860px) {

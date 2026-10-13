@@ -56,6 +56,7 @@ def matches_for(module, name, pages):
                 "icon": icon_url(match["icon"]),
                 "effect": match.get("effect") or "",
                 "slots": page.get("slots") or [],
+                "details": page.get("details") or [],
                 "url": spell_page(match["id"]),
             }
         )

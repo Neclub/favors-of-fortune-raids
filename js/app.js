@@ -62,6 +62,14 @@ function fillCard(matches, name) {
       slots.forEach((text) => list.append(el("li", "", text)));
       block.append(list);
     }
+    if (match.details && match.details.length) {
+      const details = el("dl", "spell-card-details");
+      match.details.forEach((row) => {
+        details.append(el("dt", "", row.label));
+        details.append(el("dd", "", row.value));
+      });
+      block.append(details);
+    }
     card.append(block);
   });
 }

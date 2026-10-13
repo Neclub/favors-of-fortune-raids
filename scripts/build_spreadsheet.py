@@ -16,7 +16,40 @@ FOLDERS = [
     Path(r"C:\Users\120ch\AppData\Local\Temp\fof-posts\spellpages"),
 ]
 SLOT_RE = re.compile(r"Slot\s+\d+:\s*</b>\s*</td>\s*<td>\s*([^<]+)", re.I)
+ROW_RE = re.compile(r"<b>\s*([^<]+?)\s*</b>\s*</td>\s*<td[^>]*>(.*?)</td>", re.I | re.S)
 COUNTER_RE = re.compile(r"Increase ([A-Za-z]+) Counter by (\d+)", re.I)
+DETAIL_ORDER = [
+    "In Game Description",
+    "Cast by You",
+    "Cast by Other",
+    "Land on You",
+    "Land on Other",
+    "Wear off",
+    "Mana",
+    "Endurance",
+    "Casting Time",
+    "Recast Time",
+    "Duration",
+    "Skill",
+    "Target",
+    "Range",
+    "AE Range",
+    "Max Targets",
+    "Spell Type",
+    "Dispellable",
+    "Focusable",
+    "Interruptible",
+    "Restriction",
+    "Push Back",
+    "Push Up",
+    "Viral",
+    "Hate Override",
+    "Spell Bar Lockout",
+    "Stacking",
+    "Spell Line",
+    "Timer ID",
+    "Category",
+]
 HEADERS = ["Spell", "Spell ID", "Spell information", "Counters", "Duration", "Land on You", "Wear off"]
 SHEET_NAMES = {
     "siren": "Siren Sisters",
@@ -44,6 +77,48 @@ def labeled(html, label):
     return clean(match.group(1)) if match else ""
 
 
+def cell_text(fragment):
+    text = re.sub(r"<br\s*/?>", " ", fragment, flags=re.I)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = (
+        text.replace("&nbsp;", " ")
+        .replace("&amp;", "&")
+        .replace("&#39;", "'")
+        .replace("&quot;", '"')
+        .replace("&lt;", "<")
+        .replace("&gt;", ">")
+    )
+    return clean(text)
+
+
+def spell_details(html):
+    grouped = {}
+    for label, raw in ROW_RE.findall(html):
+        label = clean(label).rstrip(":").strip()
+        if not label or label.lower() == "neclub" or re.fullmatch(r"Slot\s+\d+", label, re.I):
+            continue
+        if label.lower().startswith("drop down menu"):
+            label = "Category"
+        value = cell_text(raw)
+        if not value:
+            continue
+        values = grouped.setdefault(label, [])
+        if value not in values:
+            values.append(value)
+    details = []
+    used = set()
+    for label in DETAIL_ORDER:
+        if label not in grouped:
+            continue
+        details.extend({"label": label, "value": value} for value in grouped[label])
+        used.add(label)
+    for label, values in grouped.items():
+        if label in used:
+            continue
+        details.extend({"label": label, "value": value} for value in values)
+    return details
+
+
 def load_pages():
     pages = {}
     for folder in FOLDERS:
@@ -51,7 +126,7 @@ def load_pages():
             continue
         for path in folder.glob("*.html"):
             html = flatten(path.read_text(encoding="utf-8", errors="replace"))
-            if "Slot" not in html and "Land on You" not in html:
+            if "Casting Time:" not in html and "Slot" not in html:
                 continue
             spell_id = re.search(r"history\.php\?id=(\d+)", html) or re.search(r"spells\.php\?id=(\d+)", html)
             if not spell_id:
@@ -59,6 +134,7 @@ def load_pages():
             slots = [clean(text) for text in SLOT_RE.findall(html)]
             pages[spell_id.group(1)] = {
                 "slots": slots,
+                "details": spell_details(html),
                 "duration": labeled(html, "Duration"),
                 "land": labeled(html, "Land on You"),
                 "wear": labeled(html, "Wear off"),

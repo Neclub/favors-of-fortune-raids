@@ -2134,6 +2134,249 @@
         ]
       }
     ],
+    "Cutting Verse": [
+      {
+        "id": "75167",
+        "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 110000",
+        "url": "https://spells.eqresource.com/spells.php?id=75167&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 110000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Words cut deep, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "The words cut deep."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75168",
+        "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 275000",
+        "url": "https://spells.eqresource.com/spells.php?id=75168&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 275000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Words cut deep, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "The words cut deep."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75169",
+        "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 425000",
+        "url": "https://spells.eqresource.com/spells.php?id=75169&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 425000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Words cut deep, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "The words cut deep."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75170",
+        "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 750000",
+        "url": "https://spells.eqresource.com/spells.php?id=75170&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 750000",
+          "Stun for 12s"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Words cut deep, dealing #21 damage and stunning you for %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "The words cut deep and your body stops responding."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your body begins to respond."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
     "Decapitating Chop": [
       {
         "id": "7234",
@@ -2305,6 +2548,258 @@
           {
             "label": "Push Up",
             "value": "10"
+          }
+        ]
+      }
+    ],
+    "Discordant Melody": [
+      {
+        "id": "75173",
+        "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 110000",
+        "url": "https://spells.eqresource.com/spells.php?id=75173&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 110000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A cacophonous burst crushes you, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "A cacophonous burst crushes you."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75174",
+        "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 275000",
+        "url": "https://spells.eqresource.com/spells.php?id=75174&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 275000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A cacophonous burst crushes you, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "A cacophonous burst crushes you."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75175",
+        "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 425000",
+        "url": "https://spells.eqresource.com/spells.php?id=75175&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 425000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A cacophonous burst crushes you, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "A cacophonous burst crushes you."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75176",
+        "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 550000",
+        "url": "https://spells.eqresource.com/spells.php?id=75176&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 550000",
+          "Decrease Current Hit Points by 225000 per Tick",
+          "Decrease Movement Speed by 350%"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A cacophonous burst crushes you, dealing #21 damage and slowing you for %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "A cacophonous burst crushes you, slowing your movement."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your movement is no longer slowed."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "5 ticks"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
           }
         ]
       }
@@ -7544,6 +8039,259 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
+    "Shrill Chorus": [
+      {
+        "id": "75161",
+        "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 110000",
+        "url": "https://spells.eqresource.com/spells.php?id=75161&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 110000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A shrill song rattles you to the core, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "A shrill song rattles you to the core."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75162",
+        "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 275000",
+        "url": "https://spells.eqresource.com/spells.php?id=75162&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 275000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A shrill song rattles you to the core, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "A shrill song rattles you to the core."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75163",
+        "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 425000",
+        "url": "https://spells.eqresource.com/spells.php?id=75163&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 425000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A shrill song rattles you to the core, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "A shrill song rattles you to the core."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75164",
+        "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 550000",
+        "url": "https://spells.eqresource.com/spells.php?id=75164&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 550000",
+          "Decrease Current Hit Points by 225000 per Tick",
+          "Inhibit Spell Casting (Spell Silence)",
+          "Melee and Skill Silence"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A shrill song rattles you to the core, dealing #21 damage and silencing you for %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "A shrill song rattles you to the core and takes your voice."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your voice returns."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "3 ticks"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
           },
           {
             "label": "Restriction",

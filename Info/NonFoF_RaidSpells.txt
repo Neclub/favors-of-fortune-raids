@@ -1,0 +1,49 @@
+Spells to remove from list that are old and not used in the raid.
+
+Moruuk and Sorshkah: 
+8782 — Hand to Hand Attack for 65 with 10000% Accuracy Mod
+Sneeze is a mechanic and not a spell. Spell data is not needed.
+45478 — Decrease Current Hit Points by 99999
+
+Fractured Vazaelle:
+39657 — Decrease Current Hit Points by 6000 per Tick (Poison 10)
+ 
+Chronicles of War:
+7231 — Feign Death (1% Chance)
+852 — Decrease Current Hit Points by 2700
+1930 — Decrease Current Hit Points by 50 per Tick
+17141 — Decrease Current Hit Points by 500 per Tick
+4729 — Decrease Current Hit Points by 1225 per Tick (Poison 297)
+4727 — Decrease Current Hit Points by 6175
+4728 — Decrease Current Hit Points by 4050 (Poison 396); Decrease Current Hit Points by 500 per Tick (Poison 396)
+4739 — Decrease Current Hit Points by 3000
+47479 — Decrease Current Hit Points by 33330 per Tick
+48045 — Decrease Melee Haste by 55% (v371, Incremental)
+47478 — Decrease Current Hit Points by 65000
+48041 — Decrease Current Hit Points by 96148
+48042 — Decrease Current Hit Points by 87880
+47480 — Decrease Current Hit Points by 37892 per Tick
+48046 — Decrease Current Hit Points by 29147 per Tick
+48043 — Decrease Current Hit Points by 45999 per Tick
+48044 — Decrease Current Hit Points by 88560
+48047 — Gradual Pull to 0 Units Away (Force=110) up to Your Level
+48051 — Dispel Beneficial (100% Chance)
+48047 — Gradual Pull to 0 Units Away (Force=110) up to Your Level
+48044 — Decrease Current Hit Points by 88560
+48043 — Decrease Current Hit Points by 45999 per Tick
+47480 — Decrease Current Hit Points by 37892 per Tick
+48046 — Decrease Current Hit Points by 29147 per Tick
+48042 — Decrease Current Hit Points by 87880
+47478 — Decrease Current Hit Points by 65000
+48041 — Decrease Current Hit Points by 96148
+
+Eriak Zek:
+(OLD SPELLS) 2449, 2450, 2451, 2452, 17272, 17273, 17274, 17275, 17276, 39555, 39556, 39557, 39558, 39559
+
+Dipuc, General of Scorn:
+5720 — Decrease Current Hit Points by 250
+39655 — Decrease Current Hit Points by 5000
+
+Scorn, Queen of Thorns
+32119 — Decrease Current Hit Points by 62012 (Random: -52500 to -71525)
+ 

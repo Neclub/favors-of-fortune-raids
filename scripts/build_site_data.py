@@ -2,6 +2,7 @@
 
 import importlib.util
 import json
+import re
 import sys
 from pathlib import Path
 from urllib.parse import quote
@@ -45,10 +46,33 @@ def slot_pages():
     return load_pages()
 
 
+def load_exclusions():
+    """Spell IDs and names that share a label with a raid mechanic but are not part of the event."""
+    path = ROOT / "Info" / "NonFoF_RaidSpells.txt"
+    ids = set()
+    names = set()
+    if not path.exists():
+        return ids, names
+    for line in path.read_text(encoding="utf-8").splitlines():
+        text = line.strip()
+        if text.lower().startswith("sneeze"):
+            names.add("Sneeze")
+        if re.match(r"^\d+\b", text):
+            ids.add(text.split()[0])
+        if "OLD SPELLS" in text.upper():
+            ids.update(re.findall(r"\d+", text))
+    return ids, names
+
+
 def matches_for(module, name, pages):
+    skip_ids, skip_names = load_exclusions()
+    if name in skip_names:
+        return []
     info = module.LOOKUP.get(name) or {}
     spells = []
     for match in info.get("matches") or []:
+        if str(match["id"]) in skip_ids:
+            continue
         page = pages.get(str(match["id"])) or {}
         spells.append(
             {

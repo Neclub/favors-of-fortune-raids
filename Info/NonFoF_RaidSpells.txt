@@ -4,6 +4,7 @@ Moruuk and Sorshkah:
 8782 — Hand to Hand Attack for 65 with 10000% Accuracy Mod
 Sneeze is a mechanic and not a spell. Spell data is not needed.
 45478 — Decrease Current Hit Points by 99999
+52393 — Decrease Current Hit Points by 135165 per Tick
 
 Fractured Vazaelle:
 39657 — Decrease Current Hit Points by 6000 per Tick (Poison 10)
@@ -36,6 +37,26 @@ Chronicles of War:
 48042 — Decrease Current Hit Points by 87880
 47478 — Decrease Current Hit Points by 65000
 48041 — Decrease Current Hit Points by 96148
+23057 — Increase Damage Shield by 100
+23058 — Increase Damage Shield by 200
+23059 — Increase Damage Shield by 300
+23060 — Increase Damage Shield by 400
+23061 — Increase Damage Shield by 500
+23062 — Increase Damage Shield by 600
+23063 — Increase Damage Shield by 700
+23064 — Increase Damage Shield by 800
+23065 — Increase Damage Shield by 900
+23066 — Increase Damage Shield by 1000
+19035 — Decrease Current Hit Points by 63 per Tick (Growing @ 64/Tick)
+12087 — Decrease Current Hit Points by 6000 per Tick
+7234 — Feign Death (1% Chance)
+23056 — Decrease Current Hit Points by 10000
+23077 — Decrease Current Hit Points by 12000
+13023 — Feign Death (1% Chance)
+19920 — Decrease Current Hit Points by 8915
+12209 — Decrease Current Hit Points by 35000 (Corruption 20); Decrease Current Hit Points by 10000 per Tick (Corruption 20)
+12204 — Decrease Current Hit Points by 45000
+12196 — Decrease Current Hit Points by 20000
 
 Eriak Zek:
 (OLD SPELLS) 2449, 2450, 2451, 2452, 17272, 17273, 17274, 17275, 17276, 39555, 39556, 39557, 39558, 39559

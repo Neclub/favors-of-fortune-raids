@@ -212,6 +212,13 @@ body {
   color: var(--text);
 }
 
+.brand-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 #navList {
   display: flex;
   flex-direction: column;

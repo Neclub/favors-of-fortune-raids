@@ -2060,6 +2060,344 @@
         ]
       }
     ],
+    "Creeping Madness": [
+      {
+        "id": "75095",
+        "icon": "https://spells.eqresource.com/spellicons/786Single0.jpe",
+        "effect": "Decrease Current Hit Points by 1000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75095&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1000 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "The maddening influence of the realm seeps in."
+          },
+          {
+            "label": "Land on You",
+            "value": "The maddening influence of the realm seeps in."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your mind clears"
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "2m"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "30"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75096",
+        "icon": "https://spells.eqresource.com/spellicons/787Single0.jpe",
+        "effect": "Decrease Current Hit Points by 1000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75096&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1000 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "The maddening influence of the realm seeps in."
+          },
+          {
+            "label": "Land on You",
+            "value": "The maddening influence of the realm tickles your mind."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your mind clears"
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "2m"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "30"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75097",
+        "icon": "https://spells.eqresource.com/spellicons/788Single0.jpe",
+        "effect": "Decrease Current Hit Points by 1000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75097&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1000 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "The maddening influence of the realm seeps in."
+          },
+          {
+            "label": "Land on You",
+            "value": "The maddening influence of the realm clouds your senses."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your mind clears"
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "2m"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "30"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75098",
+        "icon": "https://spells.eqresource.com/spellicons/789Single0.jpe",
+        "effect": "Decrease Current Hit Points by 1000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75098&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1000 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "The maddening influence of the realm seeps in."
+          },
+          {
+            "label": "Land on You",
+            "value": "The maddening influence of the realm whispers in your ear."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your mind clears"
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "2m"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "30"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75099",
+        "icon": "https://spells.eqresource.com/spellicons/790Single0.jpe",
+        "effect": "Decrease Current Hit Points by 1000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75099&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 1000 per Tick",
+          "Charm up to Level 300"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "The maddening influence of the realm overwhelms you, charming for %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "The maddening influence of the realm overwhelms you."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your mind clears"
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "4 ticks"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "30"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
     "Crushing Laxity": [
       {
         "id": "75082",

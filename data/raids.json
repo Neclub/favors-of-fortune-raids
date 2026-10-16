@@ -1050,6 +1050,72 @@
         ]
       }
     ],
+    "Barb Shot": [
+      {
+        "id": "75133",
+        "icon": "https://spells.eqresource.com/spellicons/1298Directional%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 650000",
+        "url": "https://spells.eqresource.com/spells.php?id=75133&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 650000",
+          "Stun for 20s"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Sharp barbs dig deep into you, dealing #21 damage and draining #22 mana for %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "Sharp barbs dig deep into you draining your strength."
+          },
+          {
+            "label": "Wear off",
+            "value": "The barbs fall loose, allowing you to recover."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Directional AE - -22&deg; to 22&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(-22)-Math.PI/2, degreesToRadians(22)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "150"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
     "Biting Sonnet": [
       {
         "id": "75171",

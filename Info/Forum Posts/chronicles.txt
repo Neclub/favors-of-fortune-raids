@@ -102,7 +102,7 @@ Malaise
 • Occurs every 70 seconds
 • Targets a random player
 • Applies a DoT and reduces spell casting speed, combat skill, and slows movement
-Spite of Meldrath
+Spite
 • Occurs every 180 seconds
 • Corrupts a random player with 16 corruption counters
 • If it fails to be removed players in a ring around the target player take dmg

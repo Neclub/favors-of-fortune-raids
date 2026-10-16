@@ -44,7 +44,7 @@ Silencing Mist
 • Occurs every 30 seconds
 • 3 players are targeted
 • After a short delay they will create an area of mist
-• Players that move into the area will be silenced
+• Players that move into the area will be silenced and rooted
 • Fractured Psyche that move into the mist will be rooted and when killed will no longer damage the raid
 Psychic Shriek
 • Occurs every 40 seconds

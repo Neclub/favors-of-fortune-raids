@@ -25,7 +25,13 @@ import forum_writeup
 from apply_spell_exclusions import main as apply_exclusions
 from build_site_data import load_exclusions
 from build_spreadsheet import OUT as WORKBOOK, SLOT_RE, cell_text, flatten, main as build_workbook, spell_details
-from spell_notes import ensure_writeup_links, load_spell_notes
+from spell_notes import (
+    ensure_writeup_links,
+    link_sickening_glob,
+    load_spell_notes,
+    renamed_spell_names,
+    rename_writeup_spells,
+)
 from sync_word_effects import main as sync_word
 
 RAIDS_PATH = ROOT / "data" / "raids.json"
@@ -760,6 +766,11 @@ def audit_spells(session, data, extra_names, log):
             continue
         changes.extend(found)
     note_spells = load_spell_notes()
+    extra_names = renamed_spell_names(extra_names)
+    if rename_writeup_spells(data):
+        changes.append(("Queasy", "75131", "Name", "Sick", "Queasy"))
+    if link_sickening_glob(data):
+        changes.append(("Sickening Glob", "75136", "Writeup", "", "linked on the lingering snot"))
     if not signed_out:
         # Prefer IDs from Info note files, then fall back to EQResource search.
         pending_names = list(dict.fromkeys([*extra_names, *note_spells]))
@@ -900,6 +911,7 @@ def publish():
         "Info/Chronicles of War.txt",
         "Info/Scorn, Queen of Thorns.txt",
         "Info/SirenSisters_Missingspells.txt",
+        "Info/Moruuk and Sorshkah.txt",
         "js/app.js",
         "scripts/AuditAndAmend.py",
         "scripts/sync_word_effects.py",

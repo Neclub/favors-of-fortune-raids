@@ -6122,6 +6122,67 @@
         ]
       }
     ],
+    "Queasy": [
+      {
+        "id": "75131",
+        "icon": "https://spells.eqresource.com/spellicons/1146Self0.jpe",
+        "effect": "Increase Poison Counter by 60",
+        "url": "https://spells.eqresource.com/spells.php?id=75131&source=beta",
+        "slots": [
+          "Increase Poison Counter by 60"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Sorshkah feels queasy."
+          },
+          {
+            "label": "Wear off",
+            "value": "Sorshkah has shaken off the sickness."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "5d"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Self"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Poison -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
     "Quickened Reflexes": [
       {
         "id": "75185",
@@ -7833,6 +7894,82 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
+    "Sickening Glob": [
+      {
+        "id": "75136",
+        "icon": "https://spells.eqresource.com/spellicons/667Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 500000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75136&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 500000 per Tick",
+          "Decrease Movement Speed by 25%",
+          "Decrease Melee Haste by 10% (v371, Incremental)",
+          "Increase Cast Time by 1s"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Putrid phlegm burns your skin, dealing #21 damage, reducing movement, attack speed, and casting speed for %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "Putrid phlegm burns your skin and invades your senses."
+          },
+          {
+            "label": "Wear off",
+            "value": "Fresh air, finally!"
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "3 ticks"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "50"
+          },
+          {
+            "label": "AE Range",
+            "value": "50"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Poison -10000 Max: 0.5%"
           },
           {
             "label": "Dispellable",
@@ -11427,9 +11564,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Sick",
+                  "title": "Queasy",
                   "spellNames": [
-                    "Sick"
+                    "Queasy"
                   ],
                   "prose": [],
                   "bullets": [
@@ -11548,9 +11685,15 @@
                       "spell": "",
                       "children": [
                         {
-                          "text": "DoT, Reduced Movement Speed, Reduced spell casting and melee speeds",
-                          "spell": "",
-                          "children": []
+                          "text": "Sickening Glob",
+                          "spell": "Sickening Glob",
+                          "children": [
+                            {
+                              "text": "DoT, Reduced Movement Speed, Reduced spell casting and melee speeds",
+                              "spell": "",
+                              "children": []
+                            }
+                          ]
                         }
                       ]
                     }
@@ -11570,9 +11713,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Sick",
+                  "title": "Queasy",
                   "spellNames": [
-                    "Sick"
+                    "Queasy"
                   ],
                   "prose": [],
                   "bullets": [
@@ -11996,9 +12139,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Sick",
+                  "title": "Queasy",
                   "spellNames": [
-                    "Sick"
+                    "Queasy"
                   ],
                   "prose": [],
                   "bullets": [

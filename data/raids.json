@@ -6101,6 +6101,67 @@
         ]
       }
     ],
+    "Rapid Fire Burst": [
+      {
+        "id": "75179",
+        "icon": "https://spells.eqresource.com/spellicons/1771Target%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 750000",
+        "url": "https://spells.eqresource.com/spells.php?id=75179&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 750000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "An eruption of barbs deals #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "An eruption of barbs draws blood."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Target AE"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
+            "value": "20"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
     "Rapid Shanks": [
       {
         "id": "68243",

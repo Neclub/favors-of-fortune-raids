@@ -25,6 +25,7 @@ import forum_writeup
 from apply_spell_exclusions import main as apply_exclusions
 from build_site_data import load_exclusions
 from build_spreadsheet import OUT as WORKBOOK, SLOT_RE, cell_text, flatten, main as build_workbook, spell_details
+from spell_notes import ensure_writeup_links, load_spell_notes
 from sync_word_effects import main as sync_word
 
 RAIDS_PATH = ROOT / "data" / "raids.json"
@@ -758,24 +759,39 @@ def audit_spells(session, data, extra_names, log):
             log.append(f"  {name} {entry['id']}: the spell page had no details, so it was left unchanged.")
             continue
         changes.extend(found)
+    note_spells = load_spell_notes()
     if not signed_out:
-        for name in extra_names:
-            if name in data["spells"] or name in skip_names:
+        # Prefer IDs from Info note files, then fall back to EQResource search.
+        pending_names = list(dict.fromkeys([*extra_names, *note_spells]))
+        for name in pending_names:
+            if name in skip_names:
                 continue
-            try:
-                console(f"Searching EQResource for {name}...")
-                ids = search_spell_ids(session, name)
-            except SignInRequired:
-                log.append("  EQResource beta spell data needs a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. New spell names were not added.")
-                break
-            except Exception as exc:
-                log.append(f"  {name}: search failed ({exc})")
+            known_ids = [spell_id for spell_id in note_spells.get(name) or [] if spell_id not in skip_ids]
+            existing_ids = {match["id"] for match in data["spells"].get(name) or []}
+            needed = [spell_id for spell_id in known_ids if spell_id not in existing_ids and spell_id not in seen]
+            if name in data["spells"] and not needed:
+                if ensure_writeup_links(data, name):
+                    changes.append((name, ",".join(known_ids) or "", "Writeup", "", "linked from note file"))
                 continue
-            ids = [spell_id for spell_id in ids if spell_id not in skip_ids and spell_id not in seen]
-            if not ids:
-                log.append(f"  {name}: no beta spell page was found")
+            if not needed:
+                if name in data["spells"]:
+                    continue
+                try:
+                    console(f"Searching EQResource for {name}...")
+                    needed = search_spell_ids(session, name)
+                except SignInRequired:
+                    log.append("  EQResource beta spell data needs a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. New spell names were not added.")
+                    break
+                except Exception as exc:
+                    log.append(f"  {name}: search failed ({exc})")
+                    continue
+                needed = [spell_id for spell_id in needed if spell_id not in skip_ids and spell_id not in seen]
+            if not needed:
+                if name not in data["spells"]:
+                    log.append(f"  {name}: no beta spell page was found")
                 continue
-            for spell_id in ids:
+            source = "note file" if known_ids else "updated writeup"
+            for spell_id in needed:
                 try:
                     html = session.get(spell_page(spell_id))
                 except Exception as exc:
@@ -787,7 +803,8 @@ def audit_spells(session, data, extra_names, log):
                     break
                 if add_spell(data, name, spell_id, html):
                     seen.add(spell_id)
-                    changes.append((name, spell_id, "Spell", "", "added from the updated writeup"))
+                    changes.append((name, spell_id, "Spell", "", f"added from the {source}"))
+            ensure_writeup_links(data, name)
             if signed_out:
                 break
     if not changes:
@@ -881,10 +898,13 @@ def publish():
         "Info/NonFoF_RaidSpells.txt",
         "Info/Forum Posts",
         "Info/Chronicles of War.txt",
+        "Info/Scorn, Queen of Thorns.txt",
+        "Info/SirenSisters_Missingspells.txt",
         "js/app.js",
         "scripts/AuditAndAmend.py",
         "scripts/sync_word_effects.py",
         "scripts/apply_spell_exclusions.py",
+        "scripts/spell_notes.py",
         "css/site.css",
         "index.html",
     )

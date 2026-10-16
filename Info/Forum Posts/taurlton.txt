@@ -56,8 +56,8 @@ Your fighting has drawn the attention of opportunistic denizens who are looking 
 • Occurs every 110 seconds
 • Random assortment of adds spawn from the edge of the arena
 ◦ Made Centaur - mezzable
-◦ Enraged Henchman - charmable
-◦ Desperate Opportunist - rootable
+◦ Enraged Henchman - rootable
+◦ Desperate Opportunist - charmable
 Strategy: Watch your feet and don't step in the rubble, you may need them later. Control small adds and tackle the bigger ones.
 Stage 3 (64% - 40%)
 Overview

@@ -7084,6 +7084,67 @@
         ]
       }
     ],
+    "Self-Immolation Effect": [
+      {
+        "id": "75010",
+        "icon": "https://spells.eqresource.com/spellicons/53Self0.jpe",
+        "effect": "Decrease Current Hit Points by 75684 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75010&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 75684 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "This component of the Self-Immolation spell immolates the casting wizard with fire."
+          },
+          {
+            "label": "Land on You",
+            "value": "You have ignited yourself with your self-immolation spell!"
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target has been ignited by a self-immolation spell."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "2 ticks"
+          },
+          {
+            "label": "Skill",
+            "value": "Evocation"
+          },
+          {
+            "label": "Target",
+            "value": "Self"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Unresistable"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "Yes"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          }
+        ]
+      }
+    ],
     "Shatter Shot": [
       {
         "id": "75154",
@@ -7976,24 +8037,32 @@
         ]
       }
     ],
-    "Spite": [
+    "Spite of Meldrath": [
       {
-        "id": "40778",
-        "icon": "https://spells.eqresource.com/spellicons/153Hatelist0.jpe",
-        "effect": "Decrease Current Hit Points by 25000 per Tick (Scales, Base Level: 105)",
-        "url": "https://spells.eqresource.com/spells.php?id=40778&source=beta",
+        "id": "75015",
+        "icon": "https://spells.eqresource.com/spellicons/164Single0.jpe",
+        "effect": "Increase Corruption Counter by 16",
+        "url": "https://spells.eqresource.com/spells.php?id=75015&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 25000 per Tick (Scales, Base Level: 105)",
-          "Decrease Current Mana by 10000 per Tick (Scales, Base Level: 105) (v417)"
+          "Increase Corruption Counter by 16",
+          "Cast on Duration Fade: Spite of Meldrath Effect"
         ],
         "details": [
           {
+            "label": "In Game Description",
+            "value": "You feel Meldrath's hatred course through you."
+          },
+          {
+            "label": "Cast by Other",
+            "value": "Target points a gnarled finger and calls down a curse."
+          },
+          {
             "label": "Land on You",
-            "value": "You are filled with a sense of bitter spite."
+            "value": "You feel Meldrath's hatred course through you."
           },
           {
             "label": "Land on Other",
-            "value": "Target is knocked back."
+            "value": "Target shivers as the curse takes hold."
           },
           {
             "label": "Mana",
@@ -8005,7 +8074,7 @@
           },
           {
             "label": "Duration",
-            "value": "3 ticks"
+            "value": "5 ticks"
           },
           {
             "label": "Skill",
@@ -8013,19 +8082,15 @@
           },
           {
             "label": "Target",
-            "value": "Hatelist"
+            "value": "Single"
           },
           {
             "label": "Range",
-            "value": "600"
-          },
-          {
-            "label": "AE Range",
-            "value": "600"
+            "value": "2400"
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Lowest -990 Max: 25%"
+            "value": "Detrimental - Resist: Unresistable -10000"
           },
           {
             "label": "Dispellable",
@@ -8034,6 +8099,79 @@
           {
             "label": "Focusable",
             "value": "Yes"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          }
+        ]
+      }
+    ],
+    "Spite of Meldrath Effect": [
+      {
+        "id": "75016",
+        "icon": "https://spells.eqresource.com/spellicons/164Target%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 650000",
+        "url": "https://spells.eqresource.com/spells.php?id=75016&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 650000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "An explosion of pure spite consumes you, dealing #21 damage."
+          },
+          {
+            "label": "Cast by You",
+            "value": "The spite of Meldrath explodes within you."
+          },
+          {
+            "label": "Cast by Other",
+            "value": "Target is overwhelmed by pure spite and explodes outwards."
+          },
+          {
+            "label": "Land on You",
+            "value": "You are caught in an explosion of pure spite."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is caught in an explosion of pure spite."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Target AE"
+          },
+          {
+            "label": "Range",
+            "value": "2400"
+          },
+          {
+            "label": "AE Range",
+            "value": "10"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Magic -10000"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
           }
         ]
       }
@@ -8443,6 +8581,209 @@
         ]
       }
     ],
+    "Sucking Wound": [
+      {
+        "id": "75116",
+        "icon": "https://spells.eqresource.com/spellicons/1330Single0.jpe",
+        "effect": "Decrease Current Hit Points by 20000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75116&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 20000 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Your open wounds bleed heavily, dealing #21 damage over %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "Your open wounds bleed heavily as you move."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your wounds are no longing bleeding."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "1m 12s"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75117",
+        "icon": "https://spells.eqresource.com/spellicons/1330Single0.jpe",
+        "effect": "Decrease Current Hit Points by 150000 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75117&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 150000 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Your open wounds bleed heavily, dealing #21 damage over %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "Your open wounds bleed heavily as you move."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your wounds are no longing bleeding."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "1m 12s"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      },
+      {
+        "id": "75118",
+        "icon": "https://spells.eqresource.com/spellicons/1330Single0.jpe",
+        "effect": "Decrease Current Hit Points by 450500 per Tick",
+        "url": "https://spells.eqresource.com/spells.php?id=75118&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 450500 per Tick"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Your open wounds bleed heavily, dealing #21 damage over %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "Your open wounds bleed heavily as you move."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your wounds are no longing bleeding."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "1m 12s"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Single"
+          },
+          {
+            "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
     "Sword Storm": [
       {
         "id": "68263",
@@ -8696,6 +9037,209 @@
           {
             "label": "Push Up",
             "value": "4"
+          }
+        ]
+      }
+    ],
+    "Tick-Tock Explosion": [
+      {
+        "id": "75017",
+        "icon": "https://spells.eqresource.com/spellicons/51Caster%20PB0.jpe",
+        "effect": "Decrease Current Hit Points by 300000",
+        "url": "https://spells.eqresource.com/spells.php?id=75017&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 300000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "An explosion of fire and shrapnel hit you, dealing #21 damage."
+          },
+          {
+            "label": "Cast by Other",
+            "value": "Target explodes."
+          },
+          {
+            "label": "Land on You",
+            "value": "You are caught in the explosion."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is caught in the explosion."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster PB"
+          },
+          {
+            "label": "AE Range",
+            "value": "25"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Fire -10000"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Push Back",
+            "value": "3"
+          },
+          {
+            "label": "Push Up",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "id": "75018",
+        "icon": "https://spells.eqresource.com/spellicons/51Caster%20PB0.jpe",
+        "effect": "Decrease Current Hit Points by 600000",
+        "url": "https://spells.eqresource.com/spells.php?id=75018&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "An explosion of fire and shrapnel hit you, dealing #21 damage."
+          },
+          {
+            "label": "Cast by Other",
+            "value": "Target explodes."
+          },
+          {
+            "label": "Land on You",
+            "value": "You are caught in the explosion."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is caught in the explosion."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster PB"
+          },
+          {
+            "label": "AE Range",
+            "value": "50"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Fire -10000"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Push Back",
+            "value": "3"
+          },
+          {
+            "label": "Push Up",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "id": "75019",
+        "icon": "https://spells.eqresource.com/spellicons/51Caster%20PB0.jpe",
+        "effect": "Decrease Current Hit Points by 600000",
+        "url": "https://spells.eqresource.com/spells.php?id=75019&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 600000"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "An explosion of fire and shrapnel hit you, dealing #21 damage."
+          },
+          {
+            "label": "Cast by Other",
+            "value": "Target explodes."
+          },
+          {
+            "label": "Land on You",
+            "value": "You are caught in the explosion."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is caught in the explosion."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster PB"
+          },
+          {
+            "label": "AE Range",
+            "value": "75"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Fire -10000"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Push Back",
+            "value": "3"
+          },
+          {
+            "label": "Push Up",
+            "value": "3"
           }
         ]
       }
@@ -8977,57 +9521,6 @@
     ],
     "Vis Percussio": [
       {
-        "id": "48039",
-        "icon": "https://spells.eqresource.com/spellicons/198Self0.jpe",
-        "effect": "Cast on Skill Use: Vis Percussio Proc (5)",
-        "url": "https://spells.eqresource.com/spells.php?id=48039&source=beta",
-        "slots": [
-          "Cast on Skill Use: Vis Percussio Proc (5)"
-        ],
-        "details": [
-          {
-            "label": "In Game Description",
-            "value": "Gives target a chance to stun opponents with melee attacks."
-          },
-          {
-            "label": "Cast by Other",
-            "value": "Target's fists glow."
-          },
-          {
-            "label": "Mana",
-            "value": "0"
-          },
-          {
-            "label": "Casting Time",
-            "value": "Instant"
-          },
-          {
-            "label": "Duration",
-            "value": "4 ticks"
-          },
-          {
-            "label": "Skill",
-            "value": "Melee"
-          },
-          {
-            "label": "Target",
-            "value": "Self"
-          },
-          {
-            "label": "Spell Type",
-            "value": "Beneficial: Blockable"
-          },
-          {
-            "label": "Dispellable",
-            "value": "No"
-          },
-          {
-            "label": "Focusable",
-            "value": "Yes"
-          }
-        ]
-      },
-      {
         "id": "75033",
         "icon": "https://spells.eqresource.com/spellicons/198Self0.jpe",
         "effect": "Cast on Skill Use: Vis Percussio Proc (5)",
@@ -9084,57 +9577,6 @@
       }
     ],
     "Vita Anuimis": [
-      {
-        "id": "48040",
-        "icon": "https://spells.eqresource.com/spellicons/199Self0.jpe",
-        "effect": "Cast on Skill Use: Vita Anuimis Proc (5)",
-        "url": "https://spells.eqresource.com/spells.php?id=48040&source=beta",
-        "slots": [
-          "Cast on Skill Use: Vita Anuimis Proc (5)"
-        ],
-        "details": [
-          {
-            "label": "In Game Description",
-            "value": "Gives target a chance to gain health with melee attacks."
-          },
-          {
-            "label": "Cast by Other",
-            "value": "Target's fists glow."
-          },
-          {
-            "label": "Mana",
-            "value": "0"
-          },
-          {
-            "label": "Casting Time",
-            "value": "Instant"
-          },
-          {
-            "label": "Duration",
-            "value": "4 ticks"
-          },
-          {
-            "label": "Skill",
-            "value": "Melee"
-          },
-          {
-            "label": "Target",
-            "value": "Self"
-          },
-          {
-            "label": "Spell Type",
-            "value": "Beneficial: Blockable"
-          },
-          {
-            "label": "Dispellable",
-            "value": "No"
-          },
-          {
-            "label": "Focusable",
-            "value": "Yes"
-          }
-        ]
-      },
       {
         "id": "75034",
         "icon": "https://spells.eqresource.com/spellicons/199Self0.jpe",
@@ -13139,9 +13581,7 @@
                 {
                   "kind": "mechanic",
                   "title": "Self-Immolation",
-                  "spellNames": [
-                    "Self-Immolation"
-                  ],
+                  "spellNames": [],
                   "prose": [],
                   "bullets": [
                     {
@@ -13151,12 +13591,12 @@
                     },
                     {
                       "text": "PBAoE that targets a random player",
-                      "spell": "",
+                      "spell": "Self-Immolation",
                       "children": []
                     },
                     {
                       "text": "Applies a DoT to that player and all players around them",
-                      "spell": "",
+                      "spell": "Self-Immolation Effect",
                       "children": []
                     }
                   ]
@@ -13273,9 +13713,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Spite",
+                  "title": "Spite of Meldrath",
                   "spellNames": [
-                    "Spite"
+                    "Spite of Meldrath"
                   ],
                   "prose": [],
                   "bullets": [
@@ -13291,7 +13731,7 @@
                     },
                     {
                       "text": "If it fails to be removed players in a ring around the target player take dmg",
-                      "spell": "",
+                      "spell": "Spite of Meldrath Effect",
                       "children": []
                     }
                   ]
@@ -13335,7 +13775,9 @@
                 {
                   "kind": "add",
                   "title": "Tick-Tock Bomb",
-                  "spellNames": [],
+                  "spellNames": [
+                    "Tick-Tock Explosion"
+                  ],
                   "prose": [],
                   "bullets": [
                     {

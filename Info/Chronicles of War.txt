@@ -1,0 +1,31 @@
+(Currently known as "Spite" but it was a typo and should be "Spite of Meldrath")
+Spite of Meldrath:
+https://spells.eqresource.com/spells.php?id=75015&source=beta
+
+If it fails to be removed players in a ring around the target player take dmg:
+https://spells.eqresource.com/spells.php?id=75016&source=beta
+
+Tick-Tock Bomb:
+
+If killed during this stage it will explode, dealing a small amount of dmg to the raid
+https://spells.eqresource.com/spells.php?id=75017&source=beta
+
+If killed during this stage it will explode, dealing dmg to the raid:
+https://spells.eqresource.com/spells.php?id=75018&source=beta
+
+After 35 seconds it will detonate, dealing a large amount of dmg to the raid:
+https://spells.eqresource.com/spells.php?id=75019&source=beta
+
+Self-Immolation: ( 2 part best used in the description below )
+
+PBAoE that targets a random player:
+https://spells.eqresource.com/spells.php?id=75009&source=beta
+Applies a DoT to that player and all players around them:
+https://spells.eqresource.com/spells.php?id=75010&source=beta
+
+
+
+Remove: 
+
+48040 — Cast on Skill Use: Vita Anuimis Proc (5)
+48039 — Cast on Skill Use: Vis Percussio Proc (5)

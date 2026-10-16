@@ -57,6 +57,9 @@ Chronicles of War:
 12209 — Decrease Current Hit Points by 35000 (Corruption 20); Decrease Current Hit Points by 10000 per Tick (Corruption 20)
 12204 — Decrease Current Hit Points by 45000
 12196 — Decrease Current Hit Points by 20000
+48039 — Cast on Skill Use: Vis Percussio Proc (5)
+48040 — Cast on Skill Use: Vita Anuimis Proc (5)
+40778 — Decrease Current Hit Points by 25000 per Tick (Scales, Base Level: 105)
 
 Eriak Zek:
 (OLD SPELLS) 2449, 2450, 2451, 2452, 17272, 17273, 17274, 17275, 17276, 39555, 39556, 39557, 39558, 39559

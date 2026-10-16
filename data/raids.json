@@ -10836,7 +10836,7 @@
                     },
                     {
                       "text": "Players caught in the AoE are charmed",
-                      "spell": "",
+                      "spell": "Coerced Loyalty",
                       "children": []
                     }
                   ]
@@ -10977,7 +10977,7 @@
             },
             {
               "name": "Coerced Loyalty",
-              "effect": "Part of the Stage 3 Rapid Fire Burst, charms targets caught int he AoE"
+              "effect": "Part of the Stage 3 Rapid Fire Burst, charms targets caught in the AoE"
             },
             {
               "name": "Stolen Words",

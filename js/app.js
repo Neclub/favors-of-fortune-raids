@@ -96,7 +96,7 @@ function bindSpellHover(node, matches, name) {
   node.addEventListener("focusin", (event) => showCard(event, matches, name));
 }
 
-function appendSpell(parent, name) {
+function appendSpell(parent, name, showEffect) {
   const matches = data.spells[name];
   if (!matches || !matches.length) {
     parent.append(name);
@@ -137,7 +137,7 @@ function appendSpell(parent, name) {
   parent.append(wrap);
   wrap.addEventListener("mouseenter", (event) => showCard(event, matches, name));
   bindSpellHover(link, matches, name);
-  if (matches.length === 1 && matches[0].effect) {
+  if (showEffect && matches.length === 1 && matches[0].effect) {
     parent.append(el("span", "spell-effect", ` — ${matches[0].effect}`));
   }
 }
@@ -168,18 +168,19 @@ function spellSpans(text) {
 
 function appendLinkedText(parent, text) {
   const spans = spellSpans(text);
+  const whole = spans.length === 1 && spans[0][0] === 0 && spans[0][1] === text.length;
   let cursor = 0;
   spans.forEach(([start, end, name]) => {
     if (start > cursor) parent.append(text.slice(cursor, start));
-    appendSpell(parent, name);
+    appendSpell(parent, name, whole);
     cursor = end;
   });
   if (cursor < text.length) parent.append(text.slice(cursor));
 }
 
-function appendCopies(parent, name) {
+function appendCopies(parent, name, always) {
   const matches = data.spells[name] || [];
-  if (matches.length < 2) return;
+  if (!matches.length || (!always && matches.length < 2)) return;
   const list = el("ul", "spell-copies");
   matches.forEach((match) => {
     const item = document.createElement("li");
@@ -205,7 +206,9 @@ function renderBullets(bullets) {
   bullets.forEach((bullet) => {
     const item = document.createElement("li");
     appendLinkedText(item, bullet.text);
-    if (bullet.spell) appendCopies(item, bullet.spell);
+    // If the bullet text is already the spell name, appendSpell showed the ID.
+    // Only force a nested ID list when the spell is linked from other wording.
+    if (bullet.spell) appendCopies(item, bullet.spell, bullet.text !== bullet.spell);
     if (bullet.children && bullet.children.length) {
       item.append(renderBullets(bullet.children));
     }

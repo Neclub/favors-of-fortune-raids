@@ -12,6 +12,8 @@ from docx.oxml.ns import qn
 ROOT = Path(__file__).resolve().parents[1]
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 DASH = re.compile(r"^(\s*[—–-]\s*)(.*)$", re.S)
+ID_LINE = re.compile(r"^\s*(\d+)\s*[—–-]\s*")
+TITLE_IDS = re.compile(r"\(([\d,\s]+)\)")
 
 
 def element_text(element):
@@ -81,7 +83,33 @@ def sync_paragraph(paragraph, spells, effects):
                     if dashed.group(2).strip():
                         set_run_text(following, " — " + effect + ". " + description)
                 continue
+            # Leave mid-sentence mentions alone, e.g. "Spawns Name (id) every 270 seconds".
+            if element_text(following).strip():
+                continue
         insert_after(closing, " — " + effect)
+
+
+def remove_duplicate_id_lines(document):
+    """Drop `id — effect` lines that repeat a heading already showing Name (id) — effect."""
+    removed = 0
+    paragraphs = list(document.paragraphs)
+    index = 1
+    while index < len(paragraphs):
+        current = paragraphs[index].text.strip()
+        previous = paragraphs[index - 1].text.strip()
+        match = ID_LINE.match(current)
+        group = TITLE_IDS.search(previous)
+        if match and group:
+            title_ids = [part.strip() for part in group.group(1).split(",") if part.strip()]
+            if title_ids == [match.group(1)]:
+                parent = paragraphs[index]._p.getparent()
+                if parent is not None:
+                    parent.remove(paragraphs[index]._p)
+                    removed += 1
+                    paragraphs = list(document.paragraphs)
+                    continue
+        index += 1
+    return removed
 
 
 def main():
@@ -94,8 +122,9 @@ def main():
     document = Document(ROOT / "Info" / "FoF_Raid_Mechanics.docx")
     for paragraph in document.paragraphs:
         sync_paragraph(paragraph, data["spells"], effects)
+    removed = remove_duplicate_id_lines(document)
     document.save(ROOT / "Info" / "FoF_Raid_Mechanics.docx")
-    print("updated word writeup")
+    print(f"updated word writeup duplicates_removed={removed}")
 
 
 if __name__ == "__main__":

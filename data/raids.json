@@ -5156,86 +5156,15 @@
       {
         "id": "110",
         "icon": "https://spells.eqresource.com/spellicons/55Single0.jpe",
-        "effect": "Decrease Cold Resist by 20",
+        "effect": "Place Holder",
         "url": "https://spells.eqresource.com/spells.php?id=110&source=beta",
         "slots": [
-          "Decrease Cold Resist by 20",
-          "Decrease Magic Resist by 20",
-          "Decrease Poison Resist by 20",
-          "Decrease Fire Resist by 20"
+          "Place Holder"
         ],
         "details": [
           {
-            "label": "In Game Description",
-            "value": "Decreases your target's resistance to cold, fire, magic, and poison."
-          },
-          {
-            "label": "Land on You",
-            "value": "You feel somewhat vulnerable."
-          },
-          {
-            "label": "Land on Other",
-            "value": "Target looks somewhat uncomfortable."
-          },
-          {
-            "label": "Wear off",
-            "value": "Your vulnerability fades."
-          },
-          {
-            "label": "Mana",
-            "value": "60"
-          },
-          {
-            "label": "Casting Time",
-            "value": "3s"
-          },
-          {
-            "label": "Recast Time",
-            "value": "6s"
-          },
-          {
-            "label": "Duration",
-            "value": "14m"
-          },
-          {
-            "label": "Skill",
-            "value": "Alteration"
-          },
-          {
-            "label": "Target",
-            "value": "Single"
-          },
-          {
-            "label": "Range",
-            "value": "200"
-          },
-          {
-            "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic"
-          },
-          {
-            "label": "Dispellable",
-            "value": "Yes"
-          },
-          {
-            "label": "Focusable",
-            "value": "Yes"
-          },
-          {
-            "label": "Interruptible",
-            "value": "Yes"
-          },
-          {
-            "label": "Spell Bar Lockout",
-            "value": "1.5s"
-          },
-          {
-            "label": "Spell Line",
-            "value": "Malaise"
-          },
-          {
-            "label": "Category",
-            "value": "Utility Detrimental -> Resist Debuffs"
+            "label": "Note",
+            "value": "Developer placeholder name. The correct spell for this mechanic is unknown."
           }
         ]
       }

@@ -29,3 +29,6 @@ Remove:
 
 48040 — Cast on Skill Use: Vita Anuimis Proc (5)
 48039 — Cast on Skill Use: Vis Percussio Proc (5)
+
+Malaise:
+Developer placeholder name. Spell ID 110 is only the name match; show Place Holder until the real spell is known.

@@ -22,8 +22,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import forum_writeup
+from apply_spell_exclusions import main as apply_exclusions
 from build_site_data import load_exclusions
 from build_spreadsheet import OUT as WORKBOOK, SLOT_RE, cell_text, flatten, main as build_workbook, spell_details
+from sync_word_effects import main as sync_word
 
 RAIDS_PATH = ROOT / "data" / "raids.json"
 WRITEUPS_PATH = ROOT / "Info" / "FoF_Raid_Writeups.txt"
@@ -726,7 +728,9 @@ def audit_spells(session, data, extra_names, log):
     pending = [
         (name, entry)
         for name, entry in spell_entries(data)
-        if entry["id"] not in skip_ids and name not in skip_names
+        if entry["id"] not in skip_ids
+        and name not in skip_names
+        and (entry.get("effect") or "") != "Place Holder"
     ]
     signed_out = False
     console(f"Checking {len(pending)} spells...")
@@ -868,7 +872,22 @@ def publish():
         if branch.stderr.strip():
             console(branch.stderr.strip())
         return 1
-    added = git("add", "--", "data/raids.json", "Info/FoF_Raid_Spells.xlsx")
+    added = git(
+        "add",
+        "--",
+        "data/raids.json",
+        "Info/FoF_Raid_Spells.xlsx",
+        "Info/FoF_Raid_Mechanics.docx",
+        "Info/NonFoF_RaidSpells.txt",
+        "Info/Forum Posts",
+        "Info/Chronicles of War.txt",
+        "js/app.js",
+        "scripts/AuditAndAmend.py",
+        "scripts/sync_word_effects.py",
+        "scripts/apply_spell_exclusions.py",
+        "css/site.css",
+        "index.html",
+    )
     if added.returncode != 0:
         console(added.stderr.strip() or "The site files could not be prepared for publishing.")
         return 1
@@ -906,9 +925,13 @@ def audit(session):
     log.append("")
     if changed:
         RAIDS_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        console("Applying spell exclusions...")
+        apply_exclusions()
         console("Rebuilding the spreadsheet...")
         build_workbook()
-        log.append("Updated the webpage data and rebuilt the spreadsheet.")
+        console("Updating the Word writeup...")
+        sync_word()
+        log.append("Updated the webpage data, spreadsheet, and Word writeup.")
         log.append(f"Backup: {backup}")
         log.append("Run RestoreBackup.bat to put the site back to this backup.")
     else:

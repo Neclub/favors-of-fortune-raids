@@ -12,6 +12,7 @@ NOTE_FILES = [
     INFO / "Chronicles of War.txt",
     INFO / "SirenSisters_Missingspells.txt",
     INFO / "Moruuk and Sorshkah.txt",
+    INFO / "Fractured Vazaelle.txt",
 ]
 
 # Forum headings whose in-game spell uses a different name.
@@ -123,6 +124,45 @@ def link_sickening_glob(data):
                             {
                                 "text": SICKENING_GLOB,
                                 "spell": SICKENING_GLOB,
+                                "children": children,
+                            }
+                        ]
+                        changed = True
+    return changed
+
+
+ROOT_TEXT = "Players that move into the area will be silenced and rooted"
+GRASPING_MIST = "Grasping Mist"
+
+
+def link_grasping_mist(data):
+    """Attach Grasping Mist under the Silencing Mist root line on Vazaelle."""
+    changed = False
+    for tier in data.get("tiers") or []:
+        for raid in tier.get("raids") or []:
+            if raid.get("id") != "vazaelle":
+                continue
+            for stage in raid.get("stages") or []:
+                for block in stage.get("blocks") or []:
+                    if (block.get("title") or "").strip() != "Silencing Mist":
+                        continue
+                    for bullet in block.get("bullets") or []:
+                        if bullet.get("text") != ROOT_TEXT:
+                            continue
+                        children = bullet.setdefault("children", [])
+                        existing = next(
+                            (child for child in children if child.get("text") == GRASPING_MIST or child.get("spell") == GRASPING_MIST),
+                            None,
+                        )
+                        if existing:
+                            if existing.get("spell") != GRASPING_MIST:
+                                existing["spell"] = GRASPING_MIST
+                                changed = True
+                            continue
+                        bullet["children"] = [
+                            {
+                                "text": GRASPING_MIST,
+                                "spell": GRASPING_MIST,
                                 "children": children,
                             }
                         ]

@@ -4014,6 +4014,80 @@
         ]
       }
     ],
+    "Grasping Mist": [
+      {
+        "id": "75102",
+        "icon": "https://spells.eqresource.com/spellicons/608Caster%20AE0.jpe",
+        "effect": "Root",
+        "url": "https://spells.eqresource.com/spells.php?id=75102&source=beta",
+        "slots": [
+          "Root",
+          "Increase Chance of Root Breaking by 0%"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "The mist grasps your feet, preventing movement for %z."
+          },
+          {
+            "label": "Land on You",
+            "value": "The mist grips your feet, holding you in place."
+          },
+          {
+            "label": "Wear off",
+            "value": "The mist clears, you can move again."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "5 ticks"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster AE"
+          },
+          {
+            "label": "Range",
+            "value": "25"
+          },
+          {
+            "label": "AE Range",
+            "value": "25"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
+    ],
     "Gravitas Maxio": [
       {
         "id": "75040",
@@ -13248,7 +13322,13 @@
                     {
                       "text": "Players that move into the area will be silenced and rooted",
                       "spell": "",
-                      "children": []
+                      "children": [
+                        {
+                          "text": "Grasping Mist",
+                          "spell": "Grasping Mist",
+                          "children": []
+                        }
+                      ]
                     },
                     {
                       "text": "Fractured Psyche that move into the mist will be rooted and when killed will no longer damage the raid",

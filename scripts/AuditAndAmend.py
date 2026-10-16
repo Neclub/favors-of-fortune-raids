@@ -27,6 +27,7 @@ from build_site_data import load_exclusions
 from build_spreadsheet import OUT as WORKBOOK, SLOT_RE, cell_text, flatten, main as build_workbook, spell_details
 from spell_notes import (
     ensure_writeup_links,
+    link_grasping_mist,
     link_sickening_glob,
     load_spell_notes,
     renamed_spell_names,
@@ -771,6 +772,8 @@ def audit_spells(session, data, extra_names, log):
         changes.append(("Queasy", "75131", "Name", "Sick", "Queasy"))
     if link_sickening_glob(data):
         changes.append(("Sickening Glob", "75136", "Writeup", "", "linked on the lingering snot"))
+    if link_grasping_mist(data):
+        changes.append(("Grasping Mist", "75102", "Writeup", "", "linked on the silencing mist root"))
     if not signed_out:
         # Prefer IDs from Info note files, then fall back to EQResource search.
         pending_names = list(dict.fromkeys([*extra_names, *note_spells]))
@@ -912,6 +915,7 @@ def publish():
         "Info/Scorn, Queen of Thorns.txt",
         "Info/SirenSisters_Missingspells.txt",
         "Info/Moruuk and Sorshkah.txt",
+        "Info/Fractured Vazaelle.txt",
         "js/app.js",
         "scripts/AuditAndAmend.py",
         "scripts/sync_word_effects.py",

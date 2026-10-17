@@ -21,6 +21,13 @@ HEADING_RENAMES = {
     ("moruuk", "Sick"): "Queasy",
 }
 
+# Exact forum lines that are typos. The saved post and the site use the corrected line.
+FORUM_LINE_CORRECTIONS = {
+    "chronicles": {
+        "Spite": "Spite of Meldrath",
+    },
+}
+
 SPELL_URL = re.compile(
     r"https?://spells\.eqresource\.com/spells\.php\?id=(\d+)(?:&source=beta)?",
     re.I,
@@ -168,6 +175,66 @@ def link_grasping_mist(data):
                         ]
                         changed = True
     return changed
+
+
+def correct_forum_lines(raid_id, lines):
+    """Replace known mistyped forum lines before the post is compared or saved."""
+    replacements = FORUM_LINE_CORRECTIONS.get(raid_id) or {}
+    if not replacements:
+        return lines
+    return [replacements.get(line, line) for line in lines]
+
+
+def _set_spell_names(block, names):
+    if block.get("spellNames") == names:
+        return False
+    block["spellNames"] = list(names)
+    return True
+
+
+def _set_bullet_spell(block, prefix, spell_name):
+    changed = False
+    for bullet in block.get("bullets") or []:
+        if not (bullet.get("text") or "").startswith(prefix):
+            continue
+        if bullet.get("spell") != spell_name:
+            bullet["spell"] = spell_name
+            changed = True
+    return changed
+
+
+def apply_forum_spell_corrections(data):
+    """Keep spell links that correct mistyped forum headings.
+
+    Rebuilding a writeup from the staff post drops these, because the post
+    still uses the typo. The note file is the source for the real spell.
+    """
+    notes = []
+    for tier in data.get("tiers") or []:
+        for raid in tier.get("raids") or []:
+            if raid.get("id") != "chronicles":
+                continue
+            for stage in raid.get("stages") or []:
+                for block in stage.get("blocks") or []:
+                    title = (block.get("title") or "").strip()
+                    if title in {"Spite", "Spite of Meldrath"}:
+                        block_changed = title != "Spite of Meldrath"
+                        if block_changed:
+                            block["title"] = "Spite of Meldrath"
+                        block_changed |= _set_spell_names(block, ["Spite of Meldrath"])
+                        block_changed |= _set_bullet_spell(block, "If it fails to be removed", "Spite of Meldrath Effect")
+                        if block_changed:
+                            notes.append(("Spite of Meldrath", "75015", "Writeup", "Spite", "forum typo corrected from the note file"))
+                    elif title == "Tick-Tock Bomb":
+                        if _set_spell_names(block, ["Tick-Tock Explosion"]):
+                            notes.append(("Tick-Tock Explosion", "75017", "Writeup", "Tick-Tock Bomb", "linked on the forum heading"))
+                    elif title == "Self-Immolation":
+                        block_changed = _set_spell_names(block, [])
+                        block_changed |= _set_bullet_spell(block, "PBAoE that targets", "Self-Immolation")
+                        block_changed |= _set_bullet_spell(block, "Applies a DoT", "Self-Immolation Effect")
+                        if block_changed:
+                            notes.append(("Self-Immolation Effect", "75010", "Writeup", "", "linked on the DoT bullet"))
+    return notes
 
 
 def renamed_spell_names(names):

@@ -14198,9 +14198,7 @@
                 {
                   "kind": "mechanic",
                   "title": "Self-Immolation",
-                  "spellNames": [
-                    "Self-Immolation"
-                  ],
+                  "spellNames": [],
                   "prose": [],
                   "bullets": [
                     {
@@ -14210,12 +14208,12 @@
                     },
                     {
                       "text": "PBAoE that targets a random player",
-                      "spell": "",
+                      "spell": "Self-Immolation",
                       "children": []
                     },
                     {
                       "text": "Applies a DoT to that player and all players around them",
-                      "spell": "",
+                      "spell": "Self-Immolation Effect",
                       "children": []
                     }
                   ]
@@ -14332,9 +14330,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Spite",
+                  "title": "Spite of Meldrath",
                   "spellNames": [
-                    "Spite"
+                    "Spite of Meldrath"
                   ],
                   "prose": [],
                   "bullets": [
@@ -14350,7 +14348,7 @@
                     },
                     {
                       "text": "If it fails to be removed players in a ring around the target player take dmg",
-                      "spell": "",
+                      "spell": "Spite of Meldrath Effect",
                       "children": []
                     }
                   ]
@@ -14394,7 +14392,9 @@
                 {
                   "kind": "add",
                   "title": "Tick-Tock Bomb",
-                  "spellNames": [],
+                  "spellNames": [
+                    "Tick-Tock Explosion"
+                  ],
                   "prose": [],
                   "bullets": [
                     {

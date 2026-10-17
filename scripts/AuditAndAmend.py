@@ -1,4 +1,4 @@
-"""Check staff forum posts and beta EQResource spell pages, then update the site."""
+"""Check staff forum posts and beta spell files, then update the site."""
 
 import configparser
 import difflib
@@ -21,11 +21,14 @@ from urllib.parse import quote, quote_plus, unquote, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+import compare_spells
 import forum_writeup
 from apply_spell_exclusions import main as apply_exclusions
 from build_site_data import load_exclusions
 from build_spreadsheet import OUT as WORKBOOK, SLOT_RE, cell_text, flatten, main as build_workbook, spell_details
 from spell_notes import (
+    apply_forum_spell_corrections,
+    correct_forum_lines,
     ensure_writeup_links,
     link_grasping_mist,
     link_sickening_glob,
@@ -582,6 +585,20 @@ def apply_writeup(raid, parsed):
     return True
 
 
+def added_writeup_names(previous, live):
+    """Spell names that appear in the new post and were not in the saved copy."""
+    try:
+        old_parsed = forum_writeup.parse_lines(previous)
+        new_parsed = forum_writeup.parse_lines(live)
+    except Exception:
+        return []
+    if not old_parsed.get("stages"):
+        return []
+    old = set(old_parsed.get("names") or [])
+    new = set(new_parsed.get("names") or [])
+    return sorted(new - old, key=len, reverse=True)
+
+
 def audit_forums(session, data, log):
     changed_names = []
     forum_changes = 0
@@ -601,6 +618,7 @@ def audit_forums(session, data, log):
         console(f"Forum {index}/{len(targets)}: {label}")
         try:
             live, _html = fetch_post_lines(session, target["url"], target["post"])
+            live = correct_forum_lines(raid["id"], live)
         except SignInRequired:
             message = "  EverQuest forums need a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. No forum posts were changed."
             log.append(message)
@@ -634,7 +652,7 @@ def audit_forums(session, data, log):
         log.append(f"  {label}: updated")
         for line in changes:
             log.append(f"    {line}")
-        changed_names.extend(parsed["names"])
+        changed_names.extend(added_writeup_names(previous, live))
     if not targets:
         log.append("  No forum posts were listed.")
     return changed_names, forum_changes
@@ -727,6 +745,248 @@ def add_spell(data, name, spell_id, html):
     return True
 
 
+def load_beta_bundle(log):
+    """Download the beta client spell files and return the tables the compare uses."""
+    folder = compare_spells.DOWNLOADS / "beta"
+    try:
+        compare_spells.download_server("beta", folder)
+    except Exception as exc:
+        if (folder / "spells_us.txt").is_file():
+            log.append(f"  Could not refresh the beta spell files ({exc}). Using the last download.")
+        else:
+            log.append(f"  Could not download the beta spell files ({exc}).")
+            return None
+    spells = compare_spells.load_spells(folder / "spells_us.txt")
+    if not spells:
+        log.append("  The beta spell file had no spells.")
+        return None
+    strings = compare_spells.load_strings(folder / "spells_us_str.txt")
+    text = compare_spells.load_dbstr(folder / "dbstr_us.txt")
+    descriptions = text.get(6) or None
+    stacking = compare_spells.load_stacking(folder / "SpellStackingGroups.txt", text.get(40, {}))
+    names = {spell_id: spell["name"] for spell_id, spell in spells.items()}
+    return {
+        "spells": spells,
+        "strings": strings,
+        "descriptions": descriptions,
+        "categories": text.get(5, {}),
+        "lines": text.get(27, {}),
+        "stacking": stacking,
+        "names": names,
+        "index": index_spell_names(spells),
+    }
+
+
+def index_spell_names(spells):
+    found = {}
+    for spell in spells.values():
+        key = spell["name"].strip().casefold()
+        if not key:
+            continue
+        bucket = found.setdefault(key, {"name": spell["name"].strip(), "ids": [], "beta_ids": []})
+        spell_id = str(spell["id"])
+        if spell_id not in bucket["ids"]:
+            bucket["ids"].append(spell_id)
+        if spell["beta_only"] and spell_id not in bucket["beta_ids"]:
+            bucket["beta_ids"].append(spell_id)
+    for bucket in found.values():
+        bucket["ids"].sort(key=int)
+        bucket["beta_ids"].sort(key=int)
+    return found
+
+
+def near_spell_names(name, name_index, limit=5):
+    folded = name.strip().casefold()
+    hits = []
+    seen = set()
+
+    def add(key):
+        if key in seen or key == folded:
+            return
+        bucket = name_index.get(key)
+        if not bucket:
+            return
+        seen.add(key)
+        hits.append(bucket)
+
+    for key in name_index:
+        if key.startswith(folded + " ") or folded.startswith(key + " "):
+            add(key)
+    for key in difflib.get_close_matches(folded, name_index.keys(), n=limit, cutoff=0.86):
+        add(key)
+    hits.sort(key=lambda bucket: (len(bucket["name"]), bucket["name"].casefold()))
+    return hits[:limit], len(hits)
+
+
+def spell_file_diffs(name, entry, bundle):
+    spell_id = int(entry["id"])
+    spell = bundle["spells"].get(spell_id)
+    if spell is None:
+        return None
+    return compare_spells.field_diffs(
+        name,
+        entry,
+        spell,
+        bundle["strings"].get(spell_id, {}),
+        bundle["descriptions"],
+        bundle["names"],
+        bundle["categories"],
+        bundle["lines"],
+        bundle["stacking"].get(spell_id, []),
+    )
+
+
+def needs_spell_page(diffs):
+    return any(label in {"Icon", "Slots"} for label, _old, _new in diffs)
+
+
+def apply_file_diffs(entry, diffs):
+    """Write scalar spell-file values over the site. Slot text and icons stay on the page."""
+    details = list(entry.get("details") or [])
+    changes = []
+    for label, old, new in diffs:
+        if label in {"Name", "Icon", "Slots"}:
+            continue
+        if label != "Restriction" and not str(new).strip() and str(old).strip():
+            continue
+        if label == "Restriction":
+            details = [row for row in details if row.get("label") != "Restriction"]
+            for value in [part.strip() for part in str(new).split(" | ") if part.strip()]:
+                details.append({"label": "Restriction", "value": value})
+        else:
+            replaced = False
+            updated = []
+            for row in details:
+                if row.get("label") != label:
+                    updated.append(row)
+                    continue
+                if not replaced:
+                    updated.append({"label": label, "value": new})
+                    replaced = True
+            if not replaced:
+                updated.append({"label": label, "value": new})
+            details = updated
+        changes.append((label, old, new))
+    if changes:
+        entry["details"] = details
+    return changes
+
+
+def record_file_diffs(name, entry, diffs, changes):
+    for label, old, new in apply_file_diffs(entry, diffs):
+        changes.append((name, entry["id"], label, old, new))
+
+
+def refresh_spell_page(session, name, entry):
+    html = session.get(entry.get("url") or spell_page(entry["id"]))
+    if spell_blocked(html):
+        raise SignInRequired("EQResource")
+    return update_spell(name, entry, html)
+
+
+def audit_spell_pages(session, pending, log, changes):
+    """Read every spell page. Used when the beta spell files are unavailable."""
+    signed_out = False
+    console(f"Checking {len(pending)} spells...")
+    for index, (name, entry) in enumerate(pending, start=1):
+        if signed_out:
+            break
+        console(f"Spell {index}/{len(pending)}: {name} ({entry['id']})")
+        try:
+            found = refresh_spell_page(session, name, entry)
+        except SignInRequired:
+            message = "  EQResource beta spell data needs a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. Remaining spells were left unchanged."
+            log.append(message)
+            console(message.strip())
+            signed_out = True
+            break
+        except Exception as exc:
+            log.append(f"  {name} {entry['id']}: could not be read ({exc})")
+            continue
+        if found is None:
+            log.append(f"  {name} {entry['id']}: the spell page had no details, so it was left unchanged.")
+            continue
+        changes.extend(found)
+    return signed_out
+
+
+def audit_spells_from_files(session, pending, bundle, log, changes):
+    """Update scalars from the spell files and open a page only when slots or the icon differ."""
+    page_ids = []
+    missing = 0
+    for name, entry in pending:
+        diffs = spell_file_diffs(name, entry, bundle)
+        if diffs is None:
+            missing += 1
+            log.append(f"  {name} {entry['id']}: not in the beta spell files, so it was left unchanged.")
+            continue
+        if needs_spell_page(diffs):
+            page_ids.append((name, entry, diffs))
+            continue
+        record_file_diffs(name, entry, diffs, changes)
+    console(
+        f"Spell files compared. Reading {len(page_ids)} changed spell pages"
+        + (f", {missing} missing from the beta files." if missing else ".")
+    )
+    signed_out = False
+    for index, (name, entry, diffs) in enumerate(page_ids, start=1):
+        if signed_out:
+            record_file_diffs(name, entry, diffs, changes)
+            continue
+        console(f"Spell page {index}/{len(page_ids)}: {name} ({entry['id']})")
+        try:
+            found = refresh_spell_page(session, name, entry)
+        except SignInRequired:
+            message = "  EQResource beta spell data needs a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. Remaining spell pages were not read. Values from the spell files were still applied."
+            log.append(message)
+            console(message.strip())
+            signed_out = True
+            record_file_diffs(name, entry, diffs, changes)
+            continue
+        except Exception as exc:
+            log.append(f"  {name} {entry['id']}: could not be read ({exc})")
+            record_file_diffs(name, entry, diffs, changes)
+            continue
+        if found is None:
+            log.append(f"  {name} {entry['id']}: the spell page had no details, so the page was left unchanged.")
+            record_file_diffs(name, entry, diffs, changes)
+            continue
+        changes.extend(found)
+        fresh = spell_file_diffs(name, entry, bundle) or []
+        record_file_diffs(name, entry, fresh, changes)
+    return signed_out
+
+
+def lookup_spell_name(name, name_index, skip_ids, seen, existing_ids):
+    """Classify a writeup name against the beta spell-file index."""
+    bucket = name_index.get(name.strip().casefold())
+    if not bucket:
+        return "missing", []
+    beta_ids = bucket.get("beta_ids") or []
+    if not beta_ids:
+        return "live", bucket["ids"]
+    if len(beta_ids) > 4:
+        return "ambiguous", beta_ids
+    needed = [
+        spell_id
+        for spell_id in beta_ids
+        if spell_id not in skip_ids and spell_id not in seen and spell_id not in existing_ids
+    ]
+    if not needed:
+        return "present", []
+    return "exact", needed
+
+
+def log_unmatched_name(log, name, name_index):
+    near, total = near_spell_names(name, name_index)
+    if not near:
+        log.append(f"  {name}: no exact beta spell with this name")
+        return
+    shown = [f"{bucket['name']} ({', '.join(bucket['ids'])})" for bucket in near]
+    extra = f" and {total - len(shown)} more" if total > len(shown) else ""
+    log.append(f"  {name}: no exact beta spell. Closest: {'; '.join(shown)}{extra}")
+
+
 def audit_spells(session, data, extra_names, log):
     log.append("")
     log.append("Spells")
@@ -740,32 +1000,13 @@ def audit_spells(session, data, extra_names, log):
         and name not in skip_names
         and (entry.get("effect") or "") != "Place Holder"
     ]
-    signed_out = False
-    console(f"Checking {len(pending)} spells...")
-    for index, (name, entry) in enumerate(pending, start=1):
-        if signed_out:
-            break
-        console(f"Spell {index}/{len(pending)}: {name} ({entry['id']})")
-        try:
-            html = session.get(entry.get("url") or spell_page(entry["id"]))
-        except Exception as exc:
-            log.append(f"  {name} {entry['id']}: could not be read ({exc})")
-            continue
-        if spell_blocked(html):
-            message = "  EQResource beta spell data needs a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. Remaining spells were left unchanged."
-            log.append(message)
-            console(message.strip())
-            signed_out = True
-            break
-        try:
-            found = update_spell(name, entry, html)
-        except Exception as exc:
-            log.append(f"  {name} {entry['id']}: could not be read ({exc})")
-            continue
-        if found is None:
-            log.append(f"  {name} {entry['id']}: the spell page had no details, so it was left unchanged.")
-            continue
-        changes.extend(found)
+    console("Downloading beta spell files...")
+    bundle = load_beta_bundle(log)
+    if bundle is None:
+        log.append("  Spell pages will be checked directly.")
+        signed_out = audit_spell_pages(session, pending, log, changes)
+    else:
+        signed_out = audit_spells_from_files(session, pending, bundle, log, changes)
     note_spells = load_spell_notes()
     extra_names = renamed_spell_names(extra_names)
     if rename_writeup_spells(data):
@@ -774,8 +1015,9 @@ def audit_spells(session, data, extra_names, log):
         changes.append(("Sickening Glob", "75136", "Writeup", "", "linked on the lingering snot"))
     if link_grasping_mist(data):
         changes.append(("Grasping Mist", "75102", "Writeup", "", "linked on the silencing mist root"))
+    changes.extend(apply_forum_spell_corrections(data))
     if not signed_out:
-        # Prefer IDs from Info note files, then fall back to EQResource search.
+        # Note files name an ID directly. New writeup names are resolved in the spell files.
         pending_names = list(dict.fromkeys([*extra_names, *note_spells]))
         for name in pending_names:
             if name in skip_names:
@@ -790,16 +1032,33 @@ def audit_spells(session, data, extra_names, log):
             if not needed:
                 if name in data["spells"]:
                     continue
-                try:
-                    console(f"Searching EQResource for {name}...")
-                    needed = search_spell_ids(session, name)
-                except SignInRequired:
-                    log.append("  EQResource beta spell data needs a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. New spell names were not added.")
-                    break
-                except Exception as exc:
-                    log.append(f"  {name}: search failed ({exc})")
-                    continue
-                needed = [spell_id for spell_id in needed if spell_id not in skip_ids and spell_id not in seen]
+                if bundle is None:
+                    try:
+                        console(f"Searching EQResource for {name}...")
+                        needed = search_spell_ids(session, name)
+                    except SignInRequired:
+                        log.append("  EQResource beta spell data needs a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. New spell names were not added.")
+                        break
+                    except Exception as exc:
+                        log.append(f"  {name}: search failed ({exc})")
+                        continue
+                    needed = [spell_id for spell_id in needed if spell_id not in skip_ids and spell_id not in seen]
+                else:
+                    status, found_ids = lookup_spell_name(name, bundle["index"], skip_ids, seen, existing_ids)
+                    if status == "ambiguous":
+                        log.append(f"  {name}: {len(found_ids)} beta spells share this exact name, so none were added.")
+                        continue
+                    if status == "live":
+                        log.append(f"  {name}: {name} ({', '.join(found_ids)}) is in the spell files and is not beta-only, so it was not added.")
+                        log_unmatched_name(log, name, bundle["index"])
+                        continue
+                    if status == "present":
+                        log.append(f"  {name}: already on the site")
+                        continue
+                    if status != "exact":
+                        log_unmatched_name(log, name, bundle["index"])
+                        continue
+                    needed = found_ids
             if not needed:
                 if name not in data["spells"]:
                     log.append(f"  {name}: no beta spell page was found")
@@ -818,6 +1077,10 @@ def audit_spells(session, data, extra_names, log):
                 if add_spell(data, name, spell_id, html):
                     seen.add(spell_id)
                     changes.append((name, spell_id, "Spell", "", f"added from the {source}"))
+                    if bundle is not None:
+                        added = next(item for item in data["spells"][name] if item["id"] == spell_id)
+                        fresh = spell_file_diffs(name, added, bundle) or []
+                        record_file_diffs(name, added, fresh, changes)
             ensure_writeup_links(data, name)
             if signed_out:
                 break

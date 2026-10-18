@@ -1,2 +1,7 @@
 Rapid Fire Burst:
 https://spells.eqresource.com/spells.php?id=75179&source=beta
+
+Stage 3 Rapid Fire Burst charms with Coerced Loyalty, not Rapid Fire Burst.
+
+Coerced Loyalty:
+https://spells.eqresource.com/spells.php?id=75200&source=beta

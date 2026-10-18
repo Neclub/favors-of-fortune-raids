@@ -3826,10 +3826,10 @@
       {
         "id": "75077",
         "icon": "https://spells.eqresource.com/spellicons/921Single0.jpe",
-        "effect": "Decrease Healing Taken by 1% to 75% (v393)",
+        "effect": "Decrease Healing Taken by 1% to 90% (v393)",
         "url": "https://spells.eqresource.com/spells.php?id=75077&source=beta",
         "slots": [
-          "Decrease Healing Taken by 1% to 75% (v393)",
+          "Decrease Healing Taken by 1% to 90% (v393)",
           "Cast on Limit Match: Transfer In Progress"
         ],
         "details": [
@@ -3871,7 +3871,7 @@
           },
           {
             "label": "Focusable",
-            "value": "No"
+            "value": "Yes"
           },
           {
             "label": "Restriction",
@@ -4017,7 +4017,7 @@
     "Grasping Mist": [
       {
         "id": "75102",
-        "icon": "https://spells.eqresource.com/spellicons/608Caster%20AE0.jpe",
+        "icon": "https://spells.eqresource.com/spellicons/608Single0.jpe",
         "effect": "Root",
         "url": "https://spells.eqresource.com/spells.php?id=75102&source=beta",
         "slots": [
@@ -4055,14 +4055,10 @@
           },
           {
             "label": "Target",
-            "value": "Caster AE"
+            "value": "Single"
           },
           {
             "label": "Range",
-            "value": "25"
-          },
-          {
-            "label": "AE Range",
             "value": "25"
           },
           {
@@ -7241,7 +7237,8 @@
         "slots": [
           "Fear up to Level 255",
           "Increase Spell and DoT Damage Taken by 25% (v483, After Crit)",
-          "Limit: Different Caster"
+          "Limit: Different Caster",
+          "Decrease Movement Speed by 900%"
         ],
         "details": [
           {
@@ -8104,7 +8101,7 @@
           },
           {
             "label": "Target",
-            "value": "Caster AE"
+            "value": "Single"
           },
           {
             "label": "Range",
@@ -8112,7 +8109,7 @@
           },
           {
             "label": "AE Range",
-            "value": "25"
+            "value": "0"
           },
           {
             "label": "Spell Type",
@@ -10491,7 +10488,7 @@
           },
           {
             "label": "Target",
-            "value": "Single"
+            "value": "Target AE"
           },
           {
             "label": "Range",
@@ -10581,11 +10578,11 @@
           },
           {
             "label": "Push Back",
-            "value": "150"
+            "value": "100"
           },
           {
             "label": "Push Up",
-            "value": "25"
+            "value": "5"
           }
         ]
       }
@@ -14378,7 +14375,7 @@
                     },
                     {
                       "text": "Spawns Stinking Miasma every 270 seconds",
-                      "spell": "",
+                      "spell": "Stinking Miasma",
                       "children": [
                         {
                           "text": "Players that enter the stinking miasma will take dmg and lose a little mana and endurance",

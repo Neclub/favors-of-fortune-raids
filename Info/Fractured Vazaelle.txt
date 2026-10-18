@@ -1,4 +1,14 @@
+Creeping Madness stacks on Stage 1. Rank V also charms.
+
+Creeping Madness:
+https://spells.eqresource.com/spells.php?id=75095&source=beta
+https://spells.eqresource.com/spells.php?id=75096&source=beta
+https://spells.eqresource.com/spells.php?id=75097&source=beta
+https://spells.eqresource.com/spells.php?id=75098&source=beta
+https://spells.eqresource.com/spells.php?id=75099&source=beta
+
 The root on Silencing Mist is Grasping Mist.
+Stage 5 only silences; do not add Grasping Mist there.
 
 Grasping Mist:
 https://spells.eqresource.com/spells.php?id=75102&source=beta

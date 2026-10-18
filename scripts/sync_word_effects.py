@@ -44,6 +44,32 @@ def insert_after(run, text):
     run.addnext(new_run)
 
 
+def effect_line(slots, fallback=""):
+    """Full slot text for a Word line, falling back to the first effect."""
+    parts = [part for part in (slots or []) if part]
+    if parts:
+        return " | ".join(parts)
+    return fallback or ""
+
+
+def should_replace_effect(current, wanted):
+    """True when the Word line should take the website effect text.
+
+    A line that already starts with the first effect and continues with more
+    slots, such as Creeping Madness 75099, is left alone.
+    """
+    current = (current or "").strip()
+    wanted = (wanted or "").strip()
+    if not wanted or current == wanted:
+        return False
+    if current.startswith(wanted):
+        return False
+    first = wanted.split(" | ", 1)[0].strip()
+    if first and current.startswith(first):
+        return False
+    return True
+
+
 def sync_paragraph(paragraph, spells, effects):
     children = [child for child in paragraph._p if child.tag in (W + "r", W + "hyperlink")]
     for index, child in enumerate(children):
@@ -55,13 +81,14 @@ def sync_paragraph(paragraph, spells, effects):
             if following is None or following.tag != W + "r" or not DASH.match(element_text(following)):
                 continue
             current = DASH.match(element_text(following)).group(2).strip()
-            if effects[label] and current != effects[label]:
-                set_run_text(following, " — " + effects[label])
+            wanted = effects[label]
+            if should_replace_effect(current, wanted):
+                set_run_text(following, " — " + wanted)
             continue
         matches = spells.get(label) or []
         if len(matches) != 1 or index + 3 >= len(children):
             continue
-        effect = matches[0].get("effect") or ""
+        effect = effect_line(matches[0].get("slots"), matches[0].get("effect") or "")
         if not effect or effect in element_text(paragraph._p):
             continue
         opening, spell_id, closing = children[index + 1 : index + 4]
@@ -78,10 +105,11 @@ def sync_paragraph(paragraph, spells, effects):
                     described = following.getnext()
                     if described is not None and described.tag == W + "r":
                         description = element_text(described).strip()
-                if description and not description.startswith(effect):
-                    set_run_text(following, " — " + effect + ". ")
-                    if dashed.group(2).strip():
-                        set_run_text(following, " — " + effect + ". " + description)
+                if should_replace_effect(description, effect):
+                    remainder = ""
+                    if description and not description.startswith(effect.split(" | ", 1)[0]):
+                        remainder = " " + description
+                    set_run_text(following, " — " + effect + ("." if remainder else "") + remainder)
                 continue
             # Leave mid-sentence mentions alone, e.g. "Spawns Name (id) every 270 seconds".
             if element_text(following).strip():
@@ -115,7 +143,7 @@ def remove_duplicate_id_lines(document):
 def main():
     data = json.loads((ROOT / "data" / "raids.json").read_text(encoding="utf-8"))
     effects = {
-        match["id"]: match.get("effect") or ""
+        match["id"]: effect_line(match.get("slots"), match.get("effect") or "")
         for matches in data["spells"].values()
         for match in matches
     }

@@ -6,10 +6,14 @@ https://spells.eqresource.com/spells.php?id=75015&source=beta
 Spite of Meldrath Effect:
 https://spells.eqresource.com/spells.php?id=75016&source=beta
 
+Tick-Tock Bomb uses Tick-Tock Explosion.
+
 Tick-Tock Explosion:
 https://spells.eqresource.com/spells.php?id=75017&source=beta
 https://spells.eqresource.com/spells.php?id=75018&source=beta
 https://spells.eqresource.com/spells.php?id=75019&source=beta
+
+Self-Immolation IDs stay on the bullets, not the heading.
 
 Self-Immolation:
 https://spells.eqresource.com/spells.php?id=75009&source=beta
@@ -17,9 +21,17 @@ https://spells.eqresource.com/spells.php?id=75009&source=beta
 Self-Immolation Effect:
 https://spells.eqresource.com/spells.php?id=75010&source=beta
 
+Stinking Miasma on Harvester's Gravestone.
+
+Stinking Miasma:
+https://spells.eqresource.com/spells.php?id=75061&source=beta
+
 Remove:
 48040 — Cast on Skill Use: Vita Anuimis Proc (5)
 48039 — Cast on Skill Use: Vis Percussio Proc (5)
+40778 — older Spite
+19920 — older Self-Immolation
+12087 — older Stinking Miasma
 
 Malaise:
 Developer placeholder name. Spell ID 110 is only the name match; show Place Holder until the real spell is known.

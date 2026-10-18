@@ -27,14 +27,13 @@ from apply_spell_exclusions import main as apply_exclusions
 from build_site_data import load_exclusions
 from build_spreadsheet import OUT as WORKBOOK, SLOT_RE, cell_text, flatten, main as build_workbook, spell_details
 from spell_notes import (
+    FORUM_LINE_CORRECTIONS,
+    HEADING_RENAMES,
     apply_forum_spell_corrections,
     correct_forum_lines,
     ensure_writeup_links,
-    link_grasping_mist,
-    link_sickening_glob,
     load_spell_notes,
     renamed_spell_names,
-    rename_writeup_spells,
 )
 from sync_word_effects import main as sync_word
 
@@ -567,16 +566,99 @@ def fetch_post_lines(session, url, post):
     return lines, html
 
 
+def block_title_key(raid_id, title):
+    """Match forum and site headings that are renames of the same mechanic."""
+    title = (title or "").strip()
+    renamed = HEADING_RENAMES.get((raid_id, title))
+    if renamed:
+        return renamed.casefold()
+    for (other_id, old), new in HEADING_RENAMES.items():
+        if other_id == raid_id and title == new:
+            return new.casefold()
+    for old, new in (FORUM_LINE_CORRECTIONS.get(raid_id) or {}).items():
+        if title in {old, new}:
+            return new.casefold()
+    return title.casefold()
+
+
+def merge_bullets(old_bullets, new_bullets):
+    """Keep spell links on bullets whose text is unchanged."""
+    old_by_text = {}
+    for bullet in old_bullets or []:
+        key = (bullet.get("text") or "").strip()
+        if key and key not in old_by_text:
+            old_by_text[key] = bullet
+    merged = []
+    for new in new_bullets or []:
+        key = (new.get("text") or "").strip()
+        old = old_by_text.get(key)
+        if not old:
+            merged.append(new)
+            continue
+        item = {
+            "text": new.get("text") or "",
+            "spell": (new.get("spell") or "").strip() or (old.get("spell") or ""),
+            "children": merge_bullets(old.get("children") or [], new.get("children") or []),
+        }
+        merged.append(item)
+    return merged
+
+
+def merge_block(raid_id, old_block, new_block):
+    """Update forum text while keeping manual spellNames that are not the heading."""
+    title = (new_block.get("title") or "").strip()
+    old_names = old_block.get("spellNames") or []
+    new_names = list(new_block.get("spellNames") or [])
+    merged_names = list(dict.fromkeys(new_names))
+    for name in old_names:
+        if name != title and name not in merged_names:
+            merged_names.append(name)
+    return {
+        "kind": new_block.get("kind") or old_block.get("kind") or "mechanic",
+        "title": new_block.get("title") or "",
+        "spellNames": merged_names,
+        "prose": list(new_block.get("prose") or []),
+        "bullets": merge_bullets(old_block.get("bullets") or [], new_block.get("bullets") or []),
+    }
+
+
+def merge_stages(raid_id, old_stages, new_stages):
+    old_by_title = {}
+    for stage in old_stages or []:
+        key = (stage.get("title") or "").strip().casefold()
+        if key and key not in old_by_title:
+            old_by_title[key] = stage
+    merged = []
+    for new_stage in new_stages or []:
+        stage_key = (new_stage.get("title") or "").strip().casefold()
+        old_stage = old_by_title.get(stage_key) or {}
+        old_blocks = {}
+        for block in old_stage.get("blocks") or []:
+            key = block_title_key(raid_id, block.get("title"))
+            if key and key not in old_blocks:
+                old_blocks[key] = block
+        blocks = []
+        for new_block in new_stage.get("blocks") or []:
+            old_block = old_blocks.get(block_title_key(raid_id, new_block.get("title")))
+            if old_block:
+                blocks.append(merge_block(raid_id, old_block, new_block))
+            else:
+                blocks.append(new_block)
+        merged.append({"title": new_stage.get("title") or "", "blocks": blocks})
+    return merged
+
+
 def apply_writeup(raid, parsed):
     if not parsed["title"] or not parsed["stages"]:
         return False
     raid["title"] = parsed["title"]
     raid["giver"] = parsed["giver"]
     raid["requirements"] = parsed["requirements"]
-    raid["stages"] = [
+    new_stages = [
         {"title": title, "blocks": [block_dict(item) for item in items]}
         for title, items in parsed["stages"]
     ]
+    raid["stages"] = merge_stages(raid.get("id"), raid.get("stages") or [], new_stages)
     raid["summary"] = [
         {"name": name, "effect": effect}
         for name, effect in parsed["summary"]
@@ -1009,12 +1091,6 @@ def audit_spells(session, data, extra_names, log):
         signed_out = audit_spells_from_files(session, pending, bundle, log, changes)
     note_spells = load_spell_notes()
     extra_names = renamed_spell_names(extra_names)
-    if rename_writeup_spells(data):
-        changes.append(("Queasy", "75131", "Name", "Sick", "Queasy"))
-    if link_sickening_glob(data):
-        changes.append(("Sickening Glob", "75136", "Writeup", "", "linked on the lingering snot"))
-    if link_grasping_mist(data):
-        changes.append(("Grasping Mist", "75102", "Writeup", "", "linked on the silencing mist root"))
     changes.extend(apply_forum_spell_corrections(data))
     if not signed_out:
         # Note files name an ID directly. New writeup names are resolved in the spell files.
@@ -1179,6 +1255,7 @@ def publish():
         "Info/SirenSisters_Missingspells.txt",
         "Info/Moruuk and Sorshkah.txt",
         "Info/Fractured Vazaelle.txt",
+        "Info/Taurlton, the Doorman.txt",
         "js/app.js",
         "scripts/AuditAndAmend.py",
         "scripts/sync_word_effects.py",

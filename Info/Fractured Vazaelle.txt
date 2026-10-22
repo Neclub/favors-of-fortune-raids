@@ -12,3 +12,12 @@ Stage 5 only silences; do not add Grasping Mist there.
 
 Grasping Mist:
 https://spells.eqresource.com/spells.php?id=75102&source=beta
+
+10/20/2026
+Madness Amalgamation
+Occurs every 60 seconds
+2 amalgamations spawn and each focus a player
+Amalgamations cannot be damage
+After 30 seconds or if they get too close to their target they will detonate, dealing a large amount of damage to the raid
+Shattered Madness (75106 )
+Moving an amalgamation near a statue will despawn the statue and the amalgamation

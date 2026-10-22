@@ -117,6 +117,7 @@ Escalating Threats
 • Area denial zones increase in frequency and number
 • A second sword storm zone spawns on the opposite side of the arena
 • The weapon puzzle now spawns 4 new adds per interval
+• If the water sort puzzle is solved, summon Weapon mini/adds that are not currently up.
 • Add spawn timers decrease, forcing faster responses
 • Eriak's Tactical Whirlwind Slash becomes more damaging (changes spell variant)
 Critical Phase

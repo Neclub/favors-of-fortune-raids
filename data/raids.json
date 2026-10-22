@@ -331,7 +331,7 @@
           },
           {
             "label": "Duration",
-            "value": "20m"
+            "value": "5m"
           },
           {
             "label": "Skill",
@@ -399,7 +399,7 @@
           },
           {
             "label": "Duration",
-            "value": "20m"
+            "value": "5m"
           },
           {
             "label": "Skill",
@@ -1283,7 +1283,7 @@
           },
           {
             "label": "Target",
-            "value": "Single"
+            "value": "Caster AE"
           },
           {
             "label": "Range",
@@ -1643,7 +1643,7 @@
           },
           {
             "label": "Land on You",
-            "value": "An immense weight slows your movement"
+            "value": "An immense weight slows your movement."
           },
           {
             "label": "Wear off",
@@ -4034,6 +4034,10 @@
             "value": "The mist grips your feet, holding you in place."
           },
           {
+            "label": "Land on Other",
+            "value": "Target is held in place."
+          },
+          {
             "label": "Wear off",
             "value": "The mist clears, you can move again."
           },
@@ -4514,6 +4518,10 @@
           {
             "label": "Land on You",
             "value": "Fate can give and take; this time it gave."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's fate takes something away."
           },
           {
             "label": "Wear off",
@@ -7178,6 +7186,10 @@
             "value": "Your mind and muscles feel sluggish and are slow to respond."
           },
           {
+            "label": "Land on Other",
+            "value": "Target looks sluggish and slow."
+          },
+          {
             "label": "Wear off",
             "value": "Your body and mind start responding again."
           },
@@ -7317,6 +7329,10 @@
           {
             "label": "Land on You",
             "value": "The magic flowing through your body ignites, burning you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's body burns."
           },
           {
             "label": "Mana",
@@ -7572,6 +7588,10 @@
             "value": "Target has been burnt by a wizard's blast of self-immolation."
           },
           {
+            "label": "Wear off",
+            "value": "Your burning flesh simmers."
+          },
+          {
             "label": "Mana",
             "value": "0"
           },
@@ -7631,6 +7651,10 @@
           {
             "label": "Land on Other",
             "value": "Target has been ignited by a self-immolation spell."
+          },
+          {
+            "label": "Wear off",
+            "value": "The immolation fades."
           },
           {
             "label": "Mana",
@@ -10088,7 +10112,7 @@
           },
           {
             "label": "Target",
-            "value": "Caster AE"
+            "value": "Single"
           },
           {
             "label": "Range",
@@ -10096,7 +10120,7 @@
           },
           {
             "label": "AE Range",
-            "value": "30"
+            "value": "0"
           },
           {
             "label": "Spell Type",
@@ -10138,6 +10162,14 @@
           {
             "label": "Cast by Other",
             "value": "Target's fists glow."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target convulses as electricity bounces across their skin."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your body no longer convulses."
           },
           {
             "label": "Mana",
@@ -10195,6 +10227,14 @@
           {
             "label": "Cast by Other",
             "value": "Target's fists glow."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target starts to be pulled apart by the very earth."
+          },
+          {
+            "label": "Wear off",
+            "value": "The earth crumbles."
           },
           {
             "label": "Mana",
@@ -10583,6 +10623,63 @@
           {
             "label": "Push Up",
             "value": "5"
+          }
+        ]
+      }
+    ],
+    "Resonating Pulse": [
+      {
+        "id": "75059",
+        "icon": "https://spells.eqresource.com/spellicons/162Caster%20PB0.jpe",
+        "effect": "Dispel Beneficial (100% Chance)",
+        "url": "https://spells.eqresource.com/spells.php?id=75059&source=beta",
+        "slots": [
+          "Dispel Beneficial (100% Chance)",
+          "Decrease Current Hit Points by 600000",
+          "Decrease Current Mana by 5000 (v417)",
+          "Decrease Current Endurance by 2000",
+          "Stun for 2s"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "A pulse resonates within your very core, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "A pulse resonates within your very core."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Caster PB"
+          },
+          {
+            "label": "AE Range",
+            "value": "37"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Magic -10000 Min: 5% Max: 15%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
           }
         ]
       }
@@ -14839,9 +14936,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Resonating Blase",
+                  "title": "Resonating Pulse",
                   "spellNames": [
-                    "Resonating Blase"
+                    "Resonating Pulse"
                   ],
                   "prose": [],
                   "bullets": [
@@ -15717,6 +15814,11 @@
                     },
                     {
                       "text": "The weapon puzzle now spawns 4 new adds per interval",
+                      "spell": "",
+                      "children": []
+                    },
+                    {
+                      "text": "If the water sort puzzle is solved, summon Weapon mini/adds that are not currently up.",
                       "spell": "",
                       "children": []
                     },

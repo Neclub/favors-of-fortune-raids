@@ -191,7 +191,7 @@ Resonating Beam
 • Occurs every 45 seconds while one of her students are alive
 • Targets one of her students and fires the beam
 • Players hit by the beam will take significant damage, has a beneficial effect removed, has their mana reduced, and has their endurance reduced
-Resonating Blase
+Resonating Pulse
 • Occurs every 45 seconds while none of her students are alive
 • Players hit will suffer the same effects as the beam, but will also be stunned
 Shifting Focus

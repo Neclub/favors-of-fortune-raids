@@ -127,10 +127,10 @@
       {
         "id": "75111",
         "icon": "https://spells.eqresource.com/spellicons/1927Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 700750 per Tick",
+        "effect": "Decrease Current Hit Points by 775500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75111&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 700750 per Tick"
+          "Decrease Current Hit Points by 775500 per Tick"
         ],
         "details": [
           {
@@ -140,6 +140,10 @@
           {
             "label": "Land on You",
             "value": "A quick slash causes you to bleed."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is bleeding."
           },
           {
             "label": "Wear off",
@@ -654,10 +658,10 @@
       {
         "id": "75130",
         "icon": "https://spells.eqresource.com/spellicons/945Single0.jpe",
-        "effect": "Decrease Current Hit Points by 750500",
+        "effect": "Decrease Current Hit Points by 850500",
         "url": "https://spells.eqresource.com/spells.php?id=75130&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 750500",
+          "Decrease Current Hit Points by 850500",
           "Fling"
         ],
         "details": [
@@ -668,6 +672,10 @@
           {
             "label": "Land on You",
             "value": "A shockwave of pressure crushes your bones and throws you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's bones are crushed as they are thrown by the shockwave."
           },
           {
             "label": "Mana",
@@ -1120,10 +1128,10 @@
       {
         "id": "75171",
         "icon": "https://spells.eqresource.com/spellicons/1343Single0.jpe",
-        "effect": "Decrease Current Hit Points by 350000",
+        "effect": "Decrease Current Hit Points by 660660",
         "url": "https://spells.eqresource.com/spells.php?id=75171&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 350000",
+          "Decrease Current Hit Points by 660660",
           "Stun for 6s"
         ],
         "details": [
@@ -1134,6 +1142,10 @@
           {
             "label": "Land on You",
             "value": "Your body tightens and freezes in place."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's body freezes in place."
           },
           {
             "label": "Wear off",
@@ -1182,10 +1194,11 @@
       {
         "id": "75126",
         "icon": "https://spells.eqresource.com/spellicons/432Single0.jpe",
-        "effect": "Decrease Current Hit Points by 500500 per Tick",
+        "effect": "Decrease Current Hit Points by 650500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75126&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 500500 per Tick",
+          "Decrease Current Hit Points by 650500 per Tick",
+          "Cast on Duration Fade: Black Listed",
           "Cast on Duration Fade: Black Listed"
         ],
         "details": [
@@ -1196,6 +1209,10 @@
           {
             "label": "Land on You",
             "value": "Taurlton's gaze rests uneasily on you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target looks uneasy as Taurlton's gaze falls on them."
           },
           {
             "label": "Wear off",
@@ -1249,12 +1266,11 @@
       },
       {
         "id": "75127",
-        "icon": "https://spells.eqresource.com/spellicons/432Single0.jpe",
-        "effect": "Decrease Current Hit Points by 600500",
+        "icon": "https://spells.eqresource.com/spellicons/432Caster%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 825500",
         "url": "https://spells.eqresource.com/spells.php?id=75127&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600500",
-          "Cast on Fade: Black Listed"
+          "Decrease Current Hit Points by 825500"
         ],
         "details": [
           {
@@ -1264,6 +1280,10 @@
           {
             "label": "Land on You",
             "value": "A shockwave of debris cuts into you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is struck by a shockwave of debris."
           },
           {
             "label": "Mana",
@@ -1287,6 +1307,10 @@
           },
           {
             "label": "Range",
+            "value": "1000"
+          },
+          {
+            "label": "AE Range",
             "value": "1000"
           },
           {
@@ -1363,10 +1387,10 @@
       {
         "id": "68237",
         "icon": "https://spells.eqresource.com/spellicons/62Single0.jpe",
-        "effect": "Decrease Armor Class by 331 to 438, Based on Class",
+        "effect": "Decrease Armor Class by 994 to 1313, Based on Class",
         "url": "https://spells.eqresource.com/spells.php?id=68237&source=beta",
         "slots": [
-          "Decrease Armor Class by 331 to 438, Based on Class"
+          "Decrease Armor Class by 994 to 1313, Based on Class"
         ],
         "details": [
           {
@@ -1491,10 +1515,10 @@
       {
         "id": "75192",
         "icon": "https://spells.eqresource.com/spellicons/1740Single0.jpe",
-        "effect": "Increase Damage Shield by 1250",
+        "effect": "Increase Damage Shield by 3125",
         "url": "https://spells.eqresource.com/spells.php?id=75192&source=beta",
         "slots": [
-          "Increase Damage Shield by 1250",
+          "Increase Damage Shield by 3125",
           "Increase Chance to Reflect Spell by 15% for 45% Base Damage"
         ],
         "details": [
@@ -1504,7 +1528,7 @@
           },
           {
             "label": "Land on Other",
-            "value": "Targetwraps herself in sharp barbs."
+            "value": "Target wraps herself in sharp barbs."
           },
           {
             "label": "Wear off",
@@ -1569,7 +1593,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Thorned shackles wrap around your legs, reducing movement by #21."
+            "value": "Thorned shackles wrap around your legs, reducing movement by #21%."
           },
           {
             "label": "Land on You",
@@ -1630,10 +1654,10 @@
       {
         "id": "75177",
         "icon": "https://spells.eqresource.com/spellicons/695Single0.jpe",
-        "effect": "Decrease Current Hit Points by 440000 per Tick",
+        "effect": "Decrease Current Hit Points by 660660 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75177&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 440000 per Tick",
+          "Decrease Current Hit Points by 660660 per Tick",
           "Decrease Movement Speed by 180%"
         ],
         "details": [
@@ -1644,6 +1668,10 @@
           {
             "label": "Land on You",
             "value": "An immense weight slows your movement."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is slowed by an immense weight."
           },
           {
             "label": "Wear off",
@@ -1700,10 +1728,10 @@
       {
         "id": "75036",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
-        "effect": "Decrease Current Hit Points by 275000",
+        "effect": "Decrease Current Hit Points by 650500",
         "url": "https://spells.eqresource.com/spells.php?id=75036&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 275000",
+          "Decrease Current Hit Points by 650500",
           "Decrease Current Mana by 3510 (v417)"
         ],
         "details": [
@@ -1714,6 +1742,14 @@
           {
             "label": "Land on You",
             "value": "Magic drains painfully from your body."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is surrounded by a ball of electricity."
+          },
+          {
+            "label": "Wear off",
+            "value": "The ball of electricity fizzles."
           },
           {
             "label": "Mana",
@@ -1754,10 +1790,10 @@
       {
         "id": "75030",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
-        "effect": "Decrease Current Hit Points by 325000",
+        "effect": "Decrease Current Hit Points by 790500",
         "url": "https://spells.eqresource.com/spells.php?id=75030&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 325000",
+          "Decrease Current Hit Points by 790500",
           "Stun for 1s"
         ],
         "details": [
@@ -1768,6 +1804,10 @@
           {
             "label": "Land on You",
             "value": "You are shocked!"
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's core is slammed by a resonating pulse."
           },
           {
             "label": "Mana",
@@ -1806,10 +1846,10 @@
       {
         "id": "75035",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
-        "effect": "Decrease Current Hit Points by 350000",
+        "effect": "Decrease Current Hit Points by 750500",
         "url": "https://spells.eqresource.com/spells.php?id=75035&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 350000",
+          "Decrease Current Hit Points by 750500",
           "Stun for 1s"
         ],
         "details": [
@@ -1820,6 +1860,14 @@
           {
             "label": "Land on You",
             "value": "You are shocked!"
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target convulses as electricity bounces across their skin."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your body no longer convulses."
           },
           {
             "label": "Mana",
@@ -2542,10 +2590,10 @@
       {
         "id": "75167",
         "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 110000",
+        "effect": "Decrease Current Hit Points by 275275",
         "url": "https://spells.eqresource.com/spells.php?id=75167&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 110000"
+          "Decrease Current Hit Points by 275275"
         ],
         "details": [
           {
@@ -2555,6 +2603,10 @@
           {
             "label": "Land on You",
             "value": "The words cut deep."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is wounded by cutting words."
           },
           {
             "label": "Mana",
@@ -2601,10 +2653,10 @@
       {
         "id": "75168",
         "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 275000",
+        "effect": "Decrease Current Hit Points by 550550",
         "url": "https://spells.eqresource.com/spells.php?id=75168&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 275000"
+          "Decrease Current Hit Points by 550550"
         ],
         "details": [
           {
@@ -2614,6 +2666,10 @@
           {
             "label": "Land on You",
             "value": "The words cut deep."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is wounded by cutting words."
           },
           {
             "label": "Mana",
@@ -2660,10 +2716,10 @@
       {
         "id": "75169",
         "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 425000",
+        "effect": "Decrease Current Hit Points by 750750",
         "url": "https://spells.eqresource.com/spells.php?id=75169&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 425000"
+          "Decrease Current Hit Points by 750750"
         ],
         "details": [
           {
@@ -2673,6 +2729,10 @@
           {
             "label": "Land on You",
             "value": "The words cut deep."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is wounded by cutting words."
           },
           {
             "label": "Mana",
@@ -2719,10 +2779,10 @@
       {
         "id": "75170",
         "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 750000",
+        "effect": "Decrease Current Hit Points by 850850",
         "url": "https://spells.eqresource.com/spells.php?id=75170&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 750000",
+          "Decrease Current Hit Points by 850850",
           "Stun for 12s"
         ],
         "details": [
@@ -2733,6 +2793,10 @@
           {
             "label": "Land on You",
             "value": "The words cut deep and your body stops responding."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's body stops responding from cutting words."
           },
           {
             "label": "Wear off",
@@ -2843,10 +2907,10 @@
       {
         "id": "75025",
         "icon": "https://spells.eqresource.com/spellicons/47Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 475000",
+        "effect": "Decrease Current Hit Points by 850850",
         "url": "https://spells.eqresource.com/spells.php?id=75025&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 475000"
+          "Decrease Current Hit Points by 850850"
         ],
         "details": [
           {
@@ -2908,10 +2972,10 @@
       {
         "id": "75173",
         "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 110000",
+        "effect": "Decrease Current Hit Points by 275275",
         "url": "https://spells.eqresource.com/spells.php?id=75173&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 110000"
+          "Decrease Current Hit Points by 275275"
         ],
         "details": [
           {
@@ -2921,6 +2985,10 @@
           {
             "label": "Land on You",
             "value": "A cacophonous burst crushes you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is crushed by a cacophonous burst."
           },
           {
             "label": "Mana",
@@ -2967,10 +3035,10 @@
       {
         "id": "75174",
         "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 275000",
+        "effect": "Decrease Current Hit Points by 550550",
         "url": "https://spells.eqresource.com/spells.php?id=75174&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 275000"
+          "Decrease Current Hit Points by 550550"
         ],
         "details": [
           {
@@ -2980,6 +3048,10 @@
           {
             "label": "Land on You",
             "value": "A cacophonous burst crushes you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is crushed by a cacophonous burst."
           },
           {
             "label": "Mana",
@@ -3026,10 +3098,10 @@
       {
         "id": "75175",
         "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 425000",
+        "effect": "Decrease Current Hit Points by 750750",
         "url": "https://spells.eqresource.com/spells.php?id=75175&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 425000"
+          "Decrease Current Hit Points by 750750"
         ],
         "details": [
           {
@@ -3039,6 +3111,10 @@
           {
             "label": "Land on You",
             "value": "A cacophonous burst crushes you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is crushed by a cacophonous burst."
           },
           {
             "label": "Mana",
@@ -3085,11 +3161,11 @@
       {
         "id": "75176",
         "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 550000",
+        "effect": "Decrease Current Hit Points by 850850",
         "url": "https://spells.eqresource.com/spells.php?id=75176&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 550000",
-          "Decrease Current Hit Points by 225000 per Tick",
+          "Decrease Current Hit Points by 850850",
+          "Decrease Current Hit Points by 425000 per Tick",
           "Decrease Movement Speed by 350%"
         ],
         "details": [
@@ -3100,6 +3176,10 @@
           {
             "label": "Land on You",
             "value": "A cacophonous burst crushes you, slowing your movement."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is slowed by a crushing cacophonous burst."
           },
           {
             "label": "Wear off",
@@ -3222,7 +3302,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your attacks and spells feel weaker, reducing spell damage by #21 and skill damage by #22."
+            "value": "Your attacks and spells feel weaker, reducing spell damage by #21% and skill damage by #22%."
           },
           {
             "label": "Land on You",
@@ -3283,10 +3363,10 @@
       {
         "id": "75107",
         "icon": "https://spells.eqresource.com/spellicons/937Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 250000",
+        "effect": "Decrease Current Hit Points by 650500",
         "url": "https://spells.eqresource.com/spells.php?id=75107&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 250000",
+          "Decrease Current Hit Points by 650500",
           "Fling"
         ],
         "details": [
@@ -3297,6 +3377,10 @@
           {
             "label": "Land on You",
             "value": "You have been judged and found wanting."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target has been judged."
           },
           {
             "label": "Mana",
@@ -3418,12 +3502,12 @@
       {
         "id": "75109",
         "icon": "https://spells.eqresource.com/spellicons/936Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 650000",
+        "effect": "Decrease Current Hit Points by 875500",
         "url": "https://spells.eqresource.com/spells.php?id=75109&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 650000",
+          "Decrease Current Hit Points by 875500",
           "Fling",
-          "Decrease Armor Class by 994 to 1313, Based on Class"
+          "Decrease Armor Class by 1988 to 2625, Based on Class"
         ],
         "details": [
           {
@@ -3433,6 +3517,10 @@
           {
             "label": "Land on You",
             "value": "You have been judged and found wanting."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target has been judged."
           },
           {
             "label": "Mana",
@@ -3695,10 +3783,10 @@
       {
         "id": "75122",
         "icon": "https://spells.eqresource.com/spellicons/596Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 450000",
+        "effect": "Decrease Current Hit Points by 750750",
         "url": "https://spells.eqresource.com/spells.php?id=75122&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 450000"
+          "Decrease Current Hit Points by 750750"
         ],
         "details": [
           {
@@ -3708,6 +3796,10 @@
           {
             "label": "Land on You",
             "value": "Debris, thrown from outside the arena, pummels you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is pummeled by falling debris."
           },
           {
             "label": "Mana",
@@ -3756,11 +3848,11 @@
       {
         "id": "75132",
         "icon": "https://spells.eqresource.com/spellicons/1299Single0.jpe",
-        "effect": "Decrease Current Hit Points by 550000 per Tick (Poison 120)",
+        "effect": "Increase Poison Counter by 120",
         "url": "https://spells.eqresource.com/spells.php?id=75132&source=beta",
         "slots": [
           "Increase Poison Counter by 120",
-          "Decrease Current Hit Points by 550000 per Tick"
+          "Decrease Current Hit Points by 750500 per Tick"
         ],
         "details": [
           {
@@ -3770,6 +3862,10 @@
           {
             "label": "Land on You",
             "value": "You inhale a potent toxin that burns your lungs."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target inhales a potent toxin."
           },
           {
             "label": "Wear off",
@@ -3957,7 +4053,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A soothing energy fills you, increasing healing done by #21 for %z."
+            "value": "A soothing energy fills you, increasing healing % done by #21 for %z."
           },
           {
             "label": "Land on You",
@@ -4096,7 +4192,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75040&source=beta",
         "slots": [
           "Gradual Pull to 0 Units Away (Force=110) up to Your Level",
-          "Decrease Current Hit Points by 175000 per Tick"
+          "Decrease Current Hit Points by 790500 per Tick"
         ],
         "details": [
           {
@@ -4222,10 +4318,10 @@
       {
         "id": "75038",
         "icon": "https://spells.eqresource.com/spellicons/169Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 444000",
+        "effect": "Decrease Current Hit Points by 675500",
         "url": "https://spells.eqresource.com/spells.php?id=75038&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 444000",
+          "Decrease Current Hit Points by 675500",
           "Push Back 3 Units and Up 3 Units",
           "Stun for 2s"
         ],
@@ -4241,6 +4337,14 @@
           {
             "label": "Land on You",
             "value": "You are engulfed in grinding earth."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is engulfed in flames."
+          },
+          {
+            "label": "Wear off",
+            "value": "The flames burn out."
           },
           {
             "label": "Mana",
@@ -4285,10 +4389,10 @@
       {
         "id": "75037",
         "icon": "https://spells.eqresource.com/spellicons/54Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 299000 per Tick",
+        "effect": "Decrease Current Hit Points by 775500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75037&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 299000 per Tick",
+          "Decrease Current Hit Points by 775500 per Tick",
           "Decrease Movement Speed by 65%"
         ],
         "details": [
@@ -4303,6 +4407,10 @@
           {
             "label": "Land on You",
             "value": "Flames engulf you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is engulfed in grinding earth."
           },
           {
             "label": "Mana",
@@ -4443,7 +4551,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "You draw energy from the surrounding area, providing #21 mana and #22 endurance over %z."
+            "value": "You draw energy from the surrounding area, providing #21% mana and #22% endurance over %z."
           },
           {
             "label": "Land on You",
@@ -5163,10 +5271,10 @@
       {
         "id": "75004",
         "icon": "https://spells.eqresource.com/spellicons/47Lifetap0.jpe",
-        "effect": "Decrease Current Hit Points by 450000",
+        "effect": "Decrease Current Hit Points by 790790",
         "url": "https://spells.eqresource.com/spells.php?id=75004&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 450000"
+          "Decrease Current Hit Points by 790790"
         ],
         "details": [
           {
@@ -5224,10 +5332,10 @@
       {
         "id": "75165",
         "icon": "https://spells.eqresource.com/spellicons/806Single0.jpe",
-        "effect": "Decrease Current Hit Points by 350000 per Tick",
+        "effect": "Decrease Current Hit Points by 660660 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75165&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 350000 per Tick",
+          "Decrease Current Hit Points by 660660 per Tick",
           "Inhibit Spell Casting (Spell Silence)",
           "Melee and Skill Silence"
         ],
@@ -5239,6 +5347,10 @@
           {
             "label": "Land on You",
             "value": "Your throat tightens, making it impossible to speak."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's throat tightens, making it impossible to speak."
           },
           {
             "label": "Wear off",
@@ -5295,10 +5407,10 @@
       {
         "id": "75137",
         "icon": "https://spells.eqresource.com/spellicons/1009Single0.jpe",
-        "effect": "Decrease Current Hit Points by 600600",
+        "effect": "Decrease Current Hit Points by 790500",
         "url": "https://spells.eqresource.com/spells.php?id=75137&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600600",
+          "Decrease Current Hit Points by 790500",
           "Root"
         ],
         "details": [
@@ -5309,6 +5421,10 @@
           {
             "label": "Land on You",
             "value": "The razor sharp jaws of the trap cut into your leg."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's legs are cut by razor sharp jaws."
           },
           {
             "label": "Wear off",
@@ -5504,7 +5620,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your inner fire grows to an inferno, increasing spell damage by #21, skill damage by #22, providing mana regen by #23%, and endurance regen by #24% for %z."
+            "value": "Your inner fire grows to an inferno, increasing spell damage by #21%, skill damage by #22%, providing mana regen by #23%, and endurance regen by #24% for %z."
           },
           {
             "label": "Land on You",
@@ -5565,10 +5681,10 @@
       {
         "id": "75092",
         "icon": "https://spells.eqresource.com/spellicons/778Single0.jpe",
-        "effect": "Decrease Current Hit Points by 600600 per Tick (Corruption 24)",
+        "effect": "Decrease Current Hit Points by 675500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75092&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600600 per Tick",
+          "Decrease Current Hit Points by 675500 per Tick",
           "Increase Corruption Counter by 24",
           "Increase Attack by 25",
           "Cast if Cured: Corrupting Pulse",
@@ -5582,6 +5698,10 @@
           {
             "label": "Land on You",
             "value": "Whispers of dark thoughts intrude your mind."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's mind is clouded with dark thoughts."
           },
           {
             "label": "Wear off",
@@ -5659,7 +5779,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75013&source=beta",
         "slots": [
           "Feign Death (1% Chance)",
-          "Decrease Current Hit Points by 650000"
+          "Decrease Current Hit Points by 775500"
         ],
         "details": [
           {
@@ -5713,10 +5833,10 @@
       {
         "id": "75115",
         "icon": "https://spells.eqresource.com/spellicons/1065Single0.jpe",
-        "effect": "Decrease Current Hit Points by 700500",
+        "effect": "Decrease Current Hit Points by 875500",
         "url": "https://spells.eqresource.com/spells.php?id=75115&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 700500"
+          "Decrease Current Hit Points by 875500"
         ],
         "details": [
           {
@@ -5726,6 +5846,10 @@
           {
             "label": "Land on You",
             "value": "Taurlton's horns pierce through your defenses, drawing blood."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is pierced by Taurlton's horns, drawing blood."
           },
           {
             "label": "Mana",
@@ -5770,10 +5894,10 @@
       {
         "id": "75153",
         "icon": "https://spells.eqresource.com/spellicons/1746Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 1600600",
+        "effect": "Decrease Current Hit Points by 850500",
         "url": "https://spells.eqresource.com/spells.php?id=75153&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 1600600"
+          "Decrease Current Hit Points by 850500"
         ],
         "details": [
           {
@@ -5783,6 +5907,10 @@
           {
             "label": "Land on You",
             "value": "A powerful arrow punches through you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is struck with a powerful arrow."
           },
           {
             "label": "Mana",
@@ -5802,7 +5930,7 @@
           },
           {
             "label": "Target",
-            "value": "Directional AE - 360&deg; to 5&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(360)-Math.PI/2, degreesToRadians(5)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
+            "value": "Directional AE - 325&deg; to 35&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(325)-Math.PI/2, degreesToRadians(35)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
           },
           {
             "label": "Range",
@@ -5831,10 +5959,10 @@
       {
         "id": "75003",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 200000",
+        "effect": "Decrease Current Hit Points by 775775",
         "url": "https://spells.eqresource.com/spells.php?id=75003&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 200000"
+          "Decrease Current Hit Points by 775775"
         ],
         "details": [
           {
@@ -5935,21 +6063,25 @@
       {
         "id": "75182",
         "icon": "https://spells.eqresource.com/spellicons/148Single0.jpe",
-        "effect": "Absorb Spell Damage: 15%, Max per Hit: 300000",
+        "effect": "Absorb Spell Damage: 15%, Max per Hit: 600000",
         "url": "https://spells.eqresource.com/spells.php?id=75182&source=beta",
         "slots": [
-          "Absorb Spell Damage: 15%, Max per Hit: 300000",
-          "Absorb Melee Damage: 15%, Max per Hit: 300000",
-          "Absorb DoT Damage: 15%, Max per Hit: 300000"
+          "Absorb Spell Damage: 15%, Max per Hit: 600000",
+          "Absorb Melee Damage: 15%, Max per Hit: 600000",
+          "Absorb DoT Damage: 15%, Max per Hit: 600000"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "A protective barrier protects provides #21 spell guard, #22 melee guard, and #23 DoT guard."
+            "value": "A protective barrier provides #21%spell guard, #22% melee guard, and #23% DoT guard."
           },
           {
             "label": "Land on You",
             "value": "A protective barrier covers you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is protected by a barrier."
           },
           {
             "label": "Wear off",
@@ -6006,10 +6138,10 @@
       {
         "id": "75104",
         "icon": "https://spells.eqresource.com/spellicons/1144Single0.jpe",
-        "effect": "Decrease Current Hit Points by 800800",
+        "effect": "Decrease Current Hit Points by 850500",
         "url": "https://spells.eqresource.com/spells.php?id=75104&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 800800"
+          "Decrease Current Hit Points by 850500"
         ],
         "details": [
           {
@@ -6019,6 +6151,10 @@
           {
             "label": "Land on You",
             "value": "Psychic energy rends your mind."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is hit by psychic energy."
           },
           {
             "label": "Mana",
@@ -6130,10 +6266,10 @@
       {
         "id": "75103",
         "icon": "https://spells.eqresource.com/spellicons/1145Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 600500 per Tick",
+        "effect": "Decrease Current Hit Points by 775500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75103&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600500 per Tick",
+          "Decrease Current Hit Points by 775500 per Tick",
           "Inhibit Spell Casting (Spell Silence)"
         ],
         "details": [
@@ -6144,6 +6280,10 @@
           {
             "label": "Land on You",
             "value": "A piercing shriek rattles your mind."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's mind is rattled by a piercing shriek."
           },
           {
             "label": "Wear off",
@@ -6274,7 +6414,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Melee speed is increased by #21 and casting speed is increased by #22."
+            "value": "Melee speed is increased by #21% and casting speed is increased by #22 seconds."
           },
           {
             "label": "Land on You",
@@ -6335,10 +6475,10 @@
       {
         "id": "75134",
         "icon": "https://spells.eqresource.com/spellicons/593Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 600600",
+        "effect": "Decrease Current Hit Points by 815250",
         "url": "https://spells.eqresource.com/spells.php?id=75134&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600600",
+          "Decrease Current Hit Points by 815250",
           "Inhibit Spell Casting (Spell Silence)"
         ],
         "details": [
@@ -6349,6 +6489,14 @@
           {
             "label": "Land on You",
             "value": "The manticore's claws rake across your flesh."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's flesh is raked by sharp claws."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your wounds stop bleeding."
           },
           {
             "label": "Mana",
@@ -6403,10 +6551,10 @@
       {
         "id": "75135",
         "icon": "https://spells.eqresource.com/spellicons/593Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 600600",
+        "effect": "Decrease Current Hit Points by 815250",
         "url": "https://spells.eqresource.com/spells.php?id=75135&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600600",
+          "Decrease Current Hit Points by 815250",
           "Inhibit Spell Casting (Spell Silence)"
         ],
         "details": [
@@ -6417,6 +6565,14 @@
           {
             "label": "Land on You",
             "value": "The manticore's claws rake across your flesh."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's flesh is raked by sharp claws."
+          },
+          {
+            "label": "Wear off",
+            "value": "Your wounds stop bleeding."
           },
           {
             "label": "Mana",
@@ -6591,10 +6747,10 @@
       {
         "id": "75178",
         "icon": "https://spells.eqresource.com/spellicons/1768Single0.jpe",
-        "effect": "Decrease Current Hit Points by 660000",
+        "effect": "Decrease Current Hit Points by 725725",
         "url": "https://spells.eqresource.com/spells.php?id=75178&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 660000"
+          "Decrease Current Hit Points by 725725"
         ],
         "details": [
           {
@@ -6604,6 +6760,10 @@
           {
             "label": "Land on You",
             "value": "A barbed arrow pierces you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is pierced by a barbed arrow."
           },
           {
             "label": "Mana",
@@ -6648,10 +6808,10 @@
       {
         "id": "75179",
         "icon": "https://spells.eqresource.com/spellicons/1771Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 750000",
+        "effect": "Decrease Current Hit Points by 750750",
         "url": "https://spells.eqresource.com/spells.php?id=75179&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 750000"
+          "Decrease Current Hit Points by 750750"
         ],
         "details": [
           {
@@ -6661,6 +6821,10 @@
           {
             "label": "Land on You",
             "value": "An eruption of barbs draws blood."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target was struck by an eruption of barbs."
           },
           {
             "label": "Mana",
@@ -6926,10 +7090,10 @@
       {
         "id": "75032",
         "icon": "https://spells.eqresource.com/spellicons/21Single0.jpe",
-        "effect": "Decrease Current Hit Points by 456789 per Tick",
+        "effect": "Decrease Current Hit Points by 790500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75032&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 456789 per Tick"
+          "Decrease Current Hit Points by 790500 per Tick"
         ],
         "details": [
           {
@@ -6943,6 +7107,10 @@
           {
             "label": "Land on You",
             "value": "A ball of electricity gathers around you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is shocked."
           },
           {
             "label": "Mana",
@@ -7057,7 +7225,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75058&source=beta",
         "slots": [
           "Dispel Beneficial (100% Chance)",
-          "Decrease Current Hit Points by 600000",
+          "Decrease Current Hit Points by 725500",
           "Decrease Current Mana by 4500 (v417)",
           "Decrease Current Endurance by 1850"
         ],
@@ -7069,6 +7237,10 @@
           {
             "label": "Land on You",
             "value": "You are hit by a powerful resonation."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is shocked."
           },
           {
             "label": "Mana",
@@ -7113,10 +7285,10 @@
       {
         "id": "75053",
         "icon": "https://spells.eqresource.com/spellicons/161Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 325000",
+        "effect": "Decrease Current Hit Points by 850850",
         "url": "https://spells.eqresource.com/spells.php?id=75053&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 325000"
+          "Decrease Current Hit Points by 850850"
         ],
         "details": [
           {
@@ -7377,10 +7549,10 @@
       {
         "id": "75066",
         "icon": "https://spells.eqresource.com/spellicons/545Single0.jpe",
-        "effect": "Decrease Current Hit Points by 600600",
+        "effect": "Decrease Current Hit Points by 890500",
         "url": "https://spells.eqresource.com/spells.php?id=75066&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600600"
+          "Decrease Current Hit Points by 890500"
         ],
         "details": [
           {
@@ -7390,6 +7562,10 @@
           {
             "label": "Land on You",
             "value": "You are slammed by a wave of immense magic pressure."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is slammed by a wave of immense magic pressure."
           },
           {
             "label": "Mana",
@@ -7434,19 +7610,23 @@
       {
         "id": "75187",
         "icon": "https://spells.eqresource.com/spellicons/722Single0.jpe",
-        "effect": "Decrease Healing by 1% to 10% (v125, Before Crit)",
+        "effect": "Decrease Healing by 25% (v125, Before Crit)",
         "url": "https://spells.eqresource.com/spells.php?id=75187&source=beta",
         "slots": [
-          "Decrease Healing by 1% to 10% (v125, Before Crit)"
+          "Decrease Healing by 25% (v125, Before Crit)"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "Flowering buds spring from your skin, reducing your healing by #21."
+            "value": "Flowering buds spring from your skin, reducing your healing by #21%."
           },
           {
             "label": "Land on You",
             "value": "Flowering buds spring from your skin."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is covered in flowering buds."
           },
           {
             "label": "Wear off",
@@ -7569,10 +7749,10 @@
       {
         "id": "75009",
         "icon": "https://spells.eqresource.com/spellicons/53Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 82994",
+        "effect": "Decrease Current Hit Points by 651184",
         "url": "https://spells.eqresource.com/spells.php?id=75009&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 82994"
+          "Decrease Current Hit Points by 651184"
         ],
         "details": [
           {
@@ -7634,10 +7814,10 @@
       {
         "id": "75010",
         "icon": "https://spells.eqresource.com/spellicons/53Self0.jpe",
-        "effect": "Decrease Current Hit Points by 75684 per Tick",
+        "effect": "Decrease Current Hit Points by 751184 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75010&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 75684 per Tick"
+          "Decrease Current Hit Points by 751184 per Tick"
         ],
         "details": [
           {
@@ -7699,10 +7879,10 @@
       {
         "id": "75154",
         "icon": "https://spells.eqresource.com/spellicons/1773Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 800800",
+        "effect": "Decrease Current Hit Points by 815500",
         "url": "https://spells.eqresource.com/spells.php?id=75154&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 800800"
+          "Decrease Current Hit Points by 815500"
         ],
         "details": [
           {
@@ -7712,6 +7892,10 @@
           {
             "label": "Land on You",
             "value": "A rain of arrows pierce your flesh."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is pierced with a rain arrows."
           },
           {
             "label": "Mana",
@@ -7760,10 +7944,10 @@
       {
         "id": "75161",
         "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 110000",
+        "effect": "Decrease Current Hit Points by 275275",
         "url": "https://spells.eqresource.com/spells.php?id=75161&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 110000"
+          "Decrease Current Hit Points by 275275"
         ],
         "details": [
           {
@@ -7773,6 +7957,10 @@
           {
             "label": "Land on You",
             "value": "A shrill song rattles you to the core."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is rattled by a shrill song."
           },
           {
             "label": "Mana",
@@ -7819,10 +8007,10 @@
       {
         "id": "75162",
         "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 275000",
+        "effect": "Decrease Current Hit Points by 550550",
         "url": "https://spells.eqresource.com/spells.php?id=75162&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 275000"
+          "Decrease Current Hit Points by 550550"
         ],
         "details": [
           {
@@ -7832,6 +8020,10 @@
           {
             "label": "Land on You",
             "value": "A shrill song rattles you to the core."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is rattled by a shrill song."
           },
           {
             "label": "Mana",
@@ -7878,10 +8070,10 @@
       {
         "id": "75163",
         "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 425000",
+        "effect": "Decrease Current Hit Points by 750750",
         "url": "https://spells.eqresource.com/spells.php?id=75163&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 425000"
+          "Decrease Current Hit Points by 750750"
         ],
         "details": [
           {
@@ -7891,6 +8083,10 @@
           {
             "label": "Land on You",
             "value": "A shrill song rattles you to the core."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is rattled by a shrill song."
           },
           {
             "label": "Mana",
@@ -7937,11 +8133,11 @@
       {
         "id": "75164",
         "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 550000",
+        "effect": "Decrease Current Hit Points by 850850",
         "url": "https://spells.eqresource.com/spells.php?id=75164&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 550000",
-          "Decrease Current Hit Points by 225000 per Tick",
+          "Decrease Current Hit Points by 850850",
+          "Decrease Current Hit Points by 425000 per Tick",
           "Inhibit Spell Casting (Spell Silence)",
           "Melee and Skill Silence"
         ],
@@ -7953,6 +8149,10 @@
           {
             "label": "Land on You",
             "value": "A shrill song rattles you to the core and takes your voice."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's voice is stolen as they are rattled to the core."
           },
           {
             "label": "Wear off",
@@ -8013,10 +8213,10 @@
       {
         "id": "75136",
         "icon": "https://spells.eqresource.com/spellicons/667Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 500000 per Tick",
+        "effect": "Decrease Current Hit Points by 675500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75136&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 500000 per Tick",
+          "Decrease Current Hit Points by 675500 per Tick",
           "Decrease Movement Speed by 25%",
           "Decrease Melee Haste by 10% (v371, Incremental)",
           "Increase Cast Time by 1s"
@@ -8029,6 +8229,10 @@
           {
             "label": "Land on You",
             "value": "Putrid phlegm burns your skin and invades your senses."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's flesh is burned by putrid phlegm."
           },
           {
             "label": "Wear off",
@@ -8308,10 +8512,10 @@
       {
         "id": "75056",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
-        "effect": "Decrease Current Hit Points by 375000",
+        "effect": "Decrease Current Hit Points by 875500",
         "url": "https://spells.eqresource.com/spells.php?id=75056&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 375000",
+          "Decrease Current Hit Points by 875500",
           "Decrease Current Mana by 2700"
         ],
         "details": [
@@ -8366,10 +8570,10 @@
       {
         "id": "75057",
         "icon": "https://spells.eqresource.com/spellicons/172Single0.jpe",
-        "effect": "Decrease Current Hit Points by 425000",
+        "effect": "Decrease Current Hit Points by 875500",
         "url": "https://spells.eqresource.com/spells.php?id=75057&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 425000",
+          "Decrease Current Hit Points by 875500",
           "Stun NPC for 10s (PC for 5.25s)"
         ],
         "details": [
@@ -8593,11 +8797,11 @@
       {
         "id": "75024",
         "icon": "https://spells.eqresource.com/spellicons/173Single0.jpe",
-        "effect": "Decrease Current Hit Points by 122500 per Tick (Poison 297)",
+        "effect": "Decrease Attack by 500",
         "url": "https://spells.eqresource.com/spells.php?id=75024&source=beta",
         "slots": [
           "Decrease Attack by 500",
-          "Decrease Current Hit Points by 122500 per Tick",
+          "Decrease Current Hit Points by 650500 per Tick",
           "Decrease Current Mana by 400 per Tick",
           "Decrease Current Endurance by 400 per Tick",
           "Decrease Base Stats by 350",
@@ -8737,10 +8941,10 @@
       {
         "id": "75016",
         "icon": "https://spells.eqresource.com/spellicons/164Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 650000",
+        "effect": "Decrease Current Hit Points by 650500",
         "url": "https://spells.eqresource.com/spells.php?id=75016&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 650000"
+          "Decrease Current Hit Points by 650500"
         ],
         "details": [
           {
@@ -8875,11 +9079,11 @@
       {
         "id": "75005",
         "icon": "https://spells.eqresource.com/spellicons/160Single0.jpe",
-        "effect": "Decrease Current Hit Points by 350000 (Corruption 20); Decrease Current Hit Points by 100000 per Tick (Corruption 20)",
+        "effect": "Decrease Current Hit Points by 650650",
         "url": "https://spells.eqresource.com/spells.php?id=75005&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 350000",
-          "Decrease Current Hit Points by 100000 per Tick",
+          "Decrease Current Hit Points by 650650",
+          "Decrease Current Hit Points by 325000 per Tick",
           "Decrease Melee Haste by 70% (v371, Incremental)",
           "Increase Corruption Counter by 20"
         ],
@@ -8891,6 +9095,14 @@
           {
             "label": "Land on You",
             "value": "Evil swarms over you and seethes in the air around you"
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is swarmed by evil."
+          },
+          {
+            "label": "Wear off",
+            "value": "The evil surrounding you fades."
           },
           {
             "label": "Mana",
@@ -8943,10 +9155,10 @@
       {
         "id": "75061",
         "icon": "https://spells.eqresource.com/spellicons/42Single0.jpe",
-        "effect": "Decrease Current Hit Points by 600000 per Tick",
+        "effect": "Decrease Current Hit Points by 675500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75061&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600000 per Tick",
+          "Decrease Current Hit Points by 675500 per Tick",
           "Decrease Current Mana by 6000 per Tick",
           "Decrease Current Endurance by 1500 per Tick"
         ],
@@ -9211,10 +9423,10 @@
       {
         "id": "75116",
         "icon": "https://spells.eqresource.com/spellicons/1330Single0.jpe",
-        "effect": "Decrease Current Hit Points by 20000 per Tick",
+        "effect": "Decrease Current Hit Points by 150500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75116&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 20000 per Tick"
+          "Decrease Current Hit Points by 150500 per Tick"
         ],
         "details": [
           {
@@ -9224,6 +9436,10 @@
           {
             "label": "Land on You",
             "value": "Your open wounds bleed heavily as you move."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is bleeding heavily from open wounds."
           },
           {
             "label": "Wear off",
@@ -9278,10 +9494,10 @@
       {
         "id": "75117",
         "icon": "https://spells.eqresource.com/spellicons/1330Single0.jpe",
-        "effect": "Decrease Current Hit Points by 150000 per Tick",
+        "effect": "Decrease Current Hit Points by 475500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75117&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 150000 per Tick"
+          "Decrease Current Hit Points by 475500 per Tick"
         ],
         "details": [
           {
@@ -9291,6 +9507,10 @@
           {
             "label": "Land on You",
             "value": "Your open wounds bleed heavily as you move."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is bleeding heavily from open wounds."
           },
           {
             "label": "Wear off",
@@ -9345,10 +9565,10 @@
       {
         "id": "75118",
         "icon": "https://spells.eqresource.com/spellicons/1330Single0.jpe",
-        "effect": "Decrease Current Hit Points by 450500 per Tick",
+        "effect": "Decrease Current Hit Points by 750500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75118&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 450500 per Tick"
+          "Decrease Current Hit Points by 750500 per Tick"
         ],
         "details": [
           {
@@ -9358,6 +9578,10 @@
           {
             "label": "Land on You",
             "value": "Your open wounds bleed heavily as you move."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is bleeding heavily from open wounds."
           },
           {
             "label": "Wear off",
@@ -9471,10 +9695,10 @@
       {
         "id": "75110",
         "icon": "https://spells.eqresource.com/spellicons/892Single0.jpe",
-        "effect": "Decrease Current Hit Points by 450000 per Tick",
+        "effect": "Decrease Current Hit Points by 625500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75110&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 450000 per Tick"
+          "Decrease Current Hit Points by 625500 per Tick"
         ],
         "details": [
           {
@@ -9484,6 +9708,10 @@
           {
             "label": "Land on You",
             "value": "Corrupting influence breaks your mind and body."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is corrupted."
           },
           {
             "label": "Wear off",
@@ -9671,10 +9899,10 @@
       {
         "id": "75017",
         "icon": "https://spells.eqresource.com/spellicons/51Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 300000",
+        "effect": "Decrease Current Hit Points by 425500",
         "url": "https://spells.eqresource.com/spells.php?id=75017&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 300000"
+          "Decrease Current Hit Points by 425500"
         ],
         "details": [
           {
@@ -9738,10 +9966,10 @@
       {
         "id": "75018",
         "icon": "https://spells.eqresource.com/spellicons/51Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 600000",
+        "effect": "Decrease Current Hit Points by 650500",
         "url": "https://spells.eqresource.com/spells.php?id=75018&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600000"
+          "Decrease Current Hit Points by 650500"
         ],
         "details": [
           {
@@ -9805,10 +10033,10 @@
       {
         "id": "75019",
         "icon": "https://spells.eqresource.com/spellicons/51Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 600000",
+        "effect": "Decrease Current Hit Points by 850500",
         "url": "https://spells.eqresource.com/spells.php?id=75019&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600000"
+          "Decrease Current Hit Points by 850500"
         ],
         "details": [
           {
@@ -9945,10 +10173,10 @@
       {
         "id": "75084",
         "icon": "https://spells.eqresource.com/spellicons/485Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 200000",
+        "effect": "Decrease Current Hit Points by 525500",
         "url": "https://spells.eqresource.com/spells.php?id=75084&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 200000"
+          "Decrease Current Hit Points by 525500"
         ],
         "details": [
           {
@@ -9958,6 +10186,10 @@
           {
             "label": "Land on You",
             "value": "You feel the ire of luck."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target feels the ire of luck."
           },
           {
             "label": "Mana",
@@ -10016,7 +10248,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your spirit is crushed, reducing spell damage by #21% and skill damage by #22% for %z as well as stunning for #23."
+            "value": "Your spirit is crushed, reducing spell damage by #21% and skill damage by #22% for %z as well as stunning for #23 seconds."
           },
           {
             "label": "Land on You",
@@ -10076,12 +10308,12 @@
     "Unrequited Love": [
       {
         "id": "75158",
-        "icon": "https://spells.eqresource.com/spellicons/1170Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 500500",
+        "icon": "https://spells.eqresource.com/spellicons/1170Single0.jpe",
+        "effect": "Decrease Current Hit Points by 375500",
         "url": "https://spells.eqresource.com/spells.php?id=75158&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 500500",
-          "Decrease Current Hit Points by 750000 per Tick",
+          "Decrease Current Hit Points by 375500",
+          "Decrease Current Hit Points by 550500 per Tick",
           "Decrease Melee Haste by 10% (v371, Incremental)",
           "Increase Cast Time by 1s"
         ],
@@ -10093,6 +10325,14 @@
           {
             "label": "Land on You",
             "value": "You are filled with deep sadness."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is filled with a deep sadness."
+          },
+          {
+            "label": "Wear off",
+            "value": "The cloud of sadness fades away."
           },
           {
             "label": "Mana",
@@ -10117,10 +10357,6 @@
           {
             "label": "Range",
             "value": "200"
-          },
-          {
-            "label": "AE Range",
-            "value": "0"
           },
           {
             "label": "Spell Type",
@@ -10279,10 +10515,10 @@
       {
         "id": "75031",
         "icon": "https://spells.eqresource.com/spellicons/174Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 222000 per Tick",
+        "effect": "Decrease Current Hit Points by 675500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75031&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 222000 per Tick",
+          "Decrease Current Hit Points by 675500 per Tick",
           "Decrease Melee Haste by 55%"
         ],
         "details": [
@@ -10297,6 +10533,10 @@
           {
             "label": "Land on You",
             "value": "Your body convulses as electricity runs through you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is hit by a powerful resonation."
           },
           {
             "label": "Mana",
@@ -10347,7 +10587,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75039&source=beta",
         "slots": [
           "Decrease Melee Haste by 55% (v371, Incremental)",
-          "Decrease Current Hit Points by 150000 per Tick"
+          "Decrease Current Hit Points by 750500 per Tick"
         ],
         "details": [
           {
@@ -10361,6 +10601,10 @@
           {
             "label": "Land on You",
             "value": "Your body convulses as electricity runs through you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's body is drained of magic."
           },
           {
             "label": "Mana",
@@ -10409,12 +10653,12 @@
       {
         "id": "75023",
         "icon": "https://spells.eqresource.com/spellicons/8Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 325000 (Poison 396); Decrease Current Hit Points by 150000 per Tick (Poison 396)",
+        "effect": "Increase Spell Mana Cost by 1% to 50%",
         "url": "https://spells.eqresource.com/spells.php?id=75023&source=beta",
         "slots": [
           "Increase Spell Mana Cost by 1% to 50%",
-          "Decrease Current Hit Points by 325000",
-          "Decrease Current Hit Points by 150000 per Tick",
+          "Decrease Current Hit Points by 750500",
+          "Decrease Current Hit Points by 375500 per Tick",
           "Decrease Intelligence by 400",
           "Decrease Wisdom by 400",
           "Increase Poison Counter by 396"
@@ -10431,6 +10675,10 @@
           {
             "label": "Land on Other",
             "value": "Target succumbs to the temptation of rage."
+          },
+          {
+            "label": "Wear off",
+            "value": "The rage fades."
           },
           {
             "label": "Mana",
@@ -10490,11 +10738,11 @@
     "Wither": [
       {
         "id": "75113",
-        "icon": "https://spells.eqresource.com/spellicons/1140Single0.jpe",
-        "effect": "Decrease Current Hit Points by 350000 per Tick (Corruption 30)",
+        "icon": "https://spells.eqresource.com/spellicons/1140Target%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 675500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75113&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 350000 per Tick",
+          "Decrease Current Hit Points by 675500 per Tick",
           "Increase Corruption Counter by 30"
         ],
         "details": [
@@ -10505,6 +10753,10 @@
           {
             "label": "Land on You",
             "value": "Corruption drains your life essence."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's life essence is drained."
           },
           {
             "label": "Wear off",
@@ -10535,6 +10787,10 @@
             "value": "1000"
           },
           {
+            "label": "AE Range",
+            "value": "45"
+          },
+          {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
           },
@@ -10561,10 +10817,10 @@
       {
         "id": "75075",
         "icon": "https://spells.eqresource.com/spellicons/663Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 600000",
+        "effect": "Decrease Current Hit Points by 750500",
         "url": "https://spells.eqresource.com/spells.php?id=75075&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 600000",
+          "Decrease Current Hit Points by 750500",
           "Fling"
         ],
         "details": [
@@ -10575,6 +10831,10 @@
           {
             "label": "Land on You",
             "value": "You are battered and thrown by the twist of fate."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is battered and thrown."
           },
           {
             "label": "Mana",
@@ -10635,7 +10895,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75059&source=beta",
         "slots": [
           "Dispel Beneficial (100% Chance)",
-          "Decrease Current Hit Points by 600000",
+          "Decrease Current Hit Points by 725500",
           "Decrease Current Mana by 5000 (v417)",
           "Decrease Current Endurance by 2000",
           "Stun for 2s"

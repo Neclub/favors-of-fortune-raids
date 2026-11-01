@@ -11,7 +11,6 @@ The Siren Sisters is a single stage fight where all three sirens are active at t
 This is a 54-player raid for groups with gear from the latest expansion.
 Stage 1 (100% - 0%)
 Overview
-Scorn starts the encounter by wrapping Tholuxe Paells in a layer of thick thorns, dealing persistent damage to them throughout the encounter, while leaning heavily into her mastery of archery by rapid firing arrows at targets around the arena. Meanwhile Tholuxe attempts to help the players but sometimes things just seem to go wrong. Bramble Sentinels accompany Scorn, silencing players and Tholuxe if they are too close to them.
 The Siren Sisters start the encounter spread and do not move from starting locations. Each sister will vie for your attention by offering protection from one of the elements. Show them your affection by standing close, reducing their anger, but drawing their attention. Be warned, you are not the only one drawn in by the sisters' presence.
 Mechanics
 Mella're

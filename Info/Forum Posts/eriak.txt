@@ -107,7 +107,8 @@ Strategic Considerations:
 • Groups with limited mana pools might prefer to use Greed
 • Timing switch usage against other mechanics is crucial
 Increased Puzzle Pressure
-• The weapon rack puzzle now spawns 2 new adds per interval instead of 1
+• If the weapon rack puzzle was solved before now, it restarts. The add count is 1 per unsolved rack.
+• If the weapon rack has not been solved, the amount of adds per rack is doubled (2 in this case)
 • Area denial zones continue to spawn from Eriak's position
 • The raid must juggle Doom decisions, add management, and puzzle solving
 Stage 4: The Burn Accelerates (20% - 5%)
@@ -116,7 +117,9 @@ The encounter intensifies dramatically. Reaction windows shrink as all pressure 
 Escalating Threats
 • Area denial zones increase in frequency and number
 • A second sword storm zone spawns on the opposite side of the arena
-• The weapon puzzle now spawns 4 new adds per interval
+• The Tallon Clone of Eriak Zek spawns again.
+• If the weapon rack puzzle was solved before now, it restarts. The add count is the same as last stage, per unsolved rack.
+• If the weapon rack has not been solved, the amount of adds per rack is doubles (2 or 4 depending on how thing were done in previous phases)
 • If the water sort puzzle is solved, summon Weapon mini/adds that are not currently up.
 • Add spawn timers decrease, forcing faster responses
 • Eriak's Tactical Whirlwind Slash becomes more damaging (changes spell variant)

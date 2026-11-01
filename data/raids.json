@@ -1062,20 +1062,26 @@
       {
         "id": "75133",
         "icon": "https://spells.eqresource.com/spellicons/1298Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 650000",
+        "effect": "Decrease Current Hit Points by 675500",
         "url": "https://spells.eqresource.com/spells.php?id=75133&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 650000",
-          "Stun for 20s"
+          "Decrease Current Hit Points by 675500",
+          "Increase Poison Counter by 90",
+          "Decrease Current Hit Points by 375500 per Tick",
+          "Decrease Healing Taken by 48% to 52% (v393)"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "Sharp barbs dig deep into you, dealing #21 damage and draining #22 mana for %z."
+            "value": "Sharp barbs dig deep into you, dealing #21 damage and another #23 damage per tick while also reducing healing by #24% for %z."
           },
           {
             "label": "Land on You",
-            "value": "Sharp barbs dig deep into you draining your strength."
+            "value": "Sharp barbs dig deep into you, draining your strength."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is pierced by sharp barbs."
           },
           {
             "label": "Wear off",
@@ -1091,7 +1097,7 @@
           },
           {
             "label": "Duration",
-            "value": "Instant"
+            "value": "6 ticks"
           },
           {
             "label": "Skill",
@@ -1112,6 +1118,14 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Dispellable",
+            "value": "No"
+          },
+          {
+            "label": "Focusable",
+            "value": "No"
           },
           {
             "label": "Restriction",
@@ -1137,7 +1151,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your body tightens, dealing #21 damage and stunning your for %z."
+            "value": "Your body tightens, dealing #21 damage and stunning your for #22 seconds."
           },
           {
             "label": "Land on You",
@@ -1663,7 +1677,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "An immense weight slams you, dealing #21 damage and slowing you for %z."
+            "value": "An immense weight slams you, dealing #21 damage per tick and slowing you for %z."
           },
           {
             "label": "Land on You",
@@ -2152,7 +2166,7 @@
           },
           {
             "label": "Range",
-            "value": "30"
+            "value": "1000"
           },
           {
             "label": "Spell Type",
@@ -2219,7 +2233,7 @@
           },
           {
             "label": "Range",
-            "value": "30"
+            "value": "1000"
           },
           {
             "label": "Spell Type",
@@ -2286,7 +2300,7 @@
           },
           {
             "label": "Range",
-            "value": "30"
+            "value": "1000"
           },
           {
             "label": "Spell Type",
@@ -2353,7 +2367,7 @@
           },
           {
             "label": "Range",
-            "value": "30"
+            "value": "1000"
           },
           {
             "label": "Spell Type",
@@ -2421,7 +2435,7 @@
           },
           {
             "label": "Range",
-            "value": "30"
+            "value": "1000"
           },
           {
             "label": "Spell Type",
@@ -2450,11 +2464,11 @@
       {
         "id": "75082",
         "icon": "https://spells.eqresource.com/spellicons/909Directional%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 750000 per Tick",
+        "effect": "Decrease Current Hit Points by 850000 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75082&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 750000 per Tick",
-          "Decrease Movement Speed by 40%"
+          "Decrease Current Hit Points by 850000 per Tick",
+          "Decrease Movement Speed by 50%"
         ],
         "details": [
           {
@@ -2464,6 +2478,10 @@
           {
             "label": "Land on You",
             "value": "The weight of your misstep crushes you."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target is crushed by their misstep."
           },
           {
             "label": "Mana",
@@ -2529,7 +2547,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A painful weight settles in on your chest, inflicting #21 damage and slowing your movement for %z."
+            "value": "A painful weight settles in on your chest, inflicting #21 damage per tick and slowing your movement for %z."
           },
           {
             "label": "Land on You",
@@ -2788,7 +2806,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Words cut deep, dealing #21 damage and stunning you for %z."
+            "value": "Words cut deep, dealing #21 damage and stunning you for #22 seconds."
           },
           {
             "label": "Land on You",
@@ -3171,7 +3189,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A cacophonous burst crushes you, dealing #21 damage and slowing you for %z."
+            "value": "A cacophonous burst crushes you, dealing #21 damage, #22 damager per tick, and slowing you for %z."
           },
           {
             "label": "Land on You",
@@ -3424,7 +3442,7 @@
           },
           {
             "label": "Push Back",
-            "value": "45"
+            "value": "30"
           },
           {
             "label": "Push Up",
@@ -3564,7 +3582,7 @@
           },
           {
             "label": "Push Back",
-            "value": "45"
+            "value": "30"
           },
           {
             "label": "Push Up",
@@ -3587,7 +3605,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Words of power course through you reducing damage you take from Mella`re."
+            "value": "Words of power course through you, reducing damage you take from Mella`re."
           },
           {
             "label": "Land on You",
@@ -3857,7 +3875,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Potent toxin burns your lungs for #22 damage over %z."
+            "value": "Potent toxin burns your lungs for #22 damage per tick over %z."
           },
           {
             "label": "Land on You",
@@ -4053,7 +4071,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A soothing energy fills you, increasing healing % done by #21 for %z."
+            "value": "A soothing energy fills you, increasing healing done by #21% for %z."
           },
           {
             "label": "Land on You",
@@ -4159,7 +4177,7 @@
           },
           {
             "label": "Range",
-            "value": "25"
+            "value": "1000"
           },
           {
             "label": "Spell Type",
@@ -5342,7 +5360,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your throat tightens as you take #21 damage and are silenced for %z."
+            "value": "Your throat tightens as you take #21 damage per tick and are silenced for %z."
           },
           {
             "label": "Land on You",
@@ -5572,7 +5590,7 @@
           },
           {
             "label": "Target",
-            "value": "Caster AE"
+            "value": "Single"
           },
           {
             "label": "Range",
@@ -5580,7 +5598,7 @@
           },
           {
             "label": "AE Range",
-            "value": "22"
+            "value": "0"
           },
           {
             "label": "Spell Type",
@@ -6073,7 +6091,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A protective barrier provides #21%spell guard, #22% melee guard, and #23% DoT guard."
+            "value": "A protective barrier provides #21% spell guard, #22% melee guard, and #23% DoT guard."
           },
           {
             "label": "Land on You",
@@ -6635,7 +6653,7 @@
         "details": [
           {
             "label": "Land on You",
-            "value": "The manticore's claws strike throws you back."
+            "value": "The manticore's claw strike throws you back."
           },
           {
             "label": "Mana",
@@ -6694,7 +6712,7 @@
         "details": [
           {
             "label": "Land on You",
-            "value": "The manticore's claws strike throws you back."
+            "value": "The manticore's claw strike throws you back."
           },
           {
             "label": "Mana",
@@ -7226,13 +7244,13 @@
         "slots": [
           "Dispel Beneficial (100% Chance)",
           "Decrease Current Hit Points by 725500",
-          "Decrease Current Mana by 4500 (v417)",
-          "Decrease Current Endurance by 1850"
+          "Decrease Current Mana by 20000 (v417)",
+          "Decrease Current Endurance by 185000"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "You are hit by a powerful resonation, dealing #21 damage."
+            "value": "You are hit by a powerful resonation, dealing #22 damage, reducing endurance by #23, and mana by #24."
           },
           {
             "label": "Land on You",
@@ -7549,10 +7567,10 @@
       {
         "id": "75066",
         "icon": "https://spells.eqresource.com/spellicons/545Single0.jpe",
-        "effect": "Decrease Current Hit Points by 890500",
+        "effect": "Decrease Current Hit Points by 1850800",
         "url": "https://spells.eqresource.com/spells.php?id=75066&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 890500"
+          "Decrease Current Hit Points by 1850800"
         ],
         "details": [
           {
@@ -7692,7 +7710,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "The scorn-touched satyr is filled with scorn, increasing melee speed by #21% and adds #22% damage to all melee attacks."
+            "value": "The scorn-touched satyr is filled with scorn, increasing melee speed by #21% and adding #22% damage to all melee attacks."
           },
           {
             "label": "Land on Other",
@@ -7887,15 +7905,15 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A rain of arrows pierce your flesh for #21 damage."
+            "value": "A rain of arrows pierces your flesh for #21 damage."
           },
           {
             "label": "Land on You",
-            "value": "A rain of arrows pierce your flesh."
+            "value": "A rain of arrows pierces your flesh."
           },
           {
             "label": "Land on Other",
-            "value": "Target is pierced with a rain arrows."
+            "value": "Target is pierced with a rain of arrows."
           },
           {
             "label": "Mana",
@@ -7923,7 +7941,7 @@
           },
           {
             "label": "AE Range",
-            "value": "40"
+            "value": "20"
           },
           {
             "label": "Spell Type",
@@ -8144,7 +8162,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A shrill song rattles you to the core, dealing #21 damage and silencing you for %z."
+            "value": "A shrill song rattles you to the core, dealing #21 damage, #22 damager per tick, and silencing you for %z."
           },
           {
             "label": "Land on You",
@@ -8224,7 +8242,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Putrid phlegm burns your skin, dealing #21 damage, reducing movement, attack speed, and casting speed for %z."
+            "value": "Putrid phlegm burns your skin, dealing #21 damage per tick, reducing movement, attack speed, and casting speed for %z."
           },
           {
             "label": "Land on You",
@@ -8264,7 +8282,7 @@
           },
           {
             "label": "AE Range",
-            "value": "50"
+            "value": "30"
           },
           {
             "label": "Spell Type",
@@ -8333,7 +8351,7 @@
           },
           {
             "label": "Range",
-            "value": "25"
+            "value": "1000"
           },
           {
             "label": "AE Range",
@@ -8451,7 +8469,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A soothing song envelops you reducing damage you take from Calli`do."
+            "value": "A soothing song envelops you, reducing damage you take from Calli`do."
           },
           {
             "label": "Land on You",
@@ -9366,7 +9384,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Attack's become faster and more aggressive."
+            "value": "Attacks become faster and more aggressive."
           },
           {
             "label": "Land on Other",
@@ -10112,7 +10130,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A gentle melody uplifts you reducing the damage you take from Era`mi."
+            "value": "A gentle melody uplifts you, reducing the damage you take from Era`mi."
           },
           {
             "label": "Land on You",
@@ -10209,7 +10227,7 @@
           },
           {
             "label": "Target",
-            "value": "Caster AE"
+            "value": "Single"
           },
           {
             "label": "Range",
@@ -10217,7 +10235,7 @@
           },
           {
             "label": "AE Range",
-            "value": "22"
+            "value": "0"
           },
           {
             "label": "Spell Type",
@@ -10320,7 +10338,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "You are filled with deep sadness, instantly dealing #21 damage and another #22 damage over %z. Additionally, slows attack speed and spell casting speed."
+            "value": "You are filled with deep sadness, instantly dealing #21 damage and another #22 damage per tick over %z. Additionally, slows attack speed and spell casting speed."
           },
           {
             "label": "Land on You",
@@ -10878,7 +10896,7 @@
           },
           {
             "label": "Push Back",
-            "value": "100"
+            "value": "45"
           },
           {
             "label": "Push Up",
@@ -10903,7 +10921,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A pulse resonates within your very core, dealing #21 damage."
+            "value": "A pulse resonates within your very core, dealing #22 damage, reducing endurance by #23, and mana by #24."
           },
           {
             "label": "Land on You",
@@ -16035,7 +16053,12 @@
                   "prose": [],
                   "bullets": [
                     {
-                      "text": "The weapon rack puzzle now spawns 2 new adds per interval instead of 1",
+                      "text": "If the weapon rack puzzle was solved before now, it restarts. The add count is 1 per unsolved rack.",
+                      "spell": "",
+                      "children": []
+                    },
+                    {
+                      "text": "If the weapon rack has not been solved, the amount of adds per rack is doubled (2 in this case)",
                       "spell": "",
                       "children": []
                     },
@@ -16073,7 +16096,17 @@
                       "children": []
                     },
                     {
-                      "text": "The weapon puzzle now spawns 4 new adds per interval",
+                      "text": "The Tallon Clone of Eriak Zek spawns again.",
+                      "spell": "",
+                      "children": []
+                    },
+                    {
+                      "text": "If the weapon rack puzzle was solved before now, it restarts. The add count is the same as last stage, per unsolved rack.",
+                      "spell": "",
+                      "children": []
+                    },
+                    {
+                      "text": "If the weapon rack has not been solved, the amount of adds per rack is doubles (2 or 4 depending on how thing were done in previous phases)",
                       "spell": "",
                       "children": []
                     },

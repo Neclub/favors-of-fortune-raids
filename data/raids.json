@@ -13267,9 +13267,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Black Listed",
+                  "title": "Blacklisted",
                   "spellNames": [
-                    "Black Listed"
+                    "Blacklisted"
                   ],
                   "prose": [],
                   "bullets": [
@@ -13418,9 +13418,9 @@
                 },
                 {
                   "kind": "mechanic",
-                  "title": "Black Listed",
+                  "title": "Blacklisted",
                   "spellNames": [
-                    "Black Listed"
+                    "Blacklisted"
                   ],
                   "prose": [],
                   "bullets": [
@@ -13523,7 +13523,7 @@
               "effect": "Creates piles of rubble that are destroyed when moved into"
             },
             {
-              "name": "Black Listed",
+              "name": "Blacklisted",
               "effect": "Heavy DoT curse that will instant kill and detonate if left to expire naturally"
             },
             {

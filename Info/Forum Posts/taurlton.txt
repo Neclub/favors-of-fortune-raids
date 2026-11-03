@@ -72,7 +72,7 @@ Tossing the Trash
 • Continues, but now occurs twice in a row
 Falling Debris
 • Continues
-Black Listed
+Blacklisted
 • Occurs every 80 seconds
 • Targets 5 players
 • Deals DoT
@@ -85,7 +85,7 @@ Hulking Bruiser
 • Continue to spawn
 Denizens
 • Continue to spawn
-Strategy: Utilize rubble to remove the black listed debuff and keep on your toes.
+Strategy: Utilize rubble to remove the blacklisted debuff and keep on your toes.
 Stage 4 (39% - 0%)
 Overview
 Taurlton has had enough. You haven't gotten the message yet, so it is time to resort to tactics he knows works and send you to the back of the line.
@@ -99,7 +99,7 @@ Tossing the Trash
 • Continues
 Falling Debris
 • Continues
-Black Listed
+Blacklisted
 • Continues
 Back of the Line
 • Occurs every 85 seconds
@@ -128,7 +128,7 @@ Tossing the Trash
 Large cone AoE that must be soaked by at least 10 players, applies a stack of Sucking Wound
 Falling Debris
 Creates piles of rubble that are destroyed when moved into
-Black Listed
+Blacklisted
 Heavy DoT curse that will instant kill and detonate if left to expire naturally
 Back of the Line
 Massive PBAoE that throws players and deals significant damage

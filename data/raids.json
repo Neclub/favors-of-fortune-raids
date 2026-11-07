@@ -135,7 +135,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your wounds continue to bleed, dealing #21 damage for %z."
+            "value": "Your wounds continue to bleed, dealing #21 damage per tick for %z."
           },
           {
             "label": "Land on You",
@@ -715,11 +715,11 @@
           },
           {
             "label": "Push Back",
-            "value": "45"
+            "value": "30"
           },
           {
             "label": "Push Up",
-            "value": "15"
+            "value": "10"
           }
         ]
       }
@@ -1146,7 +1146,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75171&source=beta",
         "slots": [
           "Decrease Current Hit Points by 660660",
-          "Stun for 6s"
+          "Stun for 4s"
         ],
         "details": [
           {
@@ -1208,17 +1208,17 @@
       {
         "id": "75126",
         "icon": "https://spells.eqresource.com/spellicons/432Single0.jpe",
-        "effect": "Decrease Current Hit Points by 650500 per Tick",
+        "effect": "Decrease Current Hit Points by 450500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75126&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 650500 per Tick",
-          "Cast on Duration Fade: Black Listed",
-          "Cast on Duration Fade: Black Listed"
+          "Decrease Current Hit Points by 450500 per Tick",
+          "Cast on Duration Fade: Blacklisted",
+          "Cast on Duration Fade: Blacklisted"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "Taurlton's gaze rests uneasily on you, dealing #21 damage over %z."
+            "value": "Taurlton's gaze rests uneasily on you, dealing #21 damage per tick over %z."
           },
           {
             "label": "Land on You",
@@ -1258,7 +1258,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -1281,10 +1281,10 @@
       {
         "id": "75127",
         "icon": "https://spells.eqresource.com/spellicons/432Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 825500",
+        "effect": "Decrease Current Hit Points by 525500",
         "url": "https://spells.eqresource.com/spells.php?id=75127&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 825500"
+          "Decrease Current Hit Points by 525500"
         ],
         "details": [
           {
@@ -1329,7 +1329,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -1384,7 +1384,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -1742,10 +1742,10 @@
       {
         "id": "75036",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
-        "effect": "Decrease Current Hit Points by 650500",
+        "effect": "Decrease Current Hit Points by 550500",
         "url": "https://spells.eqresource.com/spells.php?id=75036&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 650500",
+          "Decrease Current Hit Points by 550500",
           "Decrease Current Mana by 3510 (v417)"
         ],
         "details": [
@@ -1804,10 +1804,10 @@
       {
         "id": "75030",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
-        "effect": "Decrease Current Hit Points by 790500",
+        "effect": "Decrease Current Hit Points by 690500",
         "url": "https://spells.eqresource.com/spells.php?id=75030&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 790500",
+          "Decrease Current Hit Points by 690500",
           "Stun for 1s"
         ],
         "details": [
@@ -1860,10 +1860,10 @@
       {
         "id": "75035",
         "icon": "https://spells.eqresource.com/spellicons/161Single0.jpe",
-        "effect": "Decrease Current Hit Points by 750500",
+        "effect": "Decrease Current Hit Points by 550500",
         "url": "https://spells.eqresource.com/spells.php?id=75035&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 750500",
+          "Decrease Current Hit Points by 550500",
           "Stun for 1s"
         ],
         "details": [
@@ -2142,7 +2142,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your mind clears"
+            "value": "Your mind clears."
           },
           {
             "label": "Mana",
@@ -2209,7 +2209,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your mind clears"
+            "value": "Your mind clears."
           },
           {
             "label": "Mana",
@@ -2276,7 +2276,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your mind clears"
+            "value": "Your mind clears."
           },
           {
             "label": "Mana",
@@ -2343,7 +2343,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your mind clears"
+            "value": "Your mind clears."
           },
           {
             "label": "Mana",
@@ -2411,7 +2411,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your mind clears"
+            "value": "Your mind clears."
           },
           {
             "label": "Mana",
@@ -2473,7 +2473,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "The weight of your missteps crush you, dealing #21 damage and reducing your movement speed by #22."
+            "value": "The weight of your missteps crush you, dealing #21 damage per tick and reducing your movement speed by #22."
           },
           {
             "label": "Land on You",
@@ -2797,11 +2797,11 @@
       {
         "id": "75170",
         "icon": "https://spells.eqresource.com/spellicons/95Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 850850",
+        "effect": "Decrease Current Hit Points by 750750",
         "url": "https://spells.eqresource.com/spells.php?id=75170&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 850850",
-          "Stun for 12s"
+          "Decrease Current Hit Points by 750750",
+          "Stun for 8s"
         ],
         "details": [
           {
@@ -2925,10 +2925,10 @@
       {
         "id": "75025",
         "icon": "https://spells.eqresource.com/spellicons/47Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 850850",
+        "effect": "Decrease Current Hit Points by 750000",
         "url": "https://spells.eqresource.com/spells.php?id=75025&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 850850"
+          "Decrease Current Hit Points by 750000"
         ],
         "details": [
           {
@@ -3179,17 +3179,17 @@
       {
         "id": "75176",
         "icon": "https://spells.eqresource.com/spellicons/697Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 850850",
+        "effect": "Decrease Current Hit Points by 650650",
         "url": "https://spells.eqresource.com/spells.php?id=75176&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 850850",
-          "Decrease Current Hit Points by 425000 per Tick",
+          "Decrease Current Hit Points by 650650",
+          "Decrease Current Hit Points by 325000 per Tick",
           "Decrease Movement Speed by 350%"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "A cacophonous burst crushes you, dealing #21 damage, #22 damager per tick, and slowing you for %z."
+            "value": "A cacophonous burst crushes you, dealing #21 damage, #22 damage per tick, and slowing you for %z."
           },
           {
             "label": "Land on You",
@@ -3390,7 +3390,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Vazaelle's judgement knocks you away."
+            "value": "Vazaelle's judgment knocks you away."
           },
           {
             "label": "Land on You",
@@ -3461,11 +3461,11 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Vazaelle's judgement reduces your armor class by #21."
+            "value": "Vazaelle's judgment reduces your armor class by #21."
           },
           {
             "label": "Land on You",
-            "value": "Vazaelle's judgement makes it difficult to defend yourself."
+            "value": "Vazaelle's judgment makes it difficult to defend yourself."
           },
           {
             "label": "Wear off",
@@ -3530,7 +3530,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Vazaelle's judgement knocks you away, dealing #21 damage."
+            "value": "Vazaelle's judgment knocks you away, dealing #21 damage."
           },
           {
             "label": "Land on You",
@@ -3837,7 +3837,7 @@
           },
           {
             "label": "Target",
-            "value": "Caster AE"
+            "value": "Single"
           },
           {
             "label": "Range",
@@ -3845,7 +3845,7 @@
           },
           {
             "label": "AE Range",
-            "value": "45"
+            "value": "0"
           },
           {
             "label": "Spell Type",
@@ -4165,7 +4165,7 @@
           },
           {
             "label": "Duration",
-            "value": "5 ticks"
+            "value": "2 ticks"
           },
           {
             "label": "Skill",
@@ -4210,7 +4210,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75040&source=beta",
         "slots": [
           "Gradual Pull to 0 Units Away (Force=110) up to Your Level",
-          "Decrease Current Hit Points by 790500 per Tick"
+          "Decrease Current Hit Points by 590500 per Tick"
         ],
         "details": [
           {
@@ -4336,10 +4336,10 @@
       {
         "id": "75038",
         "icon": "https://spells.eqresource.com/spellicons/169Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 675500",
+        "effect": "Decrease Current Hit Points by 575500",
         "url": "https://spells.eqresource.com/spells.php?id=75038&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 675500",
+          "Decrease Current Hit Points by 575500",
           "Push Back 3 Units and Up 3 Units",
           "Stun for 2s"
         ],
@@ -4407,10 +4407,10 @@
       {
         "id": "75037",
         "icon": "https://spells.eqresource.com/spellicons/54Target%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 775500 per Tick",
+        "effect": "Decrease Current Hit Points by 575500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75037&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 775500 per Tick",
+          "Decrease Current Hit Points by 575500 per Tick",
           "Decrease Movement Speed by 65%"
         ],
         "details": [
@@ -4647,7 +4647,7 @@
           },
           {
             "label": "Land on Other",
-            "value": "Target's fate takes something away."
+            "value": "Target's fate gives something away."
           },
           {
             "label": "Wear off",
@@ -5711,7 +5711,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Dark thoughts intrude your mind, dealing #21 damage, but increasing your attack power by #22 for %z."
+            "value": "Dark thoughts intrude your mind, dealing #21 damage per tick, but increasing your attack power by #22 for %z."
           },
           {
             "label": "Land on You",
@@ -6293,7 +6293,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "A piercing shriek rattles your mind, dealing #21 damage and silencing for %z."
+            "value": "A piercing shriek rattles your mind, dealing #21 damage per tick and silencing for %z."
           },
           {
             "label": "Land on You",
@@ -6305,7 +6305,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your mind clears"
+            "value": "Your mind clears."
           },
           {
             "label": "Mana",
@@ -6502,7 +6502,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "The manticore's claws rake across your flesh, dealing #21 damage, knocking you back, and silencing you for %z."
+            "value": "The manticore's claws rake across your flesh, dealing #21 damage and silencing you for %z."
           },
           {
             "label": "Land on You",
@@ -6578,7 +6578,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "The manticore's claws rake across your flesh, dealing #21 damage, knocking you back, and silencing you for %z."
+            "value": "The manticore's claws rake across your flesh, dealing #21 damage and silencing you for %z."
           },
           {
             "label": "Land on You",
@@ -7108,10 +7108,10 @@
       {
         "id": "75032",
         "icon": "https://spells.eqresource.com/spellicons/21Single0.jpe",
-        "effect": "Decrease Current Hit Points by 790500 per Tick",
+        "effect": "Decrease Current Hit Points by 590500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75032&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 790500 per Tick"
+          "Decrease Current Hit Points by 590500 per Tick"
         ],
         "details": [
           {
@@ -7243,9 +7243,9 @@
         "url": "https://spells.eqresource.com/spells.php?id=75058&source=beta",
         "slots": [
           "Dispel Beneficial (100% Chance)",
-          "Decrease Current Hit Points by 725500",
-          "Decrease Current Mana by 20000 (v417)",
-          "Decrease Current Endurance by 185000"
+          "Decrease Current Hit Points by 525500",
+          "Decrease Current Mana by 2000 (v417)",
+          "Decrease Current Endurance by 2000"
         ],
         "details": [
           {
@@ -7445,7 +7445,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "The dice have decided your fate, you are feared for %z."
+            "value": "The dice have decided your fate. You are feared for %z."
           },
           {
             "label": "Land on You",
@@ -7506,10 +7506,10 @@
       {
         "id": "75065",
         "icon": "https://spells.eqresource.com/spellicons/901Single0.jpe",
-        "effect": "Mana Burn, Max Damage: 80000",
+        "effect": "Decrease Current Hit Points, Max: 80000 (4 Hit Points per 1 Target Mana)",
         "url": "https://spells.eqresource.com/spells.php?id=75065&source=beta",
         "slots": [
-          "Mana Burn, Max Damage: 80000"
+          "Decrease Current Hit Points, Max: 80000 (4 Hit Points per 1 Target Mana)"
         ],
         "details": [
           {
@@ -8151,18 +8151,18 @@
       {
         "id": "75164",
         "icon": "https://spells.eqresource.com/spellicons/779Caster%20AE0.jpe",
-        "effect": "Decrease Current Hit Points by 850850",
+        "effect": "Decrease Current Hit Points by 650650",
         "url": "https://spells.eqresource.com/spells.php?id=75164&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 850850",
-          "Decrease Current Hit Points by 425000 per Tick",
+          "Decrease Current Hit Points by 650650",
+          "Decrease Current Hit Points by 325000 per Tick",
           "Inhibit Spell Casting (Spell Silence)",
           "Melee and Skill Silence"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "A shrill song rattles you to the core, dealing #21 damage, #22 damager per tick, and silencing you for %z."
+            "value": "A shrill song rattles you to the core, dealing #21 damage, #22 damage per tick, and silencing you for %z."
           },
           {
             "label": "Land on You",
@@ -8530,10 +8530,10 @@
       {
         "id": "75056",
         "icon": "https://spells.eqresource.com/spellicons/163Single0.jpe",
-        "effect": "Decrease Current Hit Points by 875500",
+        "effect": "Decrease Current Hit Points by 775500",
         "url": "https://spells.eqresource.com/spells.php?id=75056&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 875500",
+          "Decrease Current Hit Points by 775500",
           "Decrease Current Mana by 2700"
         ],
         "details": [
@@ -8588,10 +8588,10 @@
       {
         "id": "75057",
         "icon": "https://spells.eqresource.com/spellicons/172Single0.jpe",
-        "effect": "Decrease Current Hit Points by 875500",
+        "effect": "Decrease Current Hit Points by 675500",
         "url": "https://spells.eqresource.com/spells.php?id=75057&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 875500",
+          "Decrease Current Hit Points by 675500",
           "Stun NPC for 10s (PC for 5.25s)"
         ],
         "details": [
@@ -9097,11 +9097,11 @@
       {
         "id": "75005",
         "icon": "https://spells.eqresource.com/spellicons/160Single0.jpe",
-        "effect": "Decrease Current Hit Points by 650650",
+        "effect": "Decrease Current Hit Points by 250650",
         "url": "https://spells.eqresource.com/spells.php?id=75005&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 650650",
-          "Decrease Current Hit Points by 325000 per Tick",
+          "Decrease Current Hit Points by 250650",
+          "Decrease Current Hit Points by 650650 per Tick",
           "Decrease Melee Haste by 70% (v371, Incremental)",
           "Increase Corruption Counter by 20"
         ],
@@ -9449,7 +9449,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your open wounds bleed heavily, dealing #21 damage over %z."
+            "value": "Your open wounds bleed heavily, dealing #21 damage per tick over %z."
           },
           {
             "label": "Land on You",
@@ -9461,7 +9461,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your wounds are no longing bleeding."
+            "value": "Your wounds are no longer bleeding."
           },
           {
             "label": "Mana",
@@ -9520,7 +9520,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your open wounds bleed heavily, dealing #21 damage over %z."
+            "value": "Your open wounds bleed heavily, dealing #21 damage per tick over %z."
           },
           {
             "label": "Land on You",
@@ -9532,7 +9532,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your wounds are no longing bleeding."
+            "value": "Your wounds are no longer bleeding."
           },
           {
             "label": "Mana",
@@ -9591,7 +9591,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your open wounds bleed heavily, dealing #21 damage over %z."
+            "value": "Your open wounds bleed heavily, dealing #21 damage per tick over %z."
           },
           {
             "label": "Land on You",
@@ -9603,7 +9603,7 @@
           },
           {
             "label": "Wear off",
-            "value": "Your wounds are no longing bleeding."
+            "value": "Your wounds are no longer bleeding."
           },
           {
             "label": "Mana",
@@ -9713,15 +9713,15 @@
       {
         "id": "75110",
         "icon": "https://spells.eqresource.com/spellicons/892Single0.jpe",
-        "effect": "Decrease Current Hit Points by 625500 per Tick",
+        "effect": "Decrease Current Hit Points by 425500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75110&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 625500 per Tick"
+          "Decrease Current Hit Points by 425500 per Tick"
         ],
         "details": [
           {
             "label": "In Game Description",
-            "value": "Corrupting influence breaks your mind and body, dealing #21 damage over %z."
+            "value": "Corrupting influence breaks your mind and body, dealing #21 damage per tick over %z."
           },
           {
             "label": "Land on You",
@@ -9745,7 +9745,7 @@
           },
           {
             "label": "Duration",
-            "value": "5 ticks"
+            "value": "3 ticks"
           },
           {
             "label": "Skill",
@@ -10403,10 +10403,10 @@
       {
         "id": "75033",
         "icon": "https://spells.eqresource.com/spellicons/198Self0.jpe",
-        "effect": "Cast on Skill Use: Vis Percussio Proc (5)",
+        "effect": "Cast on Skill Use: Vis Percussio Proc with 50% Rate Mod",
         "url": "https://spells.eqresource.com/spells.php?id=75033&source=beta",
         "slots": [
-          "Cast on Skill Use: Vis Percussio Proc (5)"
+          "Cast on Skill Use: Vis Percussio Proc with 50% Rate Mod"
         ],
         "details": [
           {
@@ -10468,10 +10468,10 @@
       {
         "id": "75034",
         "icon": "https://spells.eqresource.com/spellicons/199Self0.jpe",
-        "effect": "Cast on Skill Use: Vita Anuimis Proc (5)",
+        "effect": "Cast on Skill Use: Vita Anuimis Proc with 50% Rate Mod",
         "url": "https://spells.eqresource.com/spells.php?id=75034&source=beta",
         "slots": [
-          "Cast on Skill Use: Vita Anuimis Proc (5)"
+          "Cast on Skill Use: Vita Anuimis Proc with 50% Rate Mod"
         ],
         "details": [
           {
@@ -10533,10 +10533,10 @@
       {
         "id": "75031",
         "icon": "https://spells.eqresource.com/spellicons/174Caster%20PB0.jpe",
-        "effect": "Decrease Current Hit Points by 675500 per Tick",
+        "effect": "Decrease Current Hit Points by 575500 per Tick",
         "url": "https://spells.eqresource.com/spells.php?id=75031&source=beta",
         "slots": [
-          "Decrease Current Hit Points by 675500 per Tick",
+          "Decrease Current Hit Points by 575500 per Tick",
           "Decrease Melee Haste by 55%"
         ],
         "details": [
@@ -10605,7 +10605,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75039&source=beta",
         "slots": [
           "Decrease Melee Haste by 55% (v371, Incremental)",
-          "Decrease Current Hit Points by 750500 per Tick"
+          "Decrease Current Hit Points by 550500 per Tick"
         ],
         "details": [
           {
@@ -10675,7 +10675,7 @@
         "url": "https://spells.eqresource.com/spells.php?id=75023&source=beta",
         "slots": [
           "Increase Spell Mana Cost by 1% to 50%",
-          "Decrease Current Hit Points by 750500",
+          "Decrease Current Hit Points by 450500",
           "Decrease Current Hit Points by 375500 per Tick",
           "Decrease Intelligence by 400",
           "Decrease Wisdom by 400",
@@ -10766,7 +10766,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Corruption drains your for #21 damage for %z."
+            "value": "Corruption drains your for #21 damage per tick for %z."
           },
           {
             "label": "Land on You",
@@ -10778,7 +10778,7 @@
           },
           {
             "label": "Wear off",
-            "value": "The corruption dissipates"
+            "value": "The corruption dissipates."
           },
           {
             "label": "Mana",
@@ -10913,9 +10913,9 @@
         "url": "https://spells.eqresource.com/spells.php?id=75059&source=beta",
         "slots": [
           "Dispel Beneficial (100% Chance)",
-          "Decrease Current Hit Points by 725500",
+          "Decrease Current Hit Points by 625500",
           "Decrease Current Mana by 5000 (v417)",
-          "Decrease Current Endurance by 2000",
+          "Decrease Current Endurance by 5000",
           "Stun for 2s"
         ],
         "details": [
@@ -12171,7 +12171,7 @@
                       "children": []
                     },
                     {
-                      "text": "Can now be dispelled",
+                      "text": "Can now be counteracted by casting poison resist type spells that require mana on Sorshkah.",
                       "spell": "",
                       "children": []
                     }
@@ -16663,11 +16663,6 @@
                       "text": "Casts Lucksworn Empower on Xev",
                       "spell": "",
                       "children": [
-                        {
-                          "text": "Decreases the cooldown on roll the dice",
-                          "spell": "",
-                          "children": []
-                        },
                         {
                           "text": "Lucky or Not's negative effect is empowered",
                           "spell": "",

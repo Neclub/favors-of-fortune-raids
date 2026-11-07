@@ -85,7 +85,6 @@ Lucksworn Doubt
 • If Doubt comes into contact with the focused player they will be killed and the raid will take damage
 Lucksworn Hope
 • Casts Lucksworn Empower on Xev
-◦ Decreases the cooldown on roll the dice
 ◦ Lucky or Not's negative effect is empowered
 Lucksworn Control
 • Focuses a lucky random player and begins to move toward them

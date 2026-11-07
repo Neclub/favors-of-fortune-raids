@@ -45,7 +45,7 @@ Mechanics
 Sorshkah
 Sick:
 • 60 counters
-• Can now be dispelled
+• Can now be counteracted by casting poison resist type spells that require mana on Sorshkah.
 Feral Toxin
 • Continues
 Barb Shot:

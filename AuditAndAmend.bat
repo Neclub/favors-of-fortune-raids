@@ -11,6 +11,7 @@ if %errorlevel%==0 (
 
 echo Reading the Firefox login and checking the raids...
 %PY% "%~dp0scripts\AuditAndAmend.py"
+set "ERR=%ERRORLEVEL%"
 echo.
 pause
-exit /b %errorlevel%
+exit /b %ERR%

@@ -42,6 +42,7 @@ WRITEUPS_PATH = ROOT / "Info" / "FoF_Raid_Writeups.txt"
 POSTS_DIR = ROOT / "Info" / "Forum Posts"
 LOG_DIR = ROOT / "Info" / "Audit Logs"
 BACKUP_DIR = ROOT / "Info" / "Backups"
+WORD_DOC = ROOT / "Info" / "FoF_Raid_Mechanics.docx"
 GIT_AUTHOR = ["-c", "user.name=Neclub", "-c", "user.email=18217817+Neclub@users.noreply.github.com"]
 MARKS = ["•", "◦", "■", "▪"]
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0"
@@ -539,6 +540,14 @@ def has_stage(lines):
     return any(line.startswith("Stage ") or line == "The Echoes" for line in lines)
 
 
+def is_writeup(lines):
+    """True only for the staff mechanic writeup, not a reply that quotes Stage."""
+    if not has_stage(lines):
+        return False
+    head = "\n".join(lines[:60])
+    return "Raid Giver:" in head or "Quest Giver:" in head or "Requirements:" in head
+
+
 def thread_page(url):
     return re.sub(r"/page-\d+(?=/|$)", "", url.split("#")[0])
 
@@ -551,19 +560,122 @@ def post_lines_from(html, post):
 
 
 def fetch_post_lines(session, url, post):
+    """Read the linked writeup post, or the opening post of the thread."""
     html = session.get(url)
     if forum_blocked(html):
         raise SignInRequired("EverQuest forums")
-    lines = post_lines_from(html, post)
-    if post and not has_stage(lines):
-        lines = post_lines_from(html, "")
+    if post:
+        linked = post_lines_from(html, post)
+        if is_writeup(linked):
+            return linked, html
     root = thread_page(url)
-    if not has_stage(lines) and root != url.split("#")[0]:
+    if root != url.split("#")[0]:
         html = session.get(root)
         if forum_blocked(html):
             raise SignInRequired("EverQuest forums")
-        lines = post_lines_from(html, "")
-    return lines, html
+    return post_lines_from(html, ""), html
+
+
+def thread_page_count(html):
+    pages = [int(value) for value in re.findall(r"/page-(\d+)", html)]
+    return max(pages) if pages else 1
+
+
+def staff_articles(html):
+    """Return (post_id, plain text) for staff posts on a thread page."""
+    found = []
+    for match in re.finditer(r'<article\b[^>]*\bid="js-post-(\d+)"[^>]*>', html, re.I):
+        post = match.group(1)
+        start = match.start()
+        nxt = re.search(r'<article\b[^>]*\bid="js-post-\d+"', html[match.end():], re.I)
+        end = match.end() + nxt.start() if nxt else len(html)
+        chunk = html[start:end]
+        if "userBanner--staff" not in chunk[:5000]:
+            continue
+        fragment = slice_post_html(html, post)
+        if not fragment:
+            continue
+        body = find_first(parse_html(fragment), lambda node: has_class(node, "bbWrapper"))
+        if body is None:
+            continue
+        lines = []
+        walk_post(body, lines)
+        text = "\n".join(join_breaks(join_labels(lines)))
+        found.append((post, text))
+    return found
+
+
+def staff_reply_notes(session, url, writeup_post, writeup_lines):
+    """Collect later staff replies that mention mechanic or spell corrections."""
+    root = thread_page(url)
+    html = session.get(root)
+    if forum_blocked(html):
+        raise SignInRequired("EverQuest forums")
+    notes = []
+    writeup_fold = "\n".join(writeup_lines).casefold()
+    interesting = re.compile(
+        r"(?i)\b(spell|stage|changed|fix(?:ed)?|renamed|instead|should be|typo|"
+        r"cooldown|mechanic|added|removed|updated|now\b|damage)\b|\b\d{5}\b"
+    )
+    max_page = thread_page_count(html)
+    pages = [root] + [f"{root.rstrip('/')}/page-{page}" for page in range(2, max_page + 1)]
+    for page_url in pages:
+        page_html = html if page_url == root else session.get(page_url)
+        if page_url != root and forum_blocked(page_html):
+            raise SignInRequired("EverQuest forums")
+        for post, text in staff_articles(page_html):
+            if writeup_post and post == writeup_post:
+                continue
+            if not writeup_post and is_writeup(normalize(text.splitlines())):
+                continue
+            compact = re.sub(r"\s+", " ", text).strip()
+            if len(compact) < 20 or not interesting.search(compact):
+                continue
+            if compact.casefold() in writeup_fold:
+                continue
+            notes.append(f"staff post-{post}: {compact[:220]}")
+    return notes
+
+
+SPELL_RENAME_RE = re.compile(
+    r"(?i)Spell\s*ID:\s*(\d+)\s*Spell\s*Name:\s*(.+?)\s+"
+    r"(?:Think that'?s supposed to be|should be|renamed to)\s+"
+    r"([A-Za-z][A-Za-z0-9' \-]{0,80}?[A-Za-z0-9])"
+    r"(?=\s*(?:Click to expand|\.\.\.|Yeah\b|,|$))"
+)
+
+
+def apply_staff_spell_renames(data, notes, bundle, log, label):
+    """Rename a site spell when a staff reply and the beta files agree on the new name."""
+    if not notes or bundle is None:
+        return []
+    changed = []
+    name_index = bundle.get("index") or {}
+    for note in notes:
+        cleaned = re.sub(r"\s*Click to expand\.+", " ", note)
+        match = SPELL_RENAME_RE.search(cleaned)
+        if not match:
+            continue
+        spell_id, old_name, new_name = match.group(1), match.group(2).strip(), match.group(3).strip()
+        old_name = re.sub(r"\s+", " ", old_name)
+        new_name = re.sub(r"\s+", " ", new_name)
+        bucket = name_index.get(new_name.casefold())
+        if not bucket or spell_id not in bucket.get("ids", []):
+            log.append(
+                f"  {label}: staff rename {old_name} -> {new_name} ({spell_id}) skipped; "
+                "beta files do not have that id under the new name."
+            )
+            continue
+        if old_name in data["spells"] and new_name not in data["spells"]:
+            data["spells"][new_name] = data["spells"].pop(old_name)
+            for entry in data["spells"][new_name]:
+                if entry.get("id") == spell_id:
+                    entry["url"] = spell_page(spell_id)
+            changed.append((old_name, new_name, spell_id))
+            log.append(f"  {label}: renamed spell {old_name} -> {new_name} ({spell_id}) from staff reply.")
+        elif new_name in data["spells"]:
+            log.append(f"  {label}: staff rename {old_name} -> {new_name} ({spell_id}) already on the site.")
+    return changed
 
 
 def block_title_key(raid_id, title):
@@ -684,12 +796,13 @@ def added_writeup_names(previous, live):
 def audit_forums(session, data, log):
     changed_names = []
     forum_changes = 0
+    staff_notes = []
     log.append("Forum posts")
     try:
         targets = writeup_targets(data)
     except OSError as exc:
         log.append(f"  Could not read the writeup list: {exc}")
-        return changed_names, forum_changes
+        return changed_names, forum_changes, staff_notes
     signed_out = False
     console(f"Checking {len(targets)} forum posts...")
     for index, target in enumerate(targets, start=1):
@@ -710,34 +823,50 @@ def audit_forums(session, data, log):
         except Exception as exc:
             log.append(f"  {label}: could not be read ({exc})")
             continue
-        if len(live) < 5 or not any(line.startswith("Stage ") or line == "The Echoes" for line in live):
+        if len(live) < 5 or not is_writeup(live):
             log.append(f"  {label}: the post text was incomplete, so the site was left unchanged.")
             continue
         previous, _had_snapshot = baseline_lines(raid["id"])
         if previous is None:
             save_post(raid["id"], live)
             log.append(f"  {label}: saved a baseline. The site was not changed because there was no earlier copy.")
-            continue
-        changes = line_changes(previous, live)
-        if not changes:
-            save_post(raid["id"], live)
-            log.append(f"  {label}: no change")
-            continue
-        parsed = forum_writeup.parse_lines(live, target["url"])
-        if not apply_writeup(raid, parsed):
-            log.append(f"  {label}: the new post did not parse into a writeup, so the site was left unchanged.")
-            for line in changes:
-                log.append(f"    {line}")
-            continue
-        save_post(raid["id"], live)
-        forum_changes += 1
-        log.append(f"  {label}: updated")
-        for line in changes:
-            log.append(f"    {line}")
-        changed_names.extend(added_writeup_names(previous, live))
+        else:
+            changes = line_changes(previous, live)
+            if not changes:
+                save_post(raid["id"], live)
+                log.append(f"  {label}: no change")
+            else:
+                parsed = forum_writeup.parse_lines(live, target["url"])
+                if not apply_writeup(raid, parsed):
+                    log.append(f"  {label}: the new post did not parse into a writeup, so the site was left unchanged.")
+                    for line in changes:
+                        log.append(f"    {line}")
+                    continue
+                save_post(raid["id"], live)
+                forum_changes += 1
+                log.append(f"  {label}: updated")
+                for line in changes:
+                    log.append(f"    {line}")
+                changed_names.extend(added_writeup_names(previous, live))
+        try:
+            notes = staff_reply_notes(session, target["url"], target["post"], live)
+        except SignInRequired:
+            message = "  EverQuest forums need a Firefox login. Sign in with Firefox, choose to stay logged in, and run AuditAndAmend again. Staff replies were not scanned."
+            log.append(message)
+            console(message.strip())
+            signed_out = True
+            break
+        except Exception as exc:
+            log.append(f"  {label}: staff replies could not be read ({exc})")
+            notes = []
+        if notes:
+            staff_notes.append((label, notes))
+            log.append(f"  {label}: {len(notes)} later staff replies mention mechanic or spell changes")
+            for note in notes:
+                log.append(f"    {note}")
     if not targets:
         log.append("  No forum posts were listed.")
-    return changed_names, forum_changes
+    return changed_names, forum_changes, staff_notes
 
 
 def spell_entries(data):
@@ -1069,7 +1198,7 @@ def log_unmatched_name(log, name, name_index):
     log.append(f"  {name}: no exact beta spell. Closest: {'; '.join(shown)}{extra}")
 
 
-def audit_spells(session, data, extra_names, log):
+def audit_spells(session, data, extra_names, log, staff_notes=None):
     log.append("")
     log.append("Spells")
     skip_ids, skip_names = load_exclusions()
@@ -1089,6 +1218,9 @@ def audit_spells(session, data, extra_names, log):
         signed_out = audit_spell_pages(session, pending, log, changes)
     else:
         signed_out = audit_spells_from_files(session, pending, bundle, log, changes)
+    for label, notes in staff_notes or []:
+        for old_name, new_name, spell_id in apply_staff_spell_renames(data, notes, bundle, log, label):
+            changes.append((new_name, spell_id, "Name", old_name, new_name))
     note_spells = load_spell_notes()
     extra_names = renamed_spell_names(extra_names)
     changes.extend(apply_forum_spell_corrections(data))
@@ -1195,6 +1327,8 @@ def backup_site():
     shutil.copy2(RAIDS_PATH, dest / "raids.json")
     if WORKBOOK.is_file():
         shutil.copy2(WORKBOOK, dest / WORKBOOK.name)
+    if WORD_DOC.is_file():
+        shutil.copy2(WORD_DOC, dest / WORD_DOC.name)
     if POSTS_DIR.is_dir():
         shutil.copytree(POSTS_DIR, dest / "Forum Posts")
     return dest
@@ -1212,6 +1346,10 @@ def restore_backup(folder):
     if saved_book.is_file():
         WORKBOOK.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(saved_book, WORKBOOK)
+    saved_word = folder / WORD_DOC.name
+    if saved_word.is_file():
+        WORD_DOC.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(saved_word, WORD_DOC)
     saved_posts = folder / "Forum Posts"
     if saved_posts.is_dir():
         if POSTS_DIR.exists():
@@ -1295,8 +1433,8 @@ def audit(session):
     console("Backing up the current site...")
     backup = backup_site()
     data = load_raids()
-    names, forum_changes = audit_forums(session, data, log)
-    spell_changes = audit_spells(session, data, names, log)
+    names, forum_changes, staff_notes = audit_forums(session, data, log)
+    spell_changes = audit_spells(session, data, names, log, staff_notes)
     changed = bool(forum_changes or spell_changes)
     log.append("")
     if changed:

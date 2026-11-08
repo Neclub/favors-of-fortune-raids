@@ -4215,7 +4215,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "You feel the very earth pulling you apart, taking #21 damage."
+            "value": "You feel the very earth pulling you apart, taking #22 damage."
           },
           {
             "label": "Land on You",
@@ -5802,7 +5802,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Sharp horns gore you, dealing #21 damage."
+            "value": "Sharp horns gore you, dealing #22 damage."
           },
           {
             "label": "Land on You",
@@ -5960,7 +5960,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -8828,7 +8828,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Your soul in two, dealing #22 damage."
+            "value": "Your soul splits in two, dealing #22 damage."
           },
           {
             "label": "Land on You",

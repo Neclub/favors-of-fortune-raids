@@ -78,7 +78,7 @@ Stage 4 Vazaelle Kaleine The Inevitable (100% - 25%)
 Overview
 Your first encounter is with Vazelle Kaleine The Aberrant, she will utilize corruption and maddening clouds to drive you insane, driving you to attack your friends.
 Mechanics
-The Aberrant
+The Inevitable
 Tainted Pools
 • Occurs every 30 seconds
 • 4 pools are created
@@ -102,7 +102,7 @@ Stage 5 Vazaelle Kaleine The Mad (100% - 0%)
 Overview
 The final encounter sees you facing off against Vazaelle Kaleine, but only after she has consumed the other fragments of herself. Expect to see returning abilities from each of the other phases as you rush to defeat the mad goddess.
 Mechanics
-The Aberrant
+The Mad
 Maddening Influence
 • Occurs every 16% health
 • 3 players are targeted

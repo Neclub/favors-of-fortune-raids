@@ -133,6 +133,15 @@ SPELL_CORRECTIONS = [
         "spell_id": "75200",
         "note": "linked on the Stage 3 charm line",
     },
+    {
+        "raid": "taurlton",
+        "heading": "Hulking Bruiser",
+        "kind": "bullet_spell",
+        "prefix": "Deal damage to anyone around the targeted player",
+        "spell": "Single Out Impact",
+        "spell_id": "75124",
+        "note": "linked on the bruiser landing damage",
+    },
 ]
 
 SPELL_URL = re.compile(

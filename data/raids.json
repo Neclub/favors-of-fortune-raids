@@ -10961,6 +10961,71 @@
           }
         ]
       }
+    ],
+    "Single Out Impact": [
+      {
+        "id": "75124",
+        "icon": "https://spells.eqresource.com/spellicons/494Target%20AE0.jpe",
+        "effect": "Decrease Current Hit Points by 770750",
+        "url": "https://spells.eqresource.com/spells.php?id=75124&source=beta",
+        "slots": [
+          "Decrease Current Hit Points by 770750"
+        ],
+        "details": [
+          {
+            "label": "In Game Description",
+            "value": "Shockwaves rock your body, dealing #21 damage."
+          },
+          {
+            "label": "Land on You",
+            "value": "The impact from the bruiser sends shockwaves through your body."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target's body is rocked by the bruiser's impact."
+          },
+          {
+            "label": "Mana",
+            "value": "0"
+          },
+          {
+            "label": "Casting Time",
+            "value": "Instant"
+          },
+          {
+            "label": "Duration",
+            "value": "Instant"
+          },
+          {
+            "label": "Skill",
+            "value": "Melee"
+          },
+          {
+            "label": "Target",
+            "value": "Target AE"
+          },
+          {
+            "label": "Range",
+            "value": "60"
+          },
+          {
+            "label": "AE Range",
+            "value": "60"
+          },
+          {
+            "label": "Spell Type",
+            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+          },
+          {
+            "label": "Restriction",
+            "value": "Beta Only"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
+          }
+        ]
+      }
     ]
   },
   "tiers": [
@@ -13141,7 +13206,7 @@
                     },
                     {
                       "text": "Deal damage to anyone around the targeted player",
-                      "spell": "",
+                      "spell": "Single Out Impact",
                       "children": []
                     },
                     {

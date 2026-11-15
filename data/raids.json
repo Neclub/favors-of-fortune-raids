@@ -179,7 +179,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Dispellable",
@@ -308,12 +308,12 @@
       {
         "id": "75147",
         "icon": "https://spells.eqresource.com/spellicons/900Single0.jpe",
-        "effect": "Decrease Hit Damage by 50% (v185)",
+        "effect": "Decrease Hit Damage by 30% (v185)",
         "url": "https://spells.eqresource.com/spells.php?id=75147&source=beta",
         "slots": [
-          "Decrease Hit Damage by 50% (v185)",
-          "Decrease Spell Damage by 1% to 50% (v124, Before DoT Crit, After DD Crit)",
-          "Decrease Healing Taken by 1% to 50% (v393)",
+          "Decrease Hit Damage by 30% (v185)",
+          "Decrease Spell Damage by 1% to 30% (v124, Before DoT Crit, After DD Crit)",
+          "Decrease Healing Taken by 1% to 30% (v393)",
           "Increase Spell Damage Taken by 50% (v296, Before Crit)"
         ],
         "details": [
@@ -324,6 +324,10 @@
           {
             "label": "Land on You",
             "value": "The weight of your poverty takes its toll."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target feels the weight of their poverty."
           },
           {
             "label": "Mana",
@@ -351,7 +355,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -376,12 +380,12 @@
       {
         "id": "75148",
         "icon": "https://spells.eqresource.com/spellicons/901Single0.jpe",
-        "effect": "Decrease Hit Damage by 50% (v185)",
+        "effect": "Decrease Hit Damage by 30% (v185)",
         "url": "https://spells.eqresource.com/spells.php?id=75148&source=beta",
         "slots": [
-          "Decrease Hit Damage by 50% (v185)",
-          "Decrease Spell Damage by 1% to 50% (v124, Before DoT Crit, After DD Crit)",
-          "Decrease Healing Taken by 1% to 50% (v393)",
+          "Decrease Hit Damage by 30% (v185)",
+          "Decrease Spell Damage by 1% to 30% (v124, Before DoT Crit, After DD Crit)",
+          "Decrease Healing Taken by 1% to 30% (v393)",
           "Increase Spell Damage Taken by 50% (v296, Before Crit)"
         ],
         "details": [
@@ -392,6 +396,10 @@
           {
             "label": "Land on You",
             "value": "The weight of your greed takes its toll."
+          },
+          {
+            "label": "Land on Other",
+            "value": "Target feels the weight of their greed."
           },
           {
             "label": "Mana",
@@ -419,7 +427,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -643,7 +651,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -703,7 +711,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -1117,7 +1125,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Dispellable",
@@ -1191,7 +1199,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Cold -10000"
           },
           {
             "label": "Restriction",
@@ -1384,7 +1392,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000"
+            "value": "Detrimental - Resist: Unresistable -10000"
           },
           {
             "label": "Restriction",
@@ -1529,11 +1537,11 @@
       {
         "id": "75192",
         "icon": "https://spells.eqresource.com/spellicons/1740Single0.jpe",
-        "effect": "Increase Damage Shield by 3125",
+        "effect": "Increase Damage Shield by 5525",
         "url": "https://spells.eqresource.com/spells.php?id=75192&source=beta",
         "slots": [
-          "Increase Damage Shield by 3125",
-          "Increase Chance to Reflect Spell by 15% for 45% Base Damage"
+          "Increase Damage Shield by 5525",
+          "Increase Chance to Reflect Spell by 18% for 45% Base Damage"
         ],
         "details": [
           {
@@ -1574,7 +1582,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -1643,7 +1651,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -1717,7 +1725,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Fire -10000"
           },
           {
             "label": "Dispellable",
@@ -1971,7 +1979,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -2170,7 +2178,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -2237,7 +2245,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -2304,7 +2312,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -2371,7 +2379,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -2439,7 +2447,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -2513,7 +2521,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -2583,7 +2591,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -2656,7 +2664,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Cold -10000"
           },
           {
             "label": "Restriction",
@@ -2719,7 +2727,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Cold -10000"
           },
           {
             "label": "Restriction",
@@ -2782,7 +2790,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Cold -10000"
           },
           {
             "label": "Restriction",
@@ -2850,7 +2858,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Cold -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Cold -10000"
           },
           {
             "label": "Restriction",
@@ -3038,7 +3046,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Fire -10000"
           },
           {
             "label": "Restriction",
@@ -3101,7 +3109,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Fire -10000"
           },
           {
             "label": "Restriction",
@@ -3164,7 +3172,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Fire -10000"
           },
           {
             "label": "Restriction",
@@ -3233,7 +3241,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Fire -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Fire -10000"
           },
           {
             "label": "Dispellable",
@@ -3356,7 +3364,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -3430,7 +3438,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -3497,7 +3505,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Dispellable",
@@ -3570,7 +3578,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -3849,7 +3857,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -3915,7 +3923,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Poison -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Poison -10000"
           },
           {
             "label": "Dispellable",
@@ -3977,7 +3985,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Unresistable -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Unresistable -10000"
           },
           {
             "label": "Dispellable",
@@ -4046,7 +4054,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -4181,7 +4189,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -4752,7 +4760,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -5400,7 +5408,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -5474,7 +5482,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Dispellable",
@@ -5533,7 +5541,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Unresistable -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Unresistable -10000"
           },
           {
             "label": "Dispellable",
@@ -5751,7 +5759,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -5895,7 +5903,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -6200,7 +6208,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -6259,7 +6267,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -6337,7 +6345,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -6398,7 +6406,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Poison -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Poison -10000"
           },
           {
             "label": "Dispellable",
@@ -6546,7 +6554,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Dispellable",
@@ -6622,7 +6630,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Dispellable",
@@ -6685,7 +6693,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -6744,7 +6752,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -6809,7 +6817,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -6874,7 +6882,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -7409,7 +7417,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -7481,7 +7489,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -7550,7 +7558,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -7611,7 +7619,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -7676,7 +7684,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -7945,7 +7953,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",
@@ -8010,7 +8018,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -8073,7 +8081,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -8136,7 +8144,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -8206,7 +8214,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -8286,7 +8294,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Poison -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Poison -10000"
           },
           {
             "label": "Dispellable",
@@ -8359,7 +8367,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -8434,7 +8442,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -9288,7 +9296,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -9351,7 +9359,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -9489,7 +9497,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Unresistable -10000"
           },
           {
             "label": "Dispellable",
@@ -9560,7 +9568,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Unresistable -10000"
           },
           {
             "label": "Dispellable",
@@ -9631,7 +9639,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Unresistable -10000"
           },
           {
             "label": "Dispellable",
@@ -9761,7 +9769,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -9831,7 +9839,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -10239,7 +10247,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -10302,7 +10310,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Dispellable",
@@ -10378,7 +10386,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -10810,7 +10818,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Corruption -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Corruption -10000"
           },
           {
             "label": "Dispellable",
@@ -10884,7 +10892,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Magic -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Magic -10000"
           },
           {
             "label": "Restriction",
@@ -11014,7 +11022,7 @@
           },
           {
             "label": "Spell Type",
-            "value": "Detrimental - Resist: Physical -10000 Max: 0.5%"
+            "value": "Detrimental - Resist: Physical -10000"
           },
           {
             "label": "Restriction",

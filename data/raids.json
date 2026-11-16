@@ -1471,7 +1471,7 @@
       },
       {
         "id": "74955",
-        "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
+        "icon": "https://spells.eqresource.com/spellicons/62Single0.jpe",
         "effect": "Decrease Armor Class by 166 to 219, Based on Class",
         "url": "https://spells.eqresource.com/spells.php?id=74955&source=beta",
         "slots": [
@@ -2067,7 +2067,7 @@
       },
       {
         "id": "74957",
-        "icon": "https://spells.eqresource.com/spellicons/-1Single0.jpe",
+        "icon": "https://spells.eqresource.com/spellicons/145Single0.jpe",
         "effect": "Root",
         "url": "https://spells.eqresource.com/spells.php?id=74957&source=beta",
         "slots": [
@@ -6987,7 +6987,7 @@
           },
           {
             "label": "Duration",
-            "value": "Instant"
+            "value": "5 ticks"
           },
           {
             "label": "Skill",

@@ -167,7 +167,7 @@
           },
           {
             "label": "Target",
-            "value": "Directional AE - -15&deg; to 15&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(-15)-Math.PI/2, degreesToRadians(15)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
+            "value": "Directional AE - 345° to 15°"
           },
           {
             "label": "Range",
@@ -1113,7 +1113,7 @@
           },
           {
             "label": "Target",
-            "value": "Directional AE - -22&deg; to 22&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(-22)-Math.PI/2, degreesToRadians(22)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
+            "value": "Directional AE - 338° to 22°"
           },
           {
             "label": "Range",
@@ -2509,7 +2509,7 @@
           },
           {
             "label": "Target",
-            "value": "Directional AE - -45&deg; to 45&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(-45)-Math.PI/2, degreesToRadians(45)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
+            "value": "Directional AE - 315° to 45°"
           },
           {
             "label": "Range",
@@ -3566,7 +3566,7 @@
           },
           {
             "label": "Target",
-            "value": "Directional AE - -30&deg; to 30&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(-30)-Math.PI/2, degreesToRadians(30)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
+            "value": "Directional AE - 330° to 30°"
           },
           {
             "label": "Range",
@@ -6333,7 +6333,7 @@
           },
           {
             "label": "Target",
-            "value": "Directional AE - -20&deg; to 20&deg; function degreesToRadians (degrees) { return degrees * (Math.PI/180); } function radiansToDegrees (radians) { return radians * (180/Math.PI); } var canvas = document.getElementById('circle'); var ctx = canvas.getContext('2d'); ctx.beginPath(); ctx.arc(300, 300, 187, 0, 2 * Math.PI); ctx.strokeStyle = 'white'; ctx.lineWidth = 2; ctx.stroke(); ctx.beginPath(); ctx.arc(300, 300, 187, degreesToRadians(-20)-Math.PI/2, degreesToRadians(20)-Math.PI/2, false); ctx.strokeStyle = 'gold'; ctx.lineWidth = 10; ctx.stroke();"
+            "value": "Directional AE - 340° to 20°"
           },
           {
             "label": "Range",

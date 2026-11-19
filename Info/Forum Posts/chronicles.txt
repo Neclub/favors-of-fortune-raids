@@ -234,7 +234,7 @@ Lava Elemental Protection
 • Stacking damage shield
 • Shield is more powerful for each Lava Golem that is currently active
 Lava Golems
-• A Lava Golem will spawn when the First Creation does
+• Between one and three Lava Golem will spawn when the First Creation does
 • Spawns an additional Lava Golem every 100 seconds
 Achievements
 Complete additional challenges for special recognition:

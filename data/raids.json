@@ -191,10 +191,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -367,10 +363,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -436,10 +428,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -655,10 +643,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -714,20 +698,16 @@
             "value": "Detrimental - Resist: Physical -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
-            "value": "Cannot Remove"
-          },
-          {
             "label": "Push Back",
             "value": "30"
           },
           {
             "label": "Push Up",
             "value": "10"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
           }
         ]
       }
@@ -1137,10 +1117,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -1200,10 +1176,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Cold -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -1278,10 +1250,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -1341,10 +1309,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -1393,10 +1357,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Unresistable -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -1594,10 +1554,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -1660,10 +1616,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -1737,10 +1689,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -1800,10 +1748,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Min: 10% Max: 25%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -1858,10 +1802,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Lowest -10000 Min: 10% Max: 25%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -1918,10 +1858,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Lowest -10000 Min: 10% Max: 25%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -1988,10 +1924,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -2190,10 +2122,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -2254,10 +2182,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -2324,10 +2248,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -2388,10 +2308,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -2456,10 +2372,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -2533,10 +2445,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -2603,10 +2511,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -2665,10 +2569,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Cold -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -2731,10 +2631,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -2791,10 +2687,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Cold -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -2862,10 +2754,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -2921,10 +2809,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Max: 60%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -2978,10 +2862,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Lowest -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Push Back",
@@ -3050,10 +2930,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -3113,10 +2989,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -3173,10 +3045,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Fire -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -3250,10 +3118,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -3376,10 +3240,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -3441,20 +3301,16 @@
             "value": "Detrimental - Resist: Physical -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
-            "value": "Cannot Remove"
-          },
-          {
             "label": "Push Back",
             "value": "30"
           },
           {
             "label": "Push Up",
             "value": "15"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
           }
         ]
       },
@@ -3514,10 +3370,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -3581,20 +3433,16 @@
             "value": "Detrimental - Resist: Physical -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
-            "value": "Cannot Remove"
-          },
-          {
             "label": "Push Back",
             "value": "30"
           },
           {
             "label": "Push Up",
             "value": "15"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
           }
         ]
       }
@@ -3658,10 +3506,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -3861,10 +3705,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -3935,10 +3775,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -3997,10 +3833,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -4055,10 +3887,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -4124,10 +3952,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -4201,10 +4025,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -4264,10 +4084,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -4403,10 +4219,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Min: 10% Max: 25%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -4477,10 +4289,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -4625,10 +4433,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -4703,10 +4507,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -4772,10 +4572,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -4826,10 +4622,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -4877,10 +4669,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -4928,10 +4716,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -4979,10 +4763,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -5030,10 +4810,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -5081,10 +4857,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -5132,10 +4904,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -5183,10 +4951,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -5234,10 +4998,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -5285,10 +5045,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -5346,10 +5102,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Min: 15% Max: 55%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -5417,10 +5169,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -5494,10 +5242,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -5550,10 +5294,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -5622,10 +5362,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -5691,10 +5427,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -5771,10 +5503,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -5847,10 +5575,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Max: 60%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -5904,10 +5628,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Physical -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -5972,10 +5692,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -6022,10 +5738,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Min: 15% Max: 55%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -6151,10 +5863,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -6209,10 +5917,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -6276,10 +5980,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -6357,10 +6057,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -6415,10 +6111,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -6485,10 +6177,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -6566,10 +6254,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -6642,10 +6326,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -6696,16 +6376,12 @@
             "value": "Detrimental - Resist: Physical -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
+            "label": "Push Back",
+            "value": "30"
           },
           {
             "label": "Restriction",
             "value": "Cannot Remove"
-          },
-          {
-            "label": "Push Back",
-            "value": "30"
           }
         ]
       },
@@ -6755,16 +6431,12 @@
             "value": "Detrimental - Resist: Physical -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
+            "label": "Push Back",
+            "value": "30"
           },
           {
             "label": "Restriction",
             "value": "Cannot Remove"
-          },
-          {
-            "label": "Push Back",
-            "value": "30"
           }
         ]
       }
@@ -6818,10 +6490,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Physical -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -6883,10 +6551,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Physical -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -7175,10 +6839,6 @@
             "value": "No"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
             "label": "Viral",
             "value": "Range: 40, Recast: 10s to 15s"
           }
@@ -7235,10 +6895,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Lowest -10000 Max: 50%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -7299,10 +6955,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Min: 10% Max: 25%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -7356,10 +7008,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Lowest -10000 Max: 50%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -7426,10 +7074,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -7501,10 +7145,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -7562,10 +7202,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -7620,10 +7256,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -7696,10 +7328,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -7759,10 +7387,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -7828,10 +7452,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Fire -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -7893,10 +7513,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -7954,10 +7570,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Physical -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -8022,10 +7634,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -8085,10 +7693,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -8145,10 +7749,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -8223,10 +7823,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -8306,10 +7902,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -8376,10 +7968,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -8454,10 +8042,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -8525,10 +8109,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -8584,10 +8164,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Average -10000 Max: 67%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -8642,10 +8218,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Unresistable"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -8885,10 +8457,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -8955,10 +8523,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -9024,10 +8588,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -9093,10 +8653,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -9165,10 +8721,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Viral",
@@ -9244,10 +8796,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -9305,10 +8853,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -9371,10 +8915,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -9433,10 +8973,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -9509,10 +9045,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -9580,10 +9112,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -9648,10 +9176,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -9781,10 +9305,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -9840,10 +9360,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -9976,10 +9492,6 @@
             "value": "Detrimental - Resist: Fire -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
             "label": "Push Back",
             "value": "3"
           },
@@ -10043,10 +9555,6 @@
             "value": "Detrimental - Resist: Fire -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
             "label": "Push Back",
             "value": "3"
           },
@@ -10108,10 +9616,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Fire -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Push Back",
@@ -10186,10 +9690,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -10248,10 +9748,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -10319,10 +9815,6 @@
           {
             "label": "Focusable",
             "value": "No"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -10398,10 +9890,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -10464,10 +9952,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -10529,10 +10013,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -10599,10 +10079,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       },
@@ -10667,10 +10143,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -10745,10 +10217,6 @@
           {
             "label": "Focusable",
             "value": "Yes"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Push Back",
@@ -10830,10 +10298,6 @@
           },
           {
             "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
             "value": "Cannot Remove"
           }
         ]
@@ -10895,20 +10359,16 @@
             "value": "Detrimental - Resist: Magic -10000"
           },
           {
-            "label": "Restriction",
-            "value": "Beta Only"
-          },
-          {
-            "label": "Restriction",
-            "value": "Cannot Remove"
-          },
-          {
             "label": "Push Back",
             "value": "45"
           },
           {
             "label": "Push Up",
             "value": "5"
+          },
+          {
+            "label": "Restriction",
+            "value": "Cannot Remove"
           }
         ]
       }
@@ -10962,10 +10422,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Magic -10000 Min: 5% Max: 15%"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           }
         ]
       }
@@ -11023,10 +10479,6 @@
           {
             "label": "Spell Type",
             "value": "Detrimental - Resist: Physical -10000"
-          },
-          {
-            "label": "Restriction",
-            "value": "Beta Only"
           },
           {
             "label": "Restriction",
@@ -15581,7 +15033,7 @@
                   "prose": [],
                   "bullets": [
                     {
-                      "text": "A Lava Golem will spawn when the First Creation does",
+                      "text": "Between one and three Lava Golem will spawn when the First Creation does",
                       "spell": "",
                       "children": []
                     },

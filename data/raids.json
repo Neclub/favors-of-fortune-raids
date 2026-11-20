@@ -14,7 +14,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Punched for #1 damage and stunned for #2 seconds."
+            "value": "Punches for #1 damage and stuns for #2 seconds."
           },
           {
             "label": "Land on You",
@@ -22,7 +22,7 @@
           },
           {
             "label": "Land on Other",
-            "value": "Target is punched with a Katar."
+            "value": "Target is punched with a katar."
           },
           {
             "label": "Mana",
@@ -74,7 +74,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Punched for #1 damage and stunned for #2 seconds."
+            "value": "Punches for #1 damage and stuns for #2 seconds."
           },
           {
             "label": "Land on You",
@@ -82,7 +82,7 @@
           },
           {
             "label": "Land on Other",
-            "value": "Target is punched with a Katar."
+            "value": "Target is punched with a katar."
           },
           {
             "label": "Mana",
@@ -347,7 +347,7 @@
           },
           {
             "label": "Range",
-            "value": "800"
+            "value": "2000"
           },
           {
             "label": "Spell Type",
@@ -415,7 +415,7 @@
           },
           {
             "label": "Range",
-            "value": "800"
+            "value": "2000"
           },
           {
             "label": "Spell Type",
@@ -726,7 +726,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Does #21 damage slows and snares you."
+            "value": "Does #21 damage, slows, and snares you."
           },
           {
             "label": "Land on You",
@@ -856,7 +856,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Does #21 damage, decreases armor, reduces hate, and adds disease counters."
+            "value": "Does #21 damage per tick, decreases armor, reduces hate, and adds disease counters."
           },
           {
             "label": "Land on You",
@@ -1945,7 +1945,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Confining bonds root you to the spot and damage you for #22 for %Z."
+            "value": "Confining bonds root you to the spot and damage you for #22 per tick for %Z."
           },
           {
             "label": "Land on You",
@@ -2009,7 +2009,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Confining bonds root you to the spot and damage you for #22 for %Z."
+            "value": "Confining bonds root you to the spot and damage you for #22 per tick for %Z."
           },
           {
             "label": "Land on You",
@@ -3612,7 +3612,7 @@
           },
           {
             "label": "Land on Other",
-            "value": "Target is Fortified."
+            "value": "Target is fortified."
           },
           {
             "label": "Mana",
@@ -4103,7 +4103,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Reduces mana by #21% and slows your swings by #22%."
+            "value": "Increases mana spent by #21% and slows your swings by #22%."
           },
           {
             "label": "Land on You",
@@ -6571,7 +6571,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Stabs you for #1 damage then #2 for %Z."
+            "value": "Stabs you for #1 damage then #2 per tick for %Z."
           },
           {
             "label": "Land on You",
@@ -6631,7 +6631,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Stabs you for #1 damage then #2 for %Z."
+            "value": "Stabs you for #1 damage then #2 per tick for %Z."
           },
           {
             "label": "Land on You",
@@ -9384,7 +9384,7 @@
         "details": [
           {
             "label": "In Game Description",
-            "value": "Knocks you back and dispells spells."
+            "value": "Knocks you back and dispels spells."
           },
           {
             "label": "Land on You",
